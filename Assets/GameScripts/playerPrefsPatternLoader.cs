@@ -22,7 +22,7 @@ public static class PlayerPrefsPatternLoader
             for (int x = 0; x < 3; x++)
                 pattern[y, x] = PlayerPrefs.GetString(KeyPrefix + $"{y}_{x}", "None");
 
-        Debug.Log(" [PatternLoader] 클리어 패턴 불러오기 완료");
+        Debug.Log("[PatternLoader] 클리어 패턴 불러오기 완료");
         return pattern;
     }
 }
