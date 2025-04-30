@@ -89,4 +89,12 @@ public class DiceManager : MonoBehaviour
 
         Debug.Log($"📊 전체 3x3 패턴:\n{debugPattern}");
     }
+
+    public void InitializeDiceBoard()
+    {
+        GenerateClearPattern();   // 6색 제한을 지켜서 3x3 패턴 생성
+        SpawnDiceGrid();         // 주사위 9개 배치 및 SetTopFace()
+        SaveClearPattern();      // PlayerPrefs에 저장
+    }
+
 }
