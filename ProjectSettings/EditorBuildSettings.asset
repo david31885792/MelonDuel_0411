@@ -15,6 +15,15 @@ EditorBuildSettings:
     path: Assets/Scenes/DiceScene.unity
     guid: b6f5826a37daee544b04ad37672bf1c2
   - enabled: 1
+    path: Assets/Scenes/GameScene.unity
+    guid: bd42c02bc560d7a4fafcbdadf1b45e40
+  - enabled: 1
+    path: Assets/Scenes/ChallengeScene.unity
+    guid: fcf6e48321ab1e4429969db7f4adb378
+  - enabled: 1
+    path: Assets/Scenes/ShopScene.unity
+    guid: ff1c105ed5dadc14581b1813f71553f7
+  - enabled: 0
     path: Assets/Scenes/GameScene_Old.unity
     guid: 5a754920482634049a557edb66f3981f
   m_configObjects:
