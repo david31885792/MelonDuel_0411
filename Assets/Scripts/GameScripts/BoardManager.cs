@@ -1,8 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using DG.Tweening;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class BoardManager : MonoBehaviour
 {
+    public static BoardManager Instance { get; private set; }
+
     [Header("보드 설정")]
     public Transform boardParent;            // 타일이 들어갈 부모
     public GameObject tilePrefab;            // 타일 프리팹
@@ -11,12 +14,30 @@ public class BoardManager : MonoBehaviour
     public float tileSize = 160f;            // 타일 한 변 크기
     public float spacing = 10f;              // 타일 간격
 
+    [Header("애니메이션")]
+    public float moveDuration = 0.2f; // 이동 연출 시간
+
+
     private int boardSize = 5;
     private Tile[,] tiles = new Tile[5, 5];
     private Vector2 startPos;
 
     private string[] colorNames = { "Red", "Blue", "Yellow", "Green", "Orange", "White" };
     private int maxPerColor = 4;
+
+    private int blankX;
+    private int blankY;
+
+    // ✅ 싱글톤 초기화
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+    }
 
     void Start()
     {
@@ -25,30 +46,24 @@ public class BoardManager : MonoBehaviour
 
     public void GenerateBoard()
     {
-        // 시작 위치 계산: 중앙 정렬 기준 좌상단
         float boardWidth = boardSize * tileSize + (boardSize - 1) * spacing;
         startPos = new Vector2(-boardWidth / 2 + tileSize / 2, boardWidth / 2 - tileSize / 2);
 
-        // 타일 이름 리스트 만들기
         List<string> tileNames = GenerateTileNames();
 
-        // 빈 칸 위치 결정
-        int emptyX = Random.Range(0, boardSize);
-        int emptyY = Random.Range(0, boardSize);
+        blankX = Random.Range(0, boardSize);
+        blankY = Random.Range(0, boardSize);
 
         for (int row = 0; row < boardSize; row++)
         {
             for (int col = 0; col < boardSize; col++)
             {
-                // 빈칸이면 건너뜀
-                if (row == emptyY && col == emptyX)
+                if (row == blankY && col == blankX)
                     continue;
 
-                // 타일 이름 가져오기
                 string name = tileNames[0];
                 tileNames.RemoveAt(0);
 
-                // 생성 및 위치 지정
                 GameObject go = Instantiate(tilePrefab, boardParent);
                 RectTransform rt = go.GetComponent<RectTransform>();
                 rt.anchoredPosition = GetTilePosition(row, col);
@@ -58,10 +73,14 @@ public class BoardManager : MonoBehaviour
                 tile.Initialize(row, col, name);
 
                 tiles[row, col] = tile;
+
+                Debug.Log($"🔷 타일 생성: {name} at ({row}, {col})");
+
             }
         }
 
-        Debug.Log($"✅ Board generated with empty at ({emptyX}, {emptyY})");
+        Debug.Log($"✅ Board generated with empty at ({blankX}, {blankY})");
+        Debug.LogWarning("⚠️ GenerateBoard 호출됨!");
     }
 
     private List<string> GenerateTileNames()
@@ -73,7 +92,6 @@ public class BoardManager : MonoBehaviour
                 names.Add(color);
         }
 
-        // 랜덤 셔플
         for (int i = 0; i < names.Count; i++)
         {
             int rand = Random.Range(i, names.Count);
@@ -89,4 +107,52 @@ public class BoardManager : MonoBehaviour
         float y = startPos.y - row * (tileSize + spacing);
         return new Vector2(x, y);
     }
+
+    public void TryMoveTile(Tile tile)
+    {
+        if (!IsAdjacentToBlank(tile.x, tile.y)) return;
+
+        SwapTileWithBlank(tile);
+        UpdateTilePositions();
+    }
+
+    private bool IsAdjacentToBlank(int x, int y)
+    {
+        int dx = Mathf.Abs(blankX - x);
+        int dy = Mathf.Abs(blankY - y);
+        return (dx + dy) == 1;
+    }
+
+    private void SwapTileWithBlank(Tile tile)
+    {
+        int tileX = tile.x;
+        int tileY = tile.y;
+
+        tiles[blankY, blankX] = tile;
+        tiles[tileY, tileX] = null;
+
+        tile.x = blankX;
+        tile.y = blankY;
+
+        blankX = tileX;
+        blankY = tileY;
+    }
+
+    private void UpdateTilePositions()
+    {
+        for (int row = 0; row < boardSize; row++)
+        {
+            for (int col = 0; col < boardSize; col++)
+            {
+                Tile tile = tiles[row, col];
+                if (tile != null)
+                {
+                    RectTransform rt = tile.GetComponent<RectTransform>();
+                    Vector2 targetPos = GetTilePosition(row, col);
+                    rt.DOAnchorPos(targetPos, moveDuration).SetEase(Ease.OutQuad); // 💫 부드러운 이동
+                }
+            }
+        }
+    }
+
 }

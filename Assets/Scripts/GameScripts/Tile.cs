@@ -1,19 +1,19 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.UI;
 
 public class Tile : MonoBehaviour
 {
-    [Header("Å¸ÀÏ À§Ä¡")]
+    [Header("íƒ€ì¼ ìœ„ì¹˜")]
     public int x;
     public int y;
 
-    [Header("Å¸ÀÏ ÀÌ¸§")]
+    [Header("íƒ€ì¼ ì´ë¦„")]
     public string tileName;
 
-    [Header("Å¸ÀÏ ÀÌ¹ÌÁö")]
+    [Header("íƒ€ì¼ ì´ë¯¸ì§€")]
     public Image tileImage;
 
-    [Header("»ö»ó ¸ÅÇÎ (ÀÌ¸§°ú °ª ¼ø¼­ ÀÏÄ¡)")]
+    [Header("ìƒ‰ìƒ ë§¤í•‘ (ì´ë¦„ê³¼ ê°’ ìˆœì„œ ì¼ì¹˜)")]
     [SerializeField]
     private string[] colorNames = { "Red", "Blue", "Yellow", "Green", "Orange", "White" };
 
@@ -21,7 +21,7 @@ public class Tile : MonoBehaviour
     private Color[] colorValues;
 
     /// <summary>
-    /// Å¸ÀÏ ÃÊ±âÈ­ (ÁÂÇ¥, ÀÌ¸§ ÁöÁ¤)
+    /// íƒ€ì¼ ì´ˆê¸°í™” (ì¢Œí‘œ, ì´ë¦„ ì§€ì •)
     /// </summary>
     public void Initialize(int x, int y, string name)
     {
@@ -31,7 +31,7 @@ public class Tile : MonoBehaviour
     }
 
     /// <summary>
-    /// »ö»ó ÀÌ¸§¿¡ µû¶ó ÀÌ¹ÌÁö »ö»ó º¯°æ
+    /// ìƒ‰ìƒ ì´ë¦„ì— ë”°ë¼ ì´ë¯¸ì§€ ìƒ‰ìƒ ë³€ê²½
     /// </summary>
     public void UpdateColor(string name)
     {
@@ -47,8 +47,22 @@ public class Tile : MonoBehaviour
             }
         }
 
-        // ¸ÅÄª ½ÇÆĞ ½Ã ±âº»°ª
+        // ë§¤ì¹­ ì‹¤íŒ¨ ì‹œ ê¸°ë³¸ê°’
         if (tileImage != null)
             tileImage.color = Color.black;
+    }
+
+    private Color GetColorByName(string name)
+    {
+        for (int i = 0; i < colorNames.Length; i++)
+        {
+            if (colorNames[i].Equals(name, System.StringComparison.OrdinalIgnoreCase))
+            {
+                Color c = colorValues[i];
+                c.a = 1f; // âœ… ì•ŒíŒŒê°’ ê°•ì œ ì„¤ì •
+                return c;
+            }
+        }
+        return Color.black;
     }
 }

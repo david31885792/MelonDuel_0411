@@ -27,9 +27,6 @@ public class GameSceneManager : MonoBehaviour
         // 패턴 패널에 표시
         patternPanel.SetPattern(pattern);
 
-        // 게임 보드 생성
-        boardManager.GenerateBoard();
-
         Debug.Log("✅ GameScene 초기화 완료");
     }
 }
