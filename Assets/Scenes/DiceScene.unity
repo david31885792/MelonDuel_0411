@@ -846,12 +846,12 @@ MonoBehaviour:
   - {fileID: 600270312}
   - {fileID: 2005499443}
   faceNames:
-  - Top
-  - Bottom
-  - Left
-  - Right
-  - Front
-  - Back
+  - Red
+  - Blue
+  - Yellow
+  - Green
+  - Orange
+  - White
   maxPerFace: 4
   stopSoundDelay: 1
   showPatternDuration: 3

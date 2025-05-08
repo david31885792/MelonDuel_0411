@@ -1,129 +1,92 @@
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using System;
-using System.Collections.Generic;
 
 public class BoardManager : MonoBehaviour
 {
-    public GameObject tilePrefab;
-    public Transform boardParent;
-    public Vector2 tileSpacing = new Vector2(100, 100);
+    [Header("보드 설정")]
+    public Transform boardParent;            // 타일이 들어갈 부모
+    public GameObject tilePrefab;            // 타일 프리팹
 
-    public event Action OnTileMoved;
-    public event Action OnClearMatched;
+    [Header("크기 및 간격")]
+    public float tileSize = 160f;            // 타일 한 변 크기
+    public float spacing = 10f;              // 타일 간격
 
+    private int boardSize = 5;
     private Tile[,] tiles = new Tile[5, 5];
-    private Vector2Int emptyPos;
+    private Vector2 startPos;
 
-    private string[,] clearPattern;
+    private string[] colorNames = { "Red", "Blue", "Yellow", "Green", "Orange", "White" };
+    private int maxPerColor = 4;
 
-    [Header("���� �̸� ����")]
-    public List<string> colorNames;
-    public List<Color> colorValues;
-    private Dictionary<string, Color> colorMap = new Dictionary<string, Color>();
-
-    public void InitBoard()
+    void Start()
     {
-        InitColorMap();
-        clearPattern = PlayerPrefsPatternLoader.LoadPattern();
-        CreateBoard();
+        GenerateBoard();
     }
 
-    private void InitColorMap()
+    public void GenerateBoard()
     {
-        for (int i = 0; i < Mathf.Min(colorNames.Count, colorValues.Count); i++)
-            colorMap[colorNames[i]] = colorValues[i];
-    }
+        // 시작 위치 계산: 중앙 정렬 기준 좌상단
+        float boardWidth = boardSize * tileSize + (boardSize - 1) * spacing;
+        startPos = new Vector2(-boardWidth / 2 + tileSize / 2, boardWidth / 2 - tileSize / 2);
 
-    private void CreateBoard()
-    {
-        List<string> pool = new List<string>();
-        foreach (var name in colorMap.Keys)
-            for (int i = 0; i < 4; i++) pool.Add(name); // 6�� * 4 = 24
+        // 타일 이름 리스트 만들기
+        List<string> tileNames = GenerateTileNames();
 
-        // ������ ����
-        for (int i = 0; i < pool.Count; i++)
+        // 빈 칸 위치 결정
+        int emptyX = Random.Range(0, boardSize);
+        int emptyY = Random.Range(0, boardSize);
+
+        for (int row = 0; row < boardSize; row++)
         {
-            int j = UnityEngine.Random.Range(i, pool.Count);
-            (pool[i], pool[j]) = (pool[j], pool[i]);
-        }
-
-        emptyPos = new Vector2Int(2, 2); // �߾� ���
-
-        int index = 0;
-        for (int y = 0; y < 5; y++)
-        {
-            for (int x = 0; x < 5; x++)
+            for (int col = 0; col < boardSize; col++)
             {
-                if (x == emptyPos.x && y == emptyPos.y) continue;
+                // 빈칸이면 건너뜀
+                if (row == emptyY && col == emptyX)
+                    continue;
 
+                // 타일 이름 가져오기
+                string name = tileNames[0];
+                tileNames.RemoveAt(0);
+
+                // 생성 및 위치 지정
                 GameObject go = Instantiate(tilePrefab, boardParent);
-                go.transform.localPosition = new Vector3((x - 2) * tileSpacing.x, (2 - y) * tileSpacing.y, 0);
+                RectTransform rt = go.GetComponent<RectTransform>();
+                rt.anchoredPosition = GetTilePosition(row, col);
+                rt.sizeDelta = new Vector2(tileSize, tileSize);
 
                 Tile tile = go.GetComponent<Tile>();
-                string name = pool[index++];
-                Color color = colorMap[name];
+                tile.Initialize(row, col, name);
 
-                tile.Init(this, x, y, name, color);
-                tiles[x, y] = tile;
+                tiles[row, col] = tile;
             }
         }
+
+        Debug.Log($"✅ Board generated with empty at ({emptyX}, {emptyY})");
     }
 
-    public void OnTileClicked(Tile clicked)
+    private List<string> GenerateTileNames()
     {
-        Vector2Int pos = new Vector2Int(clicked.x, clicked.y);
-
-        if (pos.x != emptyPos.x && pos.y != emptyPos.y) return;
-
-        // �����̵� ���� ���
-        int dx = Math.Sign(emptyPos.x - pos.x);
-        int dy = Math.Sign(emptyPos.y - pos.y);
-
-        if (dx != 0)
+        List<string> names = new List<string>();
+        foreach (string color in colorNames)
         {
-            int start = dx > 0 ? pos.x : emptyPos.x + 1;
-            for (int x = emptyPos.x - dx; x != pos.x - dx; x -= dx)
-                SlideTile(new Vector2Int(x, pos.y), new Vector2Int(x + dx, pos.y));
-        }
-        else if (dy != 0)
-        {
-            int start = dy > 0 ? pos.y : emptyPos.y + 1;
-            for (int y = emptyPos.y - dy; y != pos.y - dy; y -= dy)
-                SlideTile(new Vector2Int(pos.x, y), new Vector2Int(pos.x, y + dy));
+            for (int i = 0; i < maxPerColor; i++)
+                names.Add(color);
         }
 
-        emptyPos = pos;
-        OnTileMoved?.Invoke();
-
-        if (CheckClear())
+        // 랜덤 셔플
+        for (int i = 0; i < names.Count; i++)
         {
-            OnClearMatched?.Invoke();
+            int rand = Random.Range(i, names.Count);
+            (names[i], names[rand]) = (names[rand], names[i]);
         }
+
+        return names;
     }
 
-    private void SlideTile(Vector2Int from, Vector2Int to)
+    private Vector2 GetTilePosition(int row, int col)
     {
-        Tile tile = tiles[from.x, from.y];
-        if (tile == null) return;
-
-        tile.x = to.x;
-        tile.y = to.y;
-        tile.transform.localPosition = new Vector3((to.x - 2) * tileSpacing.x, (2 - to.y) * tileSpacing.y, 0);
-
-        tiles[to.x, to.y] = tile;
-        tiles[from.x, from.y] = null;
-    }
-
-    private bool CheckClear()
-    {
-        for (int y = 0; y < 3; y++)
-            for (int x = 0; x < 3; x++)
-            {
-                Tile tile = tiles[x + 1, y + 1];
-                if (tile == null || tile.tileName != clearPattern[y, x]) return false;
-            }
-
-        return true;
+        float x = startPos.x + col * (tileSize + spacing);
+        float y = startPos.y - row * (tileSize + spacing);
+        return new Vector2(x, y);
     }
 }

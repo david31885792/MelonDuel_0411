@@ -539,12 +539,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   faceNames:
-  - Top
-  - Bottom
-  - Left
-  - Right
-  - Front
-  - Back
+  - Red
+  - Blue
+  - Yellow
+  - Green
+  - Orange
+  - White
 --- !u!114 &4074559175897751717
 MonoBehaviour:
   m_ObjectHideFlags: 0

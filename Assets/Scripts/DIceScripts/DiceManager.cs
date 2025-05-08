@@ -37,11 +37,14 @@ public class DiceManager : MonoBehaviour
         OnDiceBoardReady?.Invoke();
     }
 
+    private string[] colorNames = { "Red", "Blue", "Yellow", "Green", "Orange", "White" };
+    private int maxPerColor = 4;
+
     private void GenerateClearPattern()
     {
         Dictionary<string, int> usageCount = new Dictionary<string, int>();
-        foreach (string face in faceNames)
-            usageCount[face] = 0;
+        foreach (string color in colorNames)
+            usageCount[color] = 0;
 
         for (int row = 0; row < 3; row++)
         {
@@ -52,8 +55,10 @@ public class DiceManager : MonoBehaviour
 
                 while (safety-- > 0)
                 {
-                    string candidate = faceNames[UnityEngine.Random.Range(0, faceNames.Length)];
-                    if (usageCount[candidate] < maxPerFace)
+                    int index = UnityEngine.Random.Range(0, colorNames.Length);
+                    string candidate = colorNames[index];
+
+                    if (usageCount[candidate] < maxPerColor)
                     {
                         selected = candidate;
                         usageCount[candidate]++;
@@ -61,10 +66,12 @@ public class DiceManager : MonoBehaviour
                     }
                 }
 
-                clearPattern[row, col] = selected ?? "Top";
+
+                clearPattern[row, col] = selected ?? "Red"; // fallback 기본값
             }
         }
     }
+
 
     private void SpawnDiceGrid()
     {
