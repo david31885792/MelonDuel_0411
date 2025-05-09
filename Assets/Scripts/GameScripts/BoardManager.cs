@@ -1,22 +1,22 @@
-﻿using DG.Tweening;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class BoardManager : MonoBehaviour
 {
     public static BoardManager Instance { get; private set; }
 
     [Header("보드 설정")]
-    public Transform boardParent;            // 타일이 들어갈 부모
-    public GameObject tilePrefab;            // 타일 프리팹
+    public Transform boardParent;
+    public GameObject tilePrefab;
 
     [Header("크기 및 간격")]
-    public float tileSize = 160f;            // 타일 한 변 크기
-    public float spacing = 10f;              // 타일 간격
+    public float tileSize = 160f;
+    public float spacing = 10f;
 
     [Header("애니메이션")]
-    public float moveDuration = 0.2f; // 이동 연출 시간
-
+    public float moveDuration = 0.2f;
+    public Ease moveEase = Ease.OutQuad;
 
     private int boardSize = 5;
     private Tile[,] tiles = new Tile[5, 5];
@@ -25,11 +25,11 @@ public class BoardManager : MonoBehaviour
     private string[] colorNames = { "Red", "Blue", "Yellow", "Green", "Orange", "White" };
     private int maxPerColor = 4;
 
-    private int blankX;
-    private int blankY;
+    private Vector2 emptyTilePos;  // ✅ 빈칸 위치만 값으로 관리
 
-    // ✅ 싱글톤 초기화
-    private void Awake()
+    private bool hasCheckedClear = false;
+
+    void Awake()
     {
         if (Instance != null && Instance != this)
         {
@@ -41,7 +41,14 @@ public class BoardManager : MonoBehaviour
 
     void Start()
     {
+        hasCheckedClear = false;
         GenerateBoard();
+
+        string[,] pattern = PlayerPrefsPatternLoader.LoadPattern();
+        BoardManager.Instance.clearPattern = pattern;
+
+        Debug.Log($"패턴 값 확인: {clearPattern[0, 0]} ~ {clearPattern[2, 2]}");
+
     }
 
     public void GenerateBoard()
@@ -51,17 +58,18 @@ public class BoardManager : MonoBehaviour
 
         List<string> tileNames = GenerateTileNames();
 
-        blankX = Random.Range(0, boardSize);
-        blankY = Random.Range(0, boardSize);
+        // 빈칸 위치 중앙으로 지정
+        int emptyX = boardSize / 2;
+        int emptyY = boardSize / 2;
+        emptyTilePos = GetTilePosition(emptyY, emptyX);
 
         for (int row = 0; row < boardSize; row++)
         {
             for (int col = 0; col < boardSize; col++)
             {
-                if (row == blankY && col == blankX)
-                    continue;
+                if (row == emptyY && col == emptyX) continue;
 
-                string name = tileNames[0];
+                string color = tileNames[0];
                 tileNames.RemoveAt(0);
 
                 GameObject go = Instantiate(tilePrefab, boardParent);
@@ -70,17 +78,13 @@ public class BoardManager : MonoBehaviour
                 rt.sizeDelta = new Vector2(tileSize, tileSize);
 
                 Tile tile = go.GetComponent<Tile>();
-                tile.Initialize(row, col, name);
+                tile.Initialize(row, col, color);
 
                 tiles[row, col] = tile;
-
-                Debug.Log($"🔷 타일 생성: {name} at ({row}, {col})");
-
             }
         }
 
-        Debug.Log($"✅ Board generated with empty at ({blankX}, {blankY})");
-        Debug.LogWarning("⚠️ GenerateBoard 호출됨!");
+        Debug.Log($"✅ Board generated with empty tile at center ({emptyX},{emptyY})");
     }
 
     private List<string> GenerateTileNames()
@@ -105,54 +109,136 @@ public class BoardManager : MonoBehaviour
     {
         float x = startPos.x + col * (tileSize + spacing);
         float y = startPos.y - row * (tileSize + spacing);
-        return new Vector2(x, y);
+        return new Vector2(Mathf.Round(x), Mathf.Round(y));
     }
 
     public void TryMoveTile(Tile tile)
     {
-        if (!IsAdjacentToBlank(tile.x, tile.y)) return;
+        Vector2 tilePos = tile.GetComponent<RectTransform>().anchoredPosition;
+        float distance = Vector2.Distance(tilePos, emptyTilePos);
+        float expectedDistance = tileSize + spacing;
 
-        SwapTileWithBlank(tile);
-        UpdateTilePositions();
-    }
-
-    private bool IsAdjacentToBlank(int x, int y)
-    {
-        int dx = Mathf.Abs(blankX - x);
-        int dy = Mathf.Abs(blankY - y);
-        return (dx + dy) == 1;
-    }
-
-    private void SwapTileWithBlank(Tile tile)
-    {
-        int tileX = tile.x;
-        int tileY = tile.y;
-
-        tiles[blankY, blankX] = tile;
-        tiles[tileY, tileX] = null;
-
-        tile.x = blankX;
-        tile.y = blankY;
-
-        blankX = tileX;
-        blankY = tileY;
-    }
-
-    private void UpdateTilePositions()
-    {
-        for (int row = 0; row < boardSize; row++)
+        if (Mathf.Abs(distance - expectedDistance) < 1f)
         {
-            for (int col = 0; col < boardSize; col++)
+            RectTransform rt = tile.GetComponent<RectTransform>();
+            Vector2 tileOriginalPos = rt.anchoredPosition;
+
+            rt.DOAnchorPos(emptyTilePos, moveDuration)
+              .SetEase(moveEase)
+              .OnComplete(() =>
+              {
+                  emptyTilePos = tileOriginalPos;
+
+                             // ✅ 움직일 때마다 검사
+                  IsPatternMatched();
+              });
+        }
+    }
+
+
+
+
+    private void MoveTileToEmpty(Tile tile)
+    {
+        RectTransform rt = tile.GetComponent<RectTransform>();
+        Vector2 tileOriginalPos = rt.anchoredPosition;
+
+        // 타일 이동
+        rt.DOAnchorPos(emptyTilePos, moveDuration).SetEase(moveEase);
+
+        // 빈칸 위치 갱신
+        emptyTilePos = tileOriginalPos;
+    }
+
+    // Add this to BoardManager.cs
+    public string[,] clearPattern; // 외부에서 패턴 주입 필요
+
+    private bool IsPatternMatched()
+    {
+        bool isMatched = true;
+
+        for (int row = 0; row < 3; row++)
+        {
+            for (int col = 0; col < 3; col++)
             {
-                Tile tile = tiles[row, col];
-                if (tile != null)
+                int boardRow = row + 1;
+                int boardCol = col + 1;
+
+                Tile tile = tiles[boardRow, boardCol];
+                if (tile == null)
                 {
-                    RectTransform rt = tile.GetComponent<RectTransform>();
-                    Vector2 targetPos = GetTilePosition(row, col);
-                    rt.DOAnchorPos(targetPos, moveDuration).SetEase(Ease.OutQuad); // 💫 부드러운 이동
+                    Debug.Log($"❌ tile[{boardRow},{boardCol}] = null");
+                    isMatched = false;
+                    continue;
+                }
+
+                Color actualColor = tile.tileImage.color;
+                string expectedName = clearPattern[row, col];
+                Color expectedColor = GetColorByName(expectedName);
+
+                if (!ColorsApproximatelyEqual(actualColor, expectedColor))
+                {
+                    string actualColorName = GetColorName(actualColor);
+                    Debug.Log($"❌ 불일치: tile[{boardRow},{boardCol}] = {actualColorName} ({actualColor}), 기대: {expectedName} ({expectedColor})");
+                    isMatched = false;
                 }
             }
         }
+
+        if (isMatched)
+        {
+            Debug.Log("🎉 패턴 일치! YOU WIN!");
+            GameSceneManager.Instance.OnGameClear();
+        }
+
+        return isMatched;
+    }
+
+
+    private bool ColorsApproximatelyEqual(Color a, Color b, float tolerance = 0.01f)
+    {
+        return Mathf.Abs(a.r - b.r) < tolerance &&
+               Mathf.Abs(a.g - b.g) < tolerance &&
+               Mathf.Abs(a.b - b.b) < tolerance;
+    }
+    private Color GetColorByName(string name)
+    {
+        string[] colorNames = { "Red", "Blue", "Yellow", "Green", "Orange", "White" };
+        Color[] colorValues = {
+        Color.red,
+        Color.blue,
+        Color.yellow,
+        Color.green,
+        new Color(1f, 0.5f, 0f), // orange
+        Color.white
+    };
+
+        for (int i = 0; i < colorNames.Length; i++)
+        {
+            if (colorNames[i].Equals(name, System.StringComparison.OrdinalIgnoreCase))
+                return colorValues[i];
+        }
+
+        return Color.black; // 기본값
+    }
+    private string GetColorName(Color color)
+    {
+        string[] colorNames = { "Red", "Blue", "Yellow", "Green", "Orange", "White" };
+        Color[] colorValues = {
+        Color.red,
+        Color.blue,
+        Color.yellow,
+        Color.green,
+        new Color(1f, 0.5f, 0f), // orange
+        Color.white
+    };
+
+        for (int i = 0; i < colorValues.Length; i++)
+        {
+            if (ColorsApproximatelyEqual(color, colorValues[i]))
+                return colorNames[i];
+        }
+        return "Unknown";
     }
 
 }

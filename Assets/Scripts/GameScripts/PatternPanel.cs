@@ -3,43 +3,75 @@ using UnityEngine.UI;
 
 public class PatternPanel : MonoBehaviour
 {
-    [Header("패턴 셀들 (3x3 총 9개)")]
-    public Image[] patternCells; // 0~8
+    [Header("타일 프리팹 및 부모")]
+    public GameObject tilePrefab;
+    public Transform patternParent;
+
+    [Header("위치 및 크기")]
+    public float tileSize = 160f;
+    public float spacing = 10f;
 
     [Header("색상 매핑")]
     public string[] colorNames = { "Red", "Blue", "Yellow", "Green", "Orange", "White" };
     public Color[] colorValues;
 
+    private string[,] clearPattern;
+
     private void Start()
     {
-        LoadAndDisplayPattern();
-    }
+        clearPattern = PlayerPrefsPatternLoader.LoadPattern();
 
-    private void LoadAndDisplayPattern()
-    {
-        string[,] pattern = PlayerPrefsPatternLoader.LoadPattern();
-
-        if (pattern == null)
+        if (clearPattern == null)
         {
             Debug.LogError("❌ 패턴 불러오기 실패");
             return;
         }
 
+        GeneratePatternTiles();
+    }
+
+    private void GeneratePatternTiles()
+    {
         for (int row = 0; row < 3; row++)
         {
             for (int col = 0; col < 3; col++)
             {
-                int index = row * 3 + col;
-                string colorName = pattern[row, col];
+                string colorName = clearPattern[row, col];
 
-                Color visibleColor = GetColorByName(colorName);
-                visibleColor.a = 1f; // 🔥 알파값 강제 설정
-                patternCells[index].color = visibleColor;
+                GameObject go = Instantiate(tilePrefab, patternParent);
+                Tile tile = go.GetComponent<Tile>();
+                tile.Initialize(row, col, colorName);
+                TileInputHandler handler = tile.GetComponent<TileInputHandler>();
+                if (handler != null)
+                    handler.enabled = false; // ✅ 클릭 막기
 
-                patternCells[index].gameObject.SetActive(true); // 혹시 비활성화된 경우도 방지
+
+                // 크기 및 위치 설정
+                RectTransform rt = go.GetComponent<RectTransform>();
+                rt.sizeDelta = new Vector2(tileSize, tileSize);
+                rt.anchoredPosition = GetTilePosition(row, col);
+
+                // 알파값 강제 설정
+                Image img = tile.tileImage;
+                if (img != null)
+                {
+                    Color fixedColor = GetColorByName(colorName);
+                    fixedColor.a = 1f;
+                    img.color = fixedColor;
+                }
             }
         }
+    }
 
+    private Vector2 GetTilePosition(int row, int col)
+    {
+        float boardWidth = 3 * tileSize + 2 * spacing;
+        float startX = -boardWidth / 2 + tileSize / 2;
+        float startY = boardWidth / 2 - tileSize / 2;
+
+        float x = startX + col * (tileSize + spacing);
+        float y = startY - row * (tileSize + spacing);
+        return new Vector2(x, y);
     }
 
     private Color GetColorByName(string name)
@@ -49,26 +81,6 @@ public class PatternPanel : MonoBehaviour
             if (colorNames[i].Equals(name, System.StringComparison.OrdinalIgnoreCase))
                 return colorValues[i];
         }
-        return Color.black; // 기본값
+        return Color.black;
     }
-
-    public void SetPattern(string[,] pattern)
-    {
-        for (int row = 0; row < 3; row++)
-        {
-            for (int col = 0; col < 3; col++)
-            {
-                int index = row * 3 + col;
-                string colorName = pattern[row, col];
-
-                Color visibleColor = GetColorByName(colorName);
-                visibleColor.a = 1f; // 🔥 알파값 강제 설정
-                patternCells[index].color = visibleColor;
-
-                patternCells[index].gameObject.SetActive(true); // 혹시 비활성화된 경우도 방지
-            }
-        }
-
-    }
-
 }

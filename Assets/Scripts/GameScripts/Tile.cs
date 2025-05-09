@@ -1,68 +1,74 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class Tile : MonoBehaviour
+[RequireComponent(typeof(RectTransform), typeof(Image))]
+public class Tile : MonoBehaviour, IPointerClickHandler
 {
-    [Header("타일 위치")]
+    [Header("타일 좌표")]
     public int x;
     public int y;
 
-    [Header("타일 이름")]
+    [Header("타일 이름 (색상 이름)")]
     public string tileName;
 
     [Header("타일 이미지")]
     public Image tileImage;
 
-    [Header("색상 매핑 (이름과 값 순서 일치)")]
-    [SerializeField]
-    private string[] colorNames = { "Red", "Blue", "Yellow", "Green", "Orange", "White" };
-
-    [SerializeField]
-    private Color[] colorValues;
+    [Header("색상 매핑")]
+    public string[] colorNames = { "Red", "Blue", "Yellow", "Green", "Orange", "White" };
+    public Color[] colorValues;
 
     /// <summary>
-    /// 타일 초기화 (좌표, 이름 지정)
+    /// 타일 초기화
     /// </summary>
     public void Initialize(int x, int y, string name)
     {
         this.x = x;
         this.y = y;
+        this.tileName = name;
+
+        if (tileImage == null)
+            tileImage = GetComponent<Image>();
+
         UpdateColor(name);
     }
 
     /// <summary>
-    /// 색상 이름에 따라 이미지 색상 변경
+    /// 클릭 시 호출됨 (IPointerClickHandler)
+    /// </summary>
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        BoardManager.Instance.TryMoveTile(this);
+    }
+
+    /// <summary>
+    /// 색상 이름에 따라 색상 지정
     /// </summary>
     public void UpdateColor(string name)
     {
-        tileName = name;
+        if (tileImage == null) return;
 
         for (int i = 0; i < colorNames.Length && i < colorValues.Length; i++)
         {
             if (colorNames[i].Equals(name, System.StringComparison.OrdinalIgnoreCase))
             {
-                if (tileImage != null)
-                    tileImage.color = colorValues[i];
+                tileImage.color = colorValues[i];
                 return;
             }
         }
 
-        // 매칭 실패 시 기본값
-        if (tileImage != null)
-            tileImage.color = Color.black;
+        tileImage.color = Color.black;
     }
 
-    private Color GetColorByName(string name)
+    private void Start()
     {
-        for (int i = 0; i < colorNames.Length; i++)
+        // 알파값 강제 설정
+        if (tileImage != null)
         {
-            if (colorNames[i].Equals(name, System.StringComparison.OrdinalIgnoreCase))
-            {
-                Color c = colorValues[i];
-                c.a = 1f; // ✅ 알파값 강제 설정
-                return c;
-            }
+            Color c = tileImage.color;
+            c.a = 1f;
+            tileImage.color = c;
         }
-        return Color.black;
     }
 }
