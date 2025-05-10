@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using System.Collections;
 
 public class BoardManager : MonoBehaviour
 {
@@ -25,9 +26,10 @@ public class BoardManager : MonoBehaviour
     private string[] colorNames = { "Red", "Blue", "Yellow", "Green", "Orange", "White" };
     private int maxPerColor = 4;
 
-    private Vector2 emptyTilePos;  // ✅ 빈칸 위치만 값으로 관리
+    private Vector2 emptyTilePos;
 
-    private bool hasCheckedClear = false;
+    private PatternPanel patternPanel;
+    private int[,] clearPattern;
 
     void Awake()
     {
@@ -39,16 +41,24 @@ public class BoardManager : MonoBehaviour
         Instance = this;
     }
 
-    void Start()
+    private IEnumerator Start()
     {
-        hasCheckedClear = false;
+        patternPanel = FindFirstObjectByType<PatternPanel>();
+
+        // 🔧 한 프레임 대기 후 PatternPanel이 Start에서 초기화될 시간 확보
+        yield return null;
+
+        if (patternPanel != null)
+        {
+            int[] flatPattern = patternPanel.GetPattern();
+            clearPattern = new int[3, 3];
+            for (int i = 0; i < 9; i++)
+            {
+                clearPattern[i / 3, i % 3] = flatPattern[i];
+            }
+        }
+
         GenerateBoard();
-
-        string[,] pattern = PlayerPrefsPatternLoader.LoadPattern();
-        BoardManager.Instance.clearPattern = pattern;
-
-        Debug.Log($"패턴 값 확인: {clearPattern[0, 0]} ~ {clearPattern[2, 2]}");
-
     }
 
     public void GenerateBoard()
@@ -58,7 +68,6 @@ public class BoardManager : MonoBehaviour
 
         List<string> tileNames = GenerateTileNames();
 
-        // 빈칸 위치 중앙으로 지정
         int emptyX = boardSize / 2;
         int emptyY = boardSize / 2;
         emptyTilePos = GetTilePosition(emptyY, emptyX);
@@ -114,27 +123,33 @@ public class BoardManager : MonoBehaviour
 
     public void TryMoveTile(Tile tile)
     {
-        Vector2 tilePos = tile.GetComponent<RectTransform>().anchoredPosition;
-        float distance = Vector2.Distance(tilePos, emptyTilePos);
+        RectTransform rt = tile.GetComponent<RectTransform>();
+        Vector2 anchoredStartPos = rt.anchoredPosition; // ✅ DOTween 실행 전에 위치 저장
+
+        float distance = Vector2.Distance(anchoredStartPos, emptyTilePos);
         float expectedDistance = tileSize + spacing;
 
         if (Mathf.Abs(distance - expectedDistance) < 1f)
         {
-            RectTransform rt = tile.GetComponent<RectTransform>();
-            Vector2 tileOriginalPos = rt.anchoredPosition;
+            Vector2Int from = GetTileIndexByPosition(anchoredStartPos);     // ✅ 이동 전 위치 기준
+            Vector2Int to = GetTileIndexByPosition(emptyTilePos);           // ✅ 이동 대상 위치 기준
 
             rt.DOAnchorPos(emptyTilePos, moveDuration)
               .SetEase(moveEase)
               .OnComplete(() =>
               {
-                  emptyTilePos = tileOriginalPos;
+                  // ✅ 논리 배열 내 타일 참조 위치 스왑
+                  tiles[to.y, to.x] = tile;
+                  tiles[from.y, from.x] = null;
 
-                             // ✅ 움직일 때마다 검사
+                  // ✅ 빈칸 위치 갱신
+                  emptyTilePos = anchoredStartPos;
+
+                  // ✅ 패턴 매칭 검사
                   IsPatternMatched();
               });
         }
     }
-
 
 
 
@@ -143,56 +158,78 @@ public class BoardManager : MonoBehaviour
         RectTransform rt = tile.GetComponent<RectTransform>();
         Vector2 tileOriginalPos = rt.anchoredPosition;
 
-        // 타일 이동
         rt.DOAnchorPos(emptyTilePos, moveDuration).SetEase(moveEase);
-
-        // 빈칸 위치 갱신
         emptyTilePos = tileOriginalPos;
     }
 
-    // Add this to BoardManager.cs
-    public string[,] clearPattern; // 외부에서 패턴 주입 필요
-
     private bool IsPatternMatched()
     {
-        bool isMatched = true;
-
-        for (int row = 0; row < 3; row++)
+        // GameSceneManager 안전하게 참조
+        GameSceneManager gsm = GameSceneManager.Instance ?? FindFirstObjectByType<GameSceneManager>();
+        if (gsm == null)
         {
-            for (int col = 0; col < 3; col++)
+            Debug.LogError("❌ GameSceneManager 인스턴스를 찾을 수 없습니다!");
+            return false;
+        }
+
+        Tile[] patternTiles = gsm.GetPatternTiles();
+
+        if (patternTiles == null || patternTiles.Length != 9)
+        {
+            Debug.LogError("❌ 클리어 패턴이 올바르게 로드되지 않았습니다.");
+            return false;
+        }
+
+        int patternIndex = 0;
+
+        for (int row = 1; row <= 3; row++)
+        {
+            for (int col = 1; col <= 3; col++)
             {
-                int boardRow = row + 1;
-                int boardCol = col + 1;
+                Tile gameTile = tiles[row, col];
+                Tile patternTile = patternTiles[patternIndex];
 
-                Tile tile = tiles[boardRow, boardCol];
-                if (tile == null)
+                // 🛡 null 방어
+                if (gameTile == null)
                 {
-                    Debug.Log($"❌ tile[{boardRow},{boardCol}] = null");
-                    isMatched = false;
-                    continue;
+                    Debug.LogWarning($"⚠️ 중앙 3x3 중 빈칸 포함됨: tile[{row},{col}] is null → 비교 중단");
+                    return false;
                 }
 
-                Color actualColor = tile.tileImage.color;
-                string expectedName = clearPattern[row, col];
-                Color expectedColor = GetColorByName(expectedName);
-
-                if (!ColorsApproximatelyEqual(actualColor, expectedColor))
+                if (patternTile == null)
                 {
-                    string actualColorName = GetColorName(actualColor);
-                    Debug.Log($"❌ 불일치: tile[{boardRow},{boardCol}] = {actualColorName} ({actualColor}), 기대: {expectedName} ({expectedColor})");
-                    isMatched = false;
+                    Debug.LogError($"❌ PatternTile[{patternIndex}] is null.");
+                    return false;
                 }
+
+                if (gameTile.tmpText == null || patternTile.tmpText == null)
+                {
+                    Debug.LogError($"❌ TMP 텍스트가 null입니다: gameTile[{row},{col}], patternTile[{patternIndex}]");
+                    return false;
+                }
+
+                int gameNum = int.Parse(gameTile.tmpText.text);
+                int patternNum = int.Parse(patternTile.tmpText.text);
+
+                if (gameNum != patternNum)
+                {
+                    Debug.Log($"❌ 불일치: tile[{row},{col}] = {gameNum}, 기대: {patternNum}");
+                    return false;
+                }
+
+                patternIndex++;
             }
         }
 
-        if (isMatched)
-        {
-            Debug.Log("🎉 패턴 일치! YOU WIN!");
-            GameSceneManager.Instance.OnGameClear();
-        }
+        Debug.Log("✅ 클리어 패턴과 완벽히 일치!");
 
-        return isMatched;
+        gsm.OnGameClear(); // ✅ 클리어 UI + 씬 전환 실행
+
+        return true;
     }
+
+
+
 
 
     private bool ColorsApproximatelyEqual(Color a, Color b, float tolerance = 0.01f)
@@ -201,6 +238,7 @@ public class BoardManager : MonoBehaviour
                Mathf.Abs(a.g - b.g) < tolerance &&
                Mathf.Abs(a.b - b.b) < tolerance;
     }
+
     private Color GetColorByName(string name)
     {
         string[] colorNames = { "Red", "Blue", "Yellow", "Green", "Orange", "White" };
@@ -209,7 +247,7 @@ public class BoardManager : MonoBehaviour
         Color.blue,
         Color.yellow,
         Color.green,
-        new Color(1f, 0.5f, 0f), // orange
+        new Color(1f, 0.5f, 0f),
         Color.white
     };
 
@@ -219,8 +257,9 @@ public class BoardManager : MonoBehaviour
                 return colorValues[i];
         }
 
-        return Color.black; // 기본값
+        return Color.black;
     }
+
     private string GetColorName(Color color)
     {
         string[] colorNames = { "Red", "Blue", "Yellow", "Green", "Orange", "White" };
@@ -229,7 +268,7 @@ public class BoardManager : MonoBehaviour
         Color.blue,
         Color.yellow,
         Color.green,
-        new Color(1f, 0.5f, 0f), // orange
+        new Color(1f, 0.5f, 0f),
         Color.white
     };
 
@@ -239,6 +278,15 @@ public class BoardManager : MonoBehaviour
                 return colorNames[i];
         }
         return "Unknown";
+    }
+    private Vector2Int GetTileIndexByPosition(Vector2 anchoredPos)
+    {
+        float tileStep = tileSize + spacing;
+
+        int col = Mathf.RoundToInt((anchoredPos.x - startPos.x) / tileStep);
+        int row = Mathf.RoundToInt((startPos.y - anchoredPos.y) / tileStep);
+
+        return new Vector2Int(col, row);
     }
 
 }

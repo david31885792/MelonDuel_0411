@@ -1,74 +1,65 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;
+using TMPro;
 
-[RequireComponent(typeof(RectTransform), typeof(Image))]
-public class Tile : MonoBehaviour, IPointerClickHandler
+public class Tile : MonoBehaviour
 {
-    [Header("타일 좌표")]
+    [Header("타일 위치")]
     public int x;
     public int y;
 
-    [Header("타일 이름 (색상 이름)")]
+    [Header("타일 속성")]
     public string tileName;
-
-    [Header("타일 이미지")]
     public Image tileImage;
+    public TextMeshProUGUI tmpText;
 
     [Header("색상 매핑")]
-    public string[] colorNames = { "Red", "Blue", "Yellow", "Green", "Orange", "White" };
-    public Color[] colorValues;
+    [SerializeField] private string[] colorNames = { "Red", "Blue", "Yellow", "Green", "Orange", "White" };
+    [SerializeField] private Color[] colorValues;
 
-    /// <summary>
-    /// 타일 초기화
-    /// </summary>
+    private int tmpNumber; // 🔧 TMP 숫자 저장용 필드 추가
+
+    public int TMPNumber => tmpNumber; // 🔧 외부에서 읽을 수 있도록 프로퍼티 추가
+
     public void Initialize(int x, int y, string name)
     {
         this.x = x;
         this.y = y;
-        this.tileName = name;
-
-        if (tileImage == null)
-            tileImage = GetComponent<Image>();
-
         UpdateColor(name);
     }
 
-    /// <summary>
-    /// 클릭 시 호출됨 (IPointerClickHandler)
-    /// </summary>
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        BoardManager.Instance.TryMoveTile(this);
-    }
-
-    /// <summary>
-    /// 색상 이름에 따라 색상 지정
-    /// </summary>
     public void UpdateColor(string name)
     {
-        if (tileImage == null) return;
-
-        for (int i = 0; i < colorNames.Length && i < colorValues.Length; i++)
+        tileName = name;
+        for (int i = 0; i < colorNames.Length; i++)
         {
             if (colorNames[i].Equals(name, System.StringComparison.OrdinalIgnoreCase))
             {
-                tileImage.color = colorValues[i];
+                SetColor(colorValues[i]);
+                SetTMPNumber(i + 1); // 유튜브 방식의 넘버링
                 return;
             }
         }
-
-        tileImage.color = Color.black;
+        SetColor(Color.black);
+        SetTMPNumber(0);
     }
 
-    private void Start()
+    public void SetColor(Color color)
     {
-        // 알파값 강제 설정
         if (tileImage != null)
         {
-            Color c = tileImage.color;
-            c.a = 1f;
-            tileImage.color = c;
+            color.a = 1f;
+            tileImage.color = color;
+        }
+    }
+
+    public void SetTMPNumber(int number)
+    {
+        tmpNumber = number; // 🔧 숫자 저장
+        if (tmpText != null)
+        {
+            tmpText.text = number.ToString();
+            tmpText.enabled = false; // 보이지 않게
         }
     }
 }

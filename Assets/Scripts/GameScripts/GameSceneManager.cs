@@ -1,37 +1,13 @@
 ﻿using UnityEngine;
+using TMPro;
+using System.Collections;
 
 public class GameSceneManager : MonoBehaviour
 {
-    [Header("패턴 표시")]
-    [SerializeField] private PatternPanel patternPanel;
-
-    [Header("보드 생성")]
-    [SerializeField] private BoardManager boardManager;
-
     public static GameSceneManager Instance { get; private set; }
 
-
-    private void Start()
-    {
-        SetupGame();
-    }
-
-    private void SetupGame()
-    {
-        // ClearPattern 불러오기
-        string[,] pattern = PlayerPrefsPatternLoader.LoadPattern();
-
-        if (pattern == null)
-        {
-            Debug.LogError("❌ ClearPattern 불러오기 실패");
-            return;
-        }
-
-        // 패턴 패널에 표시
-        //patternPanel.SetPattern(pattern);
-
-        Debug.Log("✅ GameScene 초기화 완료");
-    }
+    [SerializeField] private PatternPanel patternPanel;
+    [SerializeField] private GameObject youWinPanel;
 
     private void Awake()
     {
@@ -43,10 +19,33 @@ public class GameSceneManager : MonoBehaviour
         Instance = this;
     }
 
-    public void OnGameClear()
+    public Tile[] GetPatternTiles()
     {
-        Debug.Log("🎉 YOU WIN! (임시 OnGameClear 실행됨)");
-        // 여기에 승리 연출이나 씬 전환 처리 예정
+        return patternPanel.GetPatternTiles();
     }
 
+    // ✅ 게임 클리어 시 호출되는 함수
+    public void OnGameClear()
+    {
+        Debug.Log("🎉 YOU WIN! (게임 클리어 처리)");
+
+        if (youWinPanel == null)
+        {
+            Debug.LogError("❌ youWinPanel 오브젝트가 에디터에 연결되지 않았습니다!");
+            return;
+        }
+
+        youWinPanel.SetActive(true);
+        Debug.Log("✅ youWinPanel.SetActive(true) 호출됨");
+
+        StartCoroutine(LoadMainSceneAfterDelay(3f));
+    }
+
+
+
+    private IEnumerator LoadMainSceneAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneLoader.LoadMainScene(); // ✅ SceneLoader.cs를 통한 씬 전환
+    }
 }
