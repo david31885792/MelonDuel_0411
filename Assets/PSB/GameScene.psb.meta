@@ -95,6 +95,72 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   multiSpriteImportData: []
   layeredSpriteImportData:
+  - name: YouWinFrame
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1080
+      height: 2340
+    spriteID: 074133433a8914743b964b543a4d871f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  - name: GOFrame
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1783
+      y: 3462
+      width: 349
+      height: 269
+    spriteID: 817d7e6e86d6a37478c1094294b3a4b1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1783, y: 3462}
+    spritePosition: {x: 372, y: 1029}
+  - name: ReadyFrame
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1092
+      y: 3462
+      width: 683
+      height: 283
+    spriteID: bd1c082e20e1be64da7abae3cfdf4677
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1092, y: 3462}
+    spritePosition: {x: 206, y: 1021}
   - name: CompetitorSkillFrame
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -103,11 +169,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1883
-      y: 3962
-      width: 100
-      height: 100
-    spriteID: 123bf213a94a07743bf2b1899ee9d690
+      x: 1954
+      y: 3918
+      width: 106
+      height: 106
+    spriteID: 09817154e67329647a95a632a4082ed7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -115,8 +181,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1883, y: 3962}
-    spritePosition: {x: 874, y: 1750}
+    uvTransform: {x: 1954, y: 3918}
+    spritePosition: {x: 874, y: 1744}
   - name: CompetitorSkillGuageFrame
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -125,11 +191,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1015
-      y: 4037
-      width: 365
-      height: 50
-    spriteID: fc2b213a4a8a3c348ab5e850c0366b87
+      x: 362
+      y: 4010
+      width: 371
+      height: 56
+    spriteID: 23577a60a7bf75c4ebe7359c8e9b34d7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -137,8 +203,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1015, y: 4037}
-    spritePosition: {x: 512, y: 1775}
+    uvTransform: {x: 362, y: 4010}
+    spritePosition: {x: 514, y: 1769}
   - name: CompetitorWinningAverageText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -147,11 +213,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1367
-      y: 3971
-      width: 143
-      height: 39
-    spriteID: 18c01ded95ecf18479a5b89f71101726
+      x: 1954
+      y: 4032
+      width: 147
+      height: 43
+    spriteID: a2a36005ad985dd4f96d3ce0a58d583a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -159,8 +225,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1367, y: 3971}
-    spritePosition: {x: 738, y: 1890}
+    uvTransform: {x: 1954, y: 4032}
+    spritePosition: {x: 738, y: 1886}
   - name: CompetitorLevelText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -169,11 +235,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1827
-      y: 51
-      width: 105
-      height: 39
-    spriteID: 13db06957247b1b439f03a71dbdc09d0
+      x: 3761
+      y: 56
+      width: 110
+      height: 44
+    spriteID: e49b63fe31817844baf626fd55982f3e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -181,8 +247,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1827, y: 51}
-    spritePosition: {x: 536, y: 1890}
+    uvTransform: {x: 3761, y: 56}
+    spritePosition: {x: 535, y: 1886}
   - name: CompetitorNicknameText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -191,11 +257,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1015
-      y: 3971
-      width: 344
-      height: 58
-    spriteID: 9a4d30bdc44d1bc439d60b78e789039f
+      x: 3403
+      y: 4
+      width: 350
+      height: 64
+    spriteID: c2eb69ab15faa6c4989a182487275172
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -203,9 +269,9 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1015, y: 3971}
-    spritePosition: {x: 533, y: 1946}
-  - name: CompetitorNicknameFrame
+    uvTransform: {x: 3403, y: 4}
+    spritePosition: {x: 532, y: 1941}
+  - name: CompetitorNicknameText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -213,11 +279,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1531
-      y: 3791
+      x: 2180
+      y: 178
       width: 471
       height: 163
-    spriteID: 451d92bcb13a57841a4b2f344fca6ecd
+    spriteID: a8d2e67e1e9427f44bd05a70f71864f4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -225,7 +291,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1531, y: 3791}
+    uvTransform: {x: 2180, y: 178}
     spritePosition: {x: 509, y: 1866}
   - name: CompetitorUIFrame
     originalName: 
@@ -235,11 +301,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1015
-      y: 3463
-      width: 508
-      height: 326
-    spriteID: ff7ec2c10766cbd4cab9cf385a207d5f
+      x: 1092
+      y: 3753
+      width: 517
+      height: 335
+    spriteID: 89d955d272ffc5a49b6e3ef1f36bd666
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -247,9 +313,9 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1015, y: 3463}
-    spritePosition: {x: 488, y: 1722}
-  - name: CompetitorBoard
+    uvTransform: {x: 1092, y: 3753}
+    spritePosition: {x: 488, y: 1713}
+  - name: CompetitorFrame
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -257,11 +323,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1531
-      y: 3463
-      width: 320
-      height: 320
-    spriteID: f55104c0cc808374eabd0ceb4305e82d
+      x: 1617
+      y: 3753
+      width: 329
+      height: 329
+    spriteID: 28eef0e33da16ed4daea7875312166df
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -269,9 +335,9 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1531, y: 3463}
-    spritePosition: {x: 105, y: 1722}
-  - name: HalfTonePattern_Competitor
+    uvTransform: {x: 1617, y: 3753}
+    spritePosition: {x: 105, y: 1713}
+  - name: CompetitorFrame
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -280,10 +346,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 3580
+      y: 3578
       width: 1003
       height: 424
-    spriteID: bc4fd118f9437ae47a5b65839c11b392
+    spriteID: 079a67377766b7044863f3c3b6c116a9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -291,9 +357,9 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 3580}
+    uvTransform: {x: 4, y: 3578}
     spritePosition: {x: 46, y: 1668}
-  - name: WinningAverageText
+  - name: WinningAverageFrame
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -301,11 +367,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1827
+      x: 3888
       y: 4
-      width: 110
-      height: 39
-    spriteID: ff84bec18ad41d449a428d17bbd0b94a
+      width: 115
+      height: 44
+    spriteID: 1e81716dde3c48b4c8608480e556a73b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -313,8 +379,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1827, y: 4}
-    spritePosition: {x: 738, y: 1413}
+    uvTransform: {x: 3888, y: 4}
+    spritePosition: {x: 737, y: 1409}
   - name: LevelText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -323,11 +389,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1388
-      y: 4037
-      width: 114
-      height: 39
-    spriteID: 701d8dc9597625640b52b4c175679069
+      x: 3761
+      y: 4
+      width: 119
+      height: 44
+    spriteID: 7aaf2023f292d2a47a4179c27d68d656
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -335,8 +401,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1388, y: 4037}
-    spritePosition: {x: 535, y: 1413}
+    uvTransform: {x: 3761, y: 4}
+    spritePosition: {x: 534, y: 1409}
   - name: PlayerNicknameText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -345,11 +411,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1531
-      y: 3962
-      width: 344
-      height: 58
-    spriteID: a29353b0a705739479e204bdc8ad41e0
+      x: 4
+      y: 4010
+      width: 350
+      height: 64
+    spriteID: dc0cd003c1dbfc84abd69636ba2bb035
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -357,8 +423,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1531, y: 3962}
-    spritePosition: {x: 533, y: 1469}
+    uvTransform: {x: 4, y: 4010}
+    spritePosition: {x: 532, y: 1464}
   - name: PlayerNicknameFrame
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -367,11 +433,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1015
-      y: 3797
+      x: 2180
+      y: 4
       width: 474
       height: 166
-    spriteID: 4c4e9c88951a2044994cac627c2f0543
+    spriteID: 415e2d7673e275f4a96e822debba5acd
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -379,7 +445,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1015, y: 3797}
+    uvTransform: {x: 2180, y: 4}
     spritePosition: {x: 509, y: 1386}
   - name: ClearPatternBoard
     originalName: 
@@ -389,11 +455,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1092
-      y: 112
-      width: 240
-      height: 240
-    spriteID: ae663a426b00e3e4490c12e1a90af7ba
+      x: 2180
+      y: 349
+      width: 239
+      height: 239
+    spriteID: 917905da3d0d51c4abacec92ed758d3e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -401,8 +467,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1092, y: 112}
-    spritePosition: {x: 100, y: 1339}
+    uvTransform: {x: 2180, y: 349}
+    spritePosition: {x: 105, y: 1335}
   - name: GameBoard
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -411,11 +477,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1015
+      x: 1092
       y: 2352
-      width: 880
-      height: 880
-    spriteID: 54b7499d0722040439e7ee3cf4c6a830
+      width: 879
+      height: 879
+    spriteID: f3ed08dbf8fbe674cbe0bfe045d2aef0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -423,9 +489,9 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1015, y: 2352}
-    spritePosition: {x: 100, y: 449}
-  - name: HalfTonePattern_GameBoardFrame
+    uvTransform: {x: 1092, y: 2352}
+    spritePosition: {x: 105, y: 445}
+  - name: GameBoardFrame
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -435,9 +501,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 2352
-      width: 1003
-      height: 1220
-    spriteID: f1326476b3527f74794330c4fc6a6257
+      width: 1001
+      height: 1218
+    spriteID: 9faef2a366fa93a438f68ee1f25d9760
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -446,7 +512,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 2352}
-    spritePosition: {x: 46, y: 388}
+    spritePosition: {x: 46, y: 390}
   - name: SkillIconFrame
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -455,11 +521,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1859
-      y: 3463
-      width: 150
-      height: 150
-    spriteID: f9c8c7f70caac7b46bde839eaed89065
+      x: 1954
+      y: 3753
+      width: 154
+      height: 157
+    spriteID: 0060eeea1c5827747aa5400b0bed88dc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -467,8 +533,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1859, y: 3463}
-    spritePosition: {x: 105, y: 191}
+    uvTransform: {x: 1954, y: 3753}
+    spritePosition: {x: 103, y: 184}
   - name: SkillGuageFrame
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -477,11 +543,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1092
+      x: 2662
       y: 4
-      width: 727
-      height: 100
-    spriteID: e39b5841f82a3f844bf7fb7ae5570498
+      width: 733
+      height: 106
+    spriteID: 5d4264ffe099a6f4cb41ccc27472bd9b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -489,8 +555,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1092, y: 4}
-    spritePosition: {x: 250, y: 216}
+    uvTransform: {x: 2662, y: 4}
+    spritePosition: {x: 245, y: 210}
   - name: SkillFrame
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -499,11 +565,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1015
-      y: 3240
+      x: 1092
+      y: 3239
       width: 999
       height: 215
-    spriteID: d358ca637210a2349898506c35fccb5e
+    spriteID: fca40b218c0d7b74f8e9bd076363806a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -511,7 +577,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1015, y: 3240}
+    uvTransform: {x: 1092, y: 3239}
     spritePosition: {x: 51, y: 153}
   - name: Square_1
     originalName: 
@@ -521,7 +587,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 4
+      x: 1092
       y: 4
       width: 434
       height: 1107
@@ -533,7 +599,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
+    uvTransform: {x: 1092, y: 4}
     spritePosition: {x: 0, y: 0}
   spriteImportData: []
   rigSpriteImportData: []
@@ -610,12 +676,72 @@ ScriptedImporter:
   resliceFromLayer: 0
   pSDLayerImportSetting: []
   psdLayers:
-  - name: CompetitorGameBoard
+  - name: YouWin
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: d0ba6c5cdf027c94b928efbb41d9f23a
-    layerID: 99
+    spriteID: 7f74db291668eb847ae196fe6b7b9b9f
+    layerID: 504
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: YouWinFrame
+    spriteName: YouWinFrame
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 074133433a8914743b964b543a4d871f
+    layerID: 538
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Go
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 6a0bd76528f639748bdbb87b926a3694
+    layerID: 498
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: GOFrame
+    spriteName: GOFrame
+    isGroup: 0
+    parentIndex: 2
+    spriteID: 817d7e6e86d6a37478c1094294b3a4b1
+    layerID: 532
+    mosaicPosition: {x: 1783, y: 3462}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Ready
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 817636becdfd69449ba8a9a441b6edcf
+    layerID: 493
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: ReadyFrame
+    spriteName: ReadyFrame
+    isGroup: 0
+    parentIndex: 4
+    spriteID: bd1c082e20e1be64da7abae3cfdf4677
+    layerID: 529
+    mosaicPosition: {x: 1092, y: 3462}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "\uC0C1\uB300\uBC29 \uCC3D"
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 626c3ee319b6fc0459d104fc58b51da7
+    layerID: 488
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
@@ -623,90 +749,90 @@ ScriptedImporter:
   - name: CompetitorSkillFrame
     spriteName: CompetitorSkillFrame
     isGroup: 0
-    parentIndex: 0
-    spriteID: 123bf213a94a07743bf2b1899ee9d690
-    layerID: 446
-    mosaicPosition: {x: 1883, y: 3962}
+    parentIndex: 6
+    spriteID: 09817154e67329647a95a632a4082ed7
+    layerID: 526
+    mosaicPosition: {x: 1954, y: 3918}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: CompetitorSkillGuageFrame
     spriteName: CompetitorSkillGuageFrame
     isGroup: 0
-    parentIndex: 0
-    spriteID: fc2b213a4a8a3c348ab5e850c0366b87
-    layerID: 445
-    mosaicPosition: {x: 1015, y: 4037}
+    parentIndex: 6
+    spriteID: 23577a60a7bf75c4ebe7359c8e9b34d7
+    layerID: 525
+    mosaicPosition: {x: 362, y: 4010}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: CompetitorWinningAverageText
     spriteName: CompetitorWinningAverageText
     isGroup: 0
-    parentIndex: 0
-    spriteID: 18c01ded95ecf18479a5b89f71101726
-    layerID: 444
-    mosaicPosition: {x: 1367, y: 3971}
+    parentIndex: 6
+    spriteID: a2a36005ad985dd4f96d3ce0a58d583a
+    layerID: 524
+    mosaicPosition: {x: 1954, y: 4032}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: CompetitorLevelText
     spriteName: CompetitorLevelText
     isGroup: 0
-    parentIndex: 0
-    spriteID: 13db06957247b1b439f03a71dbdc09d0
-    layerID: 443
-    mosaicPosition: {x: 1827, y: 51}
+    parentIndex: 6
+    spriteID: e49b63fe31817844baf626fd55982f3e
+    layerID: 523
+    mosaicPosition: {x: 3761, y: 56}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: CompetitorNicknameText
     spriteName: CompetitorNicknameText
     isGroup: 0
-    parentIndex: 0
-    spriteID: 9a4d30bdc44d1bc439d60b78e789039f
-    layerID: 442
-    mosaicPosition: {x: 1015, y: 3971}
+    parentIndex: 6
+    spriteID: c2eb69ab15faa6c4989a182487275172
+    layerID: 522
+    mosaicPosition: {x: 3403, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: CompetitorNicknameFrame
-    spriteName: CompetitorNicknameFrame
+  - name: CompetitorNicknameText
+    spriteName: CompetitorNicknameText
     isGroup: 0
-    parentIndex: 0
-    spriteID: 451d92bcb13a57841a4b2f344fca6ecd
-    layerID: 441
-    mosaicPosition: {x: 1531, y: 3791}
+    parentIndex: 6
+    spriteID: a8d2e67e1e9427f44bd05a70f71864f4
+    layerID: 521
+    mosaicPosition: {x: 2180, y: 178}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: CompetitorUIFrame
     spriteName: CompetitorUIFrame
     isGroup: 0
-    parentIndex: 0
-    spriteID: ff7ec2c10766cbd4cab9cf385a207d5f
-    layerID: 440
-    mosaicPosition: {x: 1015, y: 3463}
+    parentIndex: 6
+    spriteID: 89d955d272ffc5a49b6e3ef1f36bd666
+    layerID: 520
+    mosaicPosition: {x: 1092, y: 3753}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: CompetitorBoard
-    spriteName: CompetitorBoard
+  - name: CompetitorFrame
+    spriteName: CompetitorFrame
     isGroup: 0
-    parentIndex: 0
-    spriteID: f55104c0cc808374eabd0ceb4305e82d
-    layerID: 439
-    mosaicPosition: {x: 1531, y: 3463}
+    parentIndex: 6
+    spriteID: 28eef0e33da16ed4daea7875312166df
+    layerID: 519
+    mosaicPosition: {x: 1617, y: 3753}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: HalfTonePattern_Competitor
-    spriteName: HalfTonePattern_Competitor
+  - name: CompetitorFrame
+    spriteName: CompetitorFrame
     isGroup: 0
-    parentIndex: 0
-    spriteID: bc4fd118f9437ae47a5b65839c11b392
-    layerID: 447
-    mosaicPosition: {x: 4, y: 3580}
+    parentIndex: 6
+    spriteID: 079a67377766b7044863f3c3b6c116a9
+    layerID: 518
+    mosaicPosition: {x: 4, y: 3578}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -714,78 +840,78 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: 21be34ac31da2ed468de10a3215cbb43
-    layerID: 436
+    spriteID: 0aef1fdf812806748997a5028e3364f8
+    layerID: 469
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
     isVisible: 1
-  - name: WinningAverageText
-    spriteName: WinningAverageText
+  - name: WinningAverageFrame
+    spriteName: WinningAverageFrame
     isGroup: 0
-    parentIndex: 10
-    spriteID: ff84bec18ad41d449a428d17bbd0b94a
-    layerID: 435
-    mosaicPosition: {x: 1827, y: 4}
+    parentIndex: 16
+    spriteID: 1e81716dde3c48b4c8608480e556a73b
+    layerID: 516
+    mosaicPosition: {x: 3888, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: LevelText
     spriteName: LevelText
     isGroup: 0
-    parentIndex: 10
-    spriteID: 701d8dc9597625640b52b4c175679069
-    layerID: 434
-    mosaicPosition: {x: 1388, y: 4037}
+    parentIndex: 16
+    spriteID: 7aaf2023f292d2a47a4179c27d68d656
+    layerID: 515
+    mosaicPosition: {x: 3761, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: PlayerNicknameText
     spriteName: PlayerNicknameText
     isGroup: 0
-    parentIndex: 10
-    spriteID: a29353b0a705739479e204bdc8ad41e0
-    layerID: 433
-    mosaicPosition: {x: 1531, y: 3962}
+    parentIndex: 16
+    spriteID: dc0cd003c1dbfc84abd69636ba2bb035
+    layerID: 514
+    mosaicPosition: {x: 4, y: 4010}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: PlayerNicknameFrame
     spriteName: PlayerNicknameFrame
     isGroup: 0
-    parentIndex: 10
-    spriteID: 4c4e9c88951a2044994cac627c2f0543
-    layerID: 432
-    mosaicPosition: {x: 1015, y: 3797}
+    parentIndex: 16
+    spriteID: 415e2d7673e275f4a96e822debba5acd
+    layerID: 513
+    mosaicPosition: {x: 2180, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: ClearPatternBoard
     spriteName: ClearPatternBoard
     isGroup: 0
-    parentIndex: 10
-    spriteID: ae663a426b00e3e4490c12e1a90af7ba
-    layerID: 430
-    mosaicPosition: {x: 1092, y: 112}
+    parentIndex: 16
+    spriteID: 917905da3d0d51c4abacec92ed758d3e
+    layerID: 512
+    mosaicPosition: {x: 2180, y: 349}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: GameBoard
     spriteName: GameBoard
     isGroup: 0
-    parentIndex: 10
-    spriteID: 54b7499d0722040439e7ee3cf4c6a830
-    layerID: 429
-    mosaicPosition: {x: 1015, y: 2352}
+    parentIndex: 16
+    spriteID: f3ed08dbf8fbe674cbe0bfe045d2aef0
+    layerID: 511
+    mosaicPosition: {x: 1092, y: 2352}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: HalfTonePattern_GameBoardFrame
-    spriteName: HalfTonePattern_GameBoardFrame
+  - name: GameBoardFrame
+    spriteName: GameBoardFrame
     isGroup: 0
-    parentIndex: 10
-    spriteID: f1326476b3527f74794330c4fc6a6257
-    layerID: 428
+    parentIndex: 16
+    spriteID: 9faef2a366fa93a438f68ee1f25d9760
+    layerID: 510
     mosaicPosition: {x: 4, y: 2352}
     flatten: 0
     isImported: 1
@@ -794,8 +920,8 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: d8f8e49861f8bd14a901eec7bf831472
-    layerID: 95
+    spriteID: 52f212092e048b04897cdfa4d20419d9
+    layerID: 453
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
@@ -803,30 +929,30 @@ ScriptedImporter:
   - name: SkillIconFrame
     spriteName: SkillIconFrame
     isGroup: 0
-    parentIndex: 18
-    spriteID: f9c8c7f70caac7b46bde839eaed89065
-    layerID: 424
-    mosaicPosition: {x: 1859, y: 3463}
+    parentIndex: 24
+    spriteID: 0060eeea1c5827747aa5400b0bed88dc
+    layerID: 508
+    mosaicPosition: {x: 1954, y: 3753}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: SkillGuageFrame
     spriteName: SkillGuageFrame
     isGroup: 0
-    parentIndex: 18
-    spriteID: e39b5841f82a3f844bf7fb7ae5570498
-    layerID: 423
-    mosaicPosition: {x: 1092, y: 4}
+    parentIndex: 24
+    spriteID: 5d4264ffe099a6f4cb41ccc27472bd9b
+    layerID: 507
+    mosaicPosition: {x: 2662, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: SkillFrame
     spriteName: SkillFrame
     isGroup: 0
-    parentIndex: 18
-    spriteID: d358ca637210a2349898506c35fccb5e
-    layerID: 422
-    mosaicPosition: {x: 1015, y: 3240}
+    parentIndex: 24
+    spriteID: fca40b218c0d7b74f8e9bd076363806a
+    layerID: 506
+    mosaicPosition: {x: 1092, y: 3239}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -843,10 +969,10 @@ ScriptedImporter:
   - name: Square_1
     spriteName: Square_1
     isGroup: 0
-    parentIndex: 22
+    parentIndex: 28
     spriteID: 8b3df25072f9cc048a035b41ffa66c2e
     layerID: 420
-    mosaicPosition: {x: 4, y: 4}
+    mosaicPosition: {x: 1092, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
