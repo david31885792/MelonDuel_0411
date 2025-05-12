@@ -45,6 +45,18 @@ public class GameManager : MonoBehaviour
         startButton.interactable = false;
         startButton.gameObject.SetActive(false);
 
+        // 수정 방식: 컴포넌트는 그대로 두고, 시각적으로만 보이게 처리
+        foreach (var dice in FindObjectsByType<Dice>(FindObjectsSortMode.None))
+        {
+            foreach (var renderer in dice.GetComponentsInChildren<MeshRenderer>())
+            {
+                renderer.enabled = true;
+            }
+        }
+
+
+
+
         // 주사위 굴리고 완료되면 씬 전환
         diceManager.RollAllDicesAndThen(() =>
         {
@@ -52,4 +64,5 @@ public class GameManager : MonoBehaviour
             SceneLoader.LoadGameScene();
         });
     }
+
 }

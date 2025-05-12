@@ -48,13 +48,17 @@ public class DiceVisual : MonoBehaviour
         if (cameraTransform != null)
             cameraTransform.DOShakePosition(shakeDuration, shakeIntensity).SetEase(Ease.OutQuad);
 
-        // 회전 애니메이션
-        activeTween = transform.DORotate(faceRotations[faceIndex], rollDuration, RotateMode.FastBeyond360)
+        // -90도 보정 추가
+        Quaternion baseRotation = Quaternion.Euler(faceRotations[faceIndex]);
+        Quaternion adjustedRotation = Quaternion.Euler(-90f, 0f, 0f) * baseRotation;
+
+        activeTween = transform.DORotateQuaternion(adjustedRotation, rollDuration)
             .SetEase(rollEase)
             .OnComplete(() =>
             {
                 onComplete?.Invoke();
             });
+
     }
 
     void OnDestroy()

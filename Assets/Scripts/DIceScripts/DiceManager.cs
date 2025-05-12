@@ -83,17 +83,28 @@ public class DiceManager : MonoBehaviour
             int col = i % 3;
             Transform target = targetPositions[i];
 
-            GameObject go = Instantiate(dicePrefab, target.position, Quaternion.identity, diceParent);
+            Quaternion initialRotation = Quaternion.Euler(-90f, 0f, 0f);
+            GameObject go = Instantiate(dicePrefab, target.position, initialRotation, diceParent);
             go.name = $"Dice_{row}_{col}_{clearPattern[row, col]}";
+
+            // ✅ 모든 MeshRenderer 끄기 (본체 + 자식 면들)
+            foreach (var renderer in go.GetComponentsInChildren<MeshRenderer>())
+            {
+                renderer.enabled = false;
+            }
+
+
+
 
             Dice dice = go.GetComponent<Dice>();
             if (dice != null)
             {
-                dice.SetTopFace(clearPattern[row, col]); // 회전은 하지 않음
+                dice.SetTopFace(clearPattern[row, col]); // 회전 방향 설정
                 diceList.Add(dice);
             }
         }
     }
+
 
     private void ClearDiceGrid()
     {
