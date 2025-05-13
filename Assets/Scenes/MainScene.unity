@@ -2462,6 +2462,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 741153281128155260, guid: e786b2c3eb7c7b141ac3cd81decc79f0, type: 3}
+      propertyPath: winClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e28c3aa2b4cc755408a0fda8c59d76c9, type: 3}
+    - target: {fileID: 741153281128155260, guid: e786b2c3eb7c7b141ac3cd81decc79f0, type: 3}
+      propertyPath: buttonClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4bf1b5b0567a8fd479de1b941693392e, type: 3}
+    - target: {fileID: 741153281128155260, guid: e786b2c3eb7c7b141ac3cd81decc79f0, type: 3}
+      propertyPath: moveTileClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ee54b2003fc2b7041ba6daabb9e4311e, type: 3}
+    - target: {fileID: 741153281128155260, guid: e786b2c3eb7c7b141ac3cd81decc79f0, type: 3}
+      propertyPath: gameStartClip
+      value: 
+      objectReference: {fileID: 8300000, guid: fb9ed899d3d523d488775e26a14278a4, type: 3}
     - target: {fileID: 3480737942628798131, guid: e786b2c3eb7c7b141ac3cd81decc79f0, type: 3}
       propertyPath: Loop
       value: 1

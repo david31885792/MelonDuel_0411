@@ -8,6 +8,8 @@ public class GameSceneManager : MonoBehaviour
 
     [SerializeField] private PatternPanel patternPanel;
     [SerializeField] private GameObject youWinPanel;
+    [SerializeField] private GameObject glowingStroke;
+
 
     private void Awake()
     {
@@ -46,6 +48,8 @@ public class GameSceneManager : MonoBehaviour
 
         // ✅ YOU WIN 패널 활성화
         youWinPanel.SetActive(true);
+
+        glowingStroke?.SetActive(false);
 
         StartCoroutine(LoadMainSceneAfterDelay(3f));
     }

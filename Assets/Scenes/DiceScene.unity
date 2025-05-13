@@ -907,7 +907,7 @@ MonoBehaviour:
   - White
   maxPerFace: 4
   stopSoundDelay: 1
-  showPatternDuration: 3
+  showPatternDuration: 2
   stopSound: {fileID: 8300000, guid: ba86af670df059544b5b79b6106cd01d, type: 3}
   audioSource: {fileID: 1650524028}
 --- !u!4 &1650524027
