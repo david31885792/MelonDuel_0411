@@ -564,8 +564,8 @@ MonoBehaviour:
   - {x: 0, y: 0, z: -90}
   - {x: -90, y: 0, z: 0}
   - {x: 90, y: 0, z: 0}
-  rollDuration: 1.2
-  rollEase: 27
+  rollDuration: 1
+  rollEase: 30
   cameraTransform: {fileID: 0}
   shakeIntensity: 0.2
   shakeDuration: 0.3
