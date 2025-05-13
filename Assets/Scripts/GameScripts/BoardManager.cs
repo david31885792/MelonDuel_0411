@@ -117,14 +117,19 @@ public class BoardManager : MonoBehaviour
         Vector2 anchoredStartPos = rt.anchoredPosition;
 
         rt.DOAnchorPos(GetAnchoredPosition(to), moveDuration)
-            .SetEase(moveEase)
-            .OnComplete(() =>
-            {
-                tiles[to.y, to.x] = tile;
-                tiles[from.y, from.x] = null;
-                emptyTilePos = from;
-                IsPatternMatched();
-            });
+        .SetEase(moveEase)
+        .OnComplete(() =>
+        {
+            tiles[to.y, to.x] = tile;
+            tiles[from.y, from.x] = null;
+            emptyTilePos = from;
+
+            // ✅ 타일 이동 사운드
+            AudioManager.Instance?.PlaySFX(AudioManager.Instance.moveTileClip);
+
+            IsPatternMatched();
+        });
+
     }
 
     private Vector2Int GetTilePosition(Tile tile)
