@@ -35,7 +35,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 1
+    spritePixelsToUnits: 100
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -381,7 +381,29 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 2180, y: 4}
     spritePosition: {x: 229, y: 900}
-  - name: BoosterSkillIcon
+  - name: Player2SkillIcon
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2086
+      y: 3835
+      width: 75
+      height: 65
+    spriteID: d694b2d6a84fa4e488e0576dd3c60ef5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2086, y: 3835}
+    spritePosition: {x: 502, y: 718}
+  - name: Player3SkillIcon
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -391,6 +413,28 @@ ScriptedImporter:
       serializedVersion: 2
       x: 2095
       y: 3460
+      width: 77
+      height: 77
+    spriteID: 939cc20fabc409241b1e7ca14ee19621
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2095, y: 3460}
+    spritePosition: {x: 500, y: 711}
+  - name: Player1SkillIcon
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 425
+      y: 3961
       width: 73
       height: 73
     spriteID: bb779416884f1c746936c9569d280e90
@@ -401,7 +445,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 2095, y: 3460}
+    uvTransform: {x: 425, y: 3961}
     spritePosition: {x: 502, y: 713}
   - name: SkillIconFrame
     originalName: 
@@ -521,8 +565,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 425
-      y: 4023
+      x: 1878
+      y: 4037
       width: 54
       height: 55
     spriteID: a0f706537e6d4024781fcd36cdece67c
@@ -533,7 +577,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 425, y: 4023}
+    uvTransform: {x: 1878, y: 4037}
     spritePosition: {x: 474, y: 2147}
   - name: EnergyFrame
     originalName: 
@@ -631,8 +675,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 719
-      y: 4057
+      x: 425
+      y: 4042
       width: 73
       height: 30
     spriteID: 11961233b3f48d943931562a0253e66f
@@ -643,7 +687,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 719, y: 4057}
+    uvTransform: {x: 425, y: 4042}
     spritePosition: {x: 113, y: 2015}
   - name: TrophyIcon
     originalName: 
@@ -785,8 +829,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 425
-      y: 3961
+      x: 1801
+      y: 4037
       width: 69
       height: 54
     spriteID: 76f8dd5590d00064ca0959864f948bbb
@@ -797,7 +841,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 425, y: 3961}
+    uvTransform: {x: 1801, y: 4037}
     spritePosition: {x: 507, y: 67}
   - name: SelectFrame
     originalName: 
@@ -921,7 +965,7 @@ ScriptedImporter:
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
   mosaicLayers: 1
-  characterMode: 1
+  characterMode: 0
   documentPivot: {x: 0, y: 0}
   documentAlignment: 0
   importHiddenLayers: 0
@@ -1100,13 +1144,33 @@ ScriptedImporter:
     flatten: 0
     isImported: 0
     isVisible: 1
-  - name: BoosterSkillIcon
-    spriteName: BoosterSkillIcon
+  - name: Player2SkillIcon
+    spriteName: Player2SkillIcon
+    isGroup: 0
+    parentIndex: 15
+    spriteID: d694b2d6a84fa4e488e0576dd3c60ef5
+    layerID: 547
+    mosaicPosition: {x: 2086, y: 3835}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Player3SkillIcon
+    spriteName: Player3SkillIcon
+    isGroup: 0
+    parentIndex: 15
+    spriteID: 939cc20fabc409241b1e7ca14ee19621
+    layerID: 546
+    mosaicPosition: {x: 2095, y: 3460}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Player1SkillIcon
+    spriteName: Player1SkillIcon
     isGroup: 0
     parentIndex: 15
     spriteID: bb779416884f1c746936c9569d280e90
     layerID: 522
-    mosaicPosition: {x: 2095, y: 3460}
+    mosaicPosition: {x: 425, y: 3961}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -1143,7 +1207,7 @@ ScriptedImporter:
   - name: PlayerNicknameText
     spriteName: PlayerNicknameText
     isGroup: 0
-    parentIndex: 19
+    parentIndex: 21
     spriteID: ef2a3b01c04bcc2428866df4e65e2b73
     layerID: 502
     mosaicPosition: {x: 510, y: 4057}
@@ -1153,7 +1217,7 @@ ScriptedImporter:
   - name: PlayerIconFrame
     spriteName: PlayerIconFrame
     isGroup: 0
-    parentIndex: 19
+    parentIndex: 21
     spriteID: 3dea94b0ac021584c871a5274406bed3
     layerID: 500
     mosaicPosition: {x: 1776, y: 2352}
@@ -1163,7 +1227,7 @@ ScriptedImporter:
   - name: PlayerNicknameFrame
     spriteName: PlayerNicknameFrame
     isGroup: 0
-    parentIndex: 19
+    parentIndex: 21
     spriteID: 5e7cd0a3ae229fb49a3b00bb2161c3a8
     layerID: 501
     mosaicPosition: {x: 1801, y: 3460}
@@ -1183,17 +1247,17 @@ ScriptedImporter:
   - name: PlusIcon
     spriteName: PlusIcon
     isGroup: 0
-    parentIndex: 23
+    parentIndex: 25
     spriteID: a0f706537e6d4024781fcd36cdece67c
     layerID: 499
-    mosaicPosition: {x: 425, y: 4023}
+    mosaicPosition: {x: 1878, y: 4037}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: EnergyFrame
     spriteName: EnergyFrame
     isGroup: 0
-    parentIndex: 23
+    parentIndex: 25
     spriteID: d8e134be2e6c18245aba5cd657fc27f3
     layerID: 504
     mosaicPosition: {x: 510, y: 3956}
@@ -1213,7 +1277,7 @@ ScriptedImporter:
   - name: PlusIcon
     spriteName: PlusIcon
     isGroup: 0
-    parentIndex: 26
+    parentIndex: 28
     spriteID: bd99bdf4fc1ad90439488e5e215c3a1f
     layerID: 496
     mosaicPosition: {x: 2112, y: 3359}
@@ -1223,7 +1287,7 @@ ScriptedImporter:
   - name: CoinFrame
     spriteName: CoinFrame
     isGroup: 0
-    parentIndex: 26
+    parentIndex: 28
     spriteID: d2bd3344c0abf6e4ab5a0341540c9102
     layerID: 495
     mosaicPosition: {x: 1801, y: 3359}
@@ -1243,7 +1307,7 @@ ScriptedImporter:
   - name: List
     spriteName: List
     isGroup: 0
-    parentIndex: 29
+    parentIndex: 31
     spriteID: 3932bc95e13691c46a7ddac3517ffc5f
     layerID: 488
     mosaicPosition: {x: 979, y: 3956}
@@ -1263,17 +1327,17 @@ ScriptedImporter:
   - name: RankText
     spriteName: RankText
     isGroup: 0
-    parentIndex: 31
+    parentIndex: 33
     spriteID: 11961233b3f48d943931562a0253e66f
     layerID: 516
-    mosaicPosition: {x: 719, y: 4057}
+    mosaicPosition: {x: 425, y: 4042}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: TrophyIcon
     spriteName: TrophyIcon
     isGroup: 0
-    parentIndex: 31
+    parentIndex: 33
     spriteID: 7ac3af609dbd58546922ba37734101f9
     layerID: 515
     mosaicPosition: {x: 878, y: 3858}
@@ -1293,7 +1357,7 @@ ScriptedImporter:
   - name: PlayText
     spriteName: PlayText
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 36
     spriteID: b11222f7bdc37ae4a98dd8d44d1c05a2
     layerID: 482
     mosaicPosition: {x: 1958, y: 3705}
@@ -1303,7 +1367,7 @@ ScriptedImporter:
   - name: PlayButton
     spriteName: PlayButton
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 36
     spriteID: ed2f34aa57af6604b9359270c69f5e64
     layerID: 481
     mosaicPosition: {x: 4, y: 3690}
@@ -1323,7 +1387,7 @@ ScriptedImporter:
   - name: DuelIcon_Big
     spriteName: DuelIcon_Big
     isGroup: 0
-    parentIndex: 37
+    parentIndex: 39
     spriteID: 4f07998fb50b6cf4a93a6e975a6ad336
     layerID: 467
     mosaicPosition: {x: 878, y: 3690}
@@ -1333,7 +1397,7 @@ ScriptedImporter:
   - name: ShopIcon
     spriteName: ShopIcon
     isGroup: 0
-    parentIndex: 37
+    parentIndex: 39
     spriteID: aca78d89a62dc154eb9c68b00bca2632
     layerID: 373
     mosaicPosition: {x: 1776, y: 2770}
@@ -1343,7 +1407,7 @@ ScriptedImporter:
   - name: ChallengeIcon
     spriteName: ChallengeIcon
     isGroup: 0
-    parentIndex: 37
+    parentIndex: 39
     spriteID: 1419219217c54424896bf80271bf0f79
     layerID: 510
     mosaicPosition: {x: 1776, y: 2895}
@@ -1353,17 +1417,17 @@ ScriptedImporter:
   - name: DuelText
     spriteName: DuelText
     isGroup: 0
-    parentIndex: 37
+    parentIndex: 39
     spriteID: 76f8dd5590d00064ca0959864f948bbb
     layerID: 519
-    mosaicPosition: {x: 425, y: 3961}
+    mosaicPosition: {x: 1801, y: 4037}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: SelectFrame
     spriteName: SelectFrame
     isGroup: 0
-    parentIndex: 37
+    parentIndex: 39
     spriteID: 57191f3fd48bb024992d8c984a64be8d
     layerID: 464
     mosaicPosition: {x: 510, y: 3690}
@@ -1373,7 +1437,7 @@ ScriptedImporter:
   - name: BottomFrame
     spriteName: BottomFrame
     isGroup: 0
-    parentIndex: 37
+    parentIndex: 39
     spriteID: 448dab4d998542a4abf63c43fabb6d5d
     layerID: 465
     mosaicPosition: {x: 4, y: 3419}
@@ -1393,7 +1457,7 @@ ScriptedImporter:
   - name: BG
     spriteName: BG
     isGroup: 0
-    parentIndex: 44
+    parentIndex: 46
     spriteID: 032275bd51e28694bbf8ff0b822e837b
     layerID: 480
     mosaicPosition: {x: 1092, y: 4}
@@ -1406,7 +1470,7 @@ ScriptedImporter:
   importFileNodeState: 1
   platformSettingsDirtyTick: 0
   spriteSizeExpandChanged: 0
-  generateGOHierarchy: 0
+  generateGOHierarchy: 1
   textureAssetName: 
   prefabAssetName: 
   spriteLibAssetName: 

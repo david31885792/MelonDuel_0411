@@ -38,6 +38,15 @@ public class GameSceneManager : MonoBehaviour
         youWinPanel.SetActive(true);
         Debug.Log("✅ youWinPanel.SetActive(true) 호출됨");
 
+        // ✅ BGM 끄기
+        AudioManager.Instance.StopBGM();
+
+        // ✅ 승리 효과음 재생
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.winClip);
+
+        // ✅ YOU WIN 패널 활성화
+        youWinPanel.SetActive(true);
+
         StartCoroutine(LoadMainSceneAfterDelay(3f));
     }
 
@@ -48,4 +57,11 @@ public class GameSceneManager : MonoBehaviour
         yield return new WaitForSeconds(delay);
         SceneLoader.LoadMainScene(); // ✅ SceneLoader.cs를 통한 씬 전환
     }
+
+    private void Start()
+    {
+        // MainScene이면 mainBGM, GameScene이면 gameBGM
+        AudioManager.Instance.PlayBGM(AudioManager.Instance.gameBGM);
+    }
+
 }

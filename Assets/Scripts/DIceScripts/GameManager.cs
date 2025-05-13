@@ -25,6 +25,22 @@ public class GameManager : MonoBehaviour
 
         if (startButton != null)
             startButton.onClick.AddListener(OnStartGamePressed);
+
+
+        AudioManager.Instance.StopBGM();
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.gameStartClip); // ✅ 효과음만 재생
+        if (AudioManager.Instance == null)
+        {
+            Debug.LogError("❌ AudioManager.Instance is NULL");
+            return;
+        }
+
+        if (AudioManager.Instance.gameStartClip == null)
+        {
+            Debug.LogError("❌ gameStartClip is NULL");
+            return;
+        }
+
     }
 
     private void HandlePatternReady()

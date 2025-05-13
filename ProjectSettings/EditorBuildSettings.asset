@@ -21,8 +21,11 @@ EditorBuildSettings:
     path: Assets/Scenes/ChallengeScene.unity
     guid: fcf6e48321ab1e4429969db7f4adb378
   - enabled: 1
-    path: Assets/Scenes/ShopScene.unity
+    path: Assets/Scenes/ShopScene_Coin.unity
     guid: ff1c105ed5dadc14581b1813f71553f7
+  - enabled: 1
+    path: Assets/Scenes/ShopScene_Player.unity
+    guid: d25b56e41276fc046a1c33ac31b8a606
   - enabled: 0
     path: Assets/Scenes/GameScene_Old.unity
     guid: 5a754920482634049a557edb66f3981f
