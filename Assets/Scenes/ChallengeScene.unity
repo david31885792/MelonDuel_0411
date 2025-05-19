@@ -1203,6 +1203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   patternPanel: {fileID: 8546866450291270818}
   youWinPanel: {fileID: 2112463277}
+  glowingStroke: {fileID: 0}
 --- !u!4 &1049168769
 Transform:
   m_ObjectHideFlags: 0
@@ -1333,7 +1334,7 @@ Transform:
   m_GameObject: {fileID: 1253714313}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.36, z: -0}
+  m_LocalPosition: {x: 0, y: -1.36, z: 89}
   m_LocalScale: {x: 0.45000005, y: 0.45000005, z: 0.45000005}
   m_ConstrainProportionsScale: 1
   m_Children: []
