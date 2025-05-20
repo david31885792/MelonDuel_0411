@@ -10,9 +10,13 @@ public class ChallengeSceneManager : MonoBehaviour
     [SerializeField] private ChallengePatternPanel patternPanel;
 
     [Header("UI 연결")]
-    [SerializeField] private GameObject countdownPanel;
     [SerializeField] private GameObject goText;
     [SerializeField] private GameObject blockInputPanel;
+
+    [Header("카운트다운 숫자 오브젝트")] // ✅ 추가된 부분
+    [SerializeField] private GameObject count3;
+    [SerializeField] private GameObject count2;
+    [SerializeField] private GameObject count1;
 
     [SerializeField] private TMP_Text timerText;
     [SerializeField] private TMP_Text clearCountText;
@@ -45,12 +49,29 @@ public class ChallengeSceneManager : MonoBehaviour
     private IEnumerator StartCountdown()
     {
         blockInputPanel.SetActive(true);
-        countdownPanel.SetActive(true);
 
-        // 여기에 3, 2, 1, GO 텍스트 순차 표시
-        yield return new WaitForSeconds(4f); // 간단 처리
+        // ✅ 카운트다운 순차 표시
+        count1.SetActive(false);
+        count2.SetActive(false);
+        count3.SetActive(false);
+        goText.SetActive(false);
 
-        countdownPanel.SetActive(false);
+        count3.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        count3.SetActive(false);
+
+        count2.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        count2.SetActive(false);
+
+        count1.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        count1.SetActive(false);
+
+        goText.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        goText.SetActive(false);
+
         blockInputPanel.SetActive(false);
 
         StartChallenge();
@@ -96,11 +117,13 @@ public class ChallengeSceneManager : MonoBehaviour
     private void EndChallenge()
     {
         AudioManager.Instance.StopBGM();
-        string scoreString = $"{clearCount}-{currentMatchCount}";
-        Debug.Log($"🏁 종료: 최종 점수 {scoreString}");
 
-        // TODO: 최고기록 저장
-        SceneLoader.LoadMainScene(); // 또는 결과 창 띄우기
+        string score = $"{clearCount}-{currentMatchCount}";
+        Debug.Log($"🏁 종료: 최종 점수 {score}");
+
+        ChallengeScore.SaveScore(clearCount, currentMatchCount);
+
+        SceneLoader.LoadMainScene();
     }
 
     private void UpdateTimerUI(float time)
