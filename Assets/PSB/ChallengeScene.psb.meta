@@ -971,7 +971,7 @@ ScriptedImporter:
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
-    isVisible: 1
+    isVisible: 0
   - name: '!Text'
     spriteName: '!Text'
     isGroup: 0
@@ -991,7 +991,7 @@ ScriptedImporter:
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
-    isVisible: 1
+    isVisible: 0
   - name: GoText
     spriteName: GoText
     isGroup: 0
@@ -1011,7 +1011,7 @@ ScriptedImporter:
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
-    isVisible: 1
+    isVisible: 0
   - name: Count3Text
     spriteName: Count3Text
     isGroup: 0
@@ -1031,7 +1031,7 @@ ScriptedImporter:
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
-    isVisible: 1
+    isVisible: 0
   - name: Count2Text
     spriteName: Count2Text
     isGroup: 0
@@ -1051,7 +1051,7 @@ ScriptedImporter:
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
-    isVisible: 1
+    isVisible: 0
   - name: Count1Text
     spriteName: Count1Text
     isGroup: 0
@@ -1071,7 +1071,7 @@ ScriptedImporter:
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1
-    isVisible: 1
+    isVisible: 0
   - name: Profile
     spriteName: 
     isGroup: 1
