@@ -423,7 +423,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1091, y: 368}
+    uvTransform: {x: 1091, y: 367}
     spritePosition: {x: 803, y: 917}
   - name: Rectangle 3 copy 2
     originalName: 
@@ -445,7 +445,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1091, y: 726}
+    uvTransform: {x: 1090, y: 725}
     spritePosition: {x: 554, y: 917}
   - name: Rectangle 3 copy
     originalName: 
@@ -467,7 +467,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1091, y: 1084}
+    uvTransform: {x: 1090, y: 1083}
     spritePosition: {x: 305, y: 917}
   - name: Rectangle 3
     originalName: 
@@ -489,7 +489,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1091, y: 1442}
+    uvTransform: {x: 1091, y: 1441}
     spritePosition: {x: 56, y: 917}
   - name: Rectangle 16
     originalName: 
@@ -511,7 +511,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1336, y: 3}
+    uvTransform: {x: 1335, y: 2}
     spritePosition: {x: 25, y: 1297}
   - name: 1
     originalName: 
@@ -776,7 +776,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 1336, y: 179}
-    spritePosition: {x: 540, y: 1783}
+    spritePosition: {x: 25, y: 1783}
   - name: Rectangle 1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -797,8 +797,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 838, y: 322}
-    spritePosition: {x: 1056, y: 1934}
+    uvTransform: {x: 836, y: 320}
+    spritePosition: {x: 1057, y: 1935}
   - name: energy
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -951,7 +951,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 3412, y: 3}
+    uvTransform: {x: 3412, y: 2}
     spritePosition: {x: 158, y: 2146}
   - name: Rectangle 13
     originalName: 
@@ -973,7 +973,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 3709, y: 3}
+    uvTransform: {x: 3709, y: 2}
     spritePosition: {x: 158, y: 2075}
   - name: 30/30
     originalName: 
@@ -1259,7 +1259,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 2374, y: 3}
+    uvTransform: {x: 2373, y: 3}
     spritePosition: {x: 25, y: 1651}
   - name: ad-block
     originalName: 
@@ -1303,7 +1303,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 3, y: 3367}
+    uvTransform: {x: 2, y: 3367}
     spritePosition: {x: 25, y: 1431}
   - name: "\uD65C\uB3D9\uB825"
     originalName: 
@@ -1347,7 +1347,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1336, y: 91}
+    uvTransform: {x: 1335, y: 91}
     spritePosition: {x: 25, y: 738}
   - name: Coin copy 5
     originalName: 
@@ -1787,7 +1787,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1091, y: 2158}
+    uvTransform: {x: 1090, y: 2158}
     spritePosition: {x: 554, y: 353}
   - name: Rectangle 3 copy
     originalName: 
@@ -1809,7 +1809,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1091, y: 2516}
+    uvTransform: {x: 1090, y: 2516}
     spritePosition: {x: 305, y: 353}
   - name: Rectangle 3
     originalName: 
