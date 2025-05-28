@@ -335,7 +335,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 3, y: 3136}
+    uvTransform: {x: 2, y: 3137}
     spritePosition: {x: 445, y: 1328}
   - name: Rectangle 2
     originalName: 
@@ -357,8 +357,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 207, y: 3318}
-    spritePosition: {x: 415, y: 1680}
+    uvTransform: {x: 207, y: 3319}
+    spritePosition: {x: 415, y: 1679}
   - name: Rectangle 1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -379,8 +379,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: -434, y: 2280}
-    spritePosition: {x: 1041, y: 1702}
+    uvTransform: {x: -436, y: 2281}
+    spritePosition: {x: 1042, y: 1702}
   - name: RankTitleText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
