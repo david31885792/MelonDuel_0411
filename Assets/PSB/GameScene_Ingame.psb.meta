@@ -1,0 +1,1702 @@
+fileFormatVersion: 2
+guid: 06a5637009a169642a9cb3fbc94c9e0a
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 5044b3284c5f5144f9674827830c9151
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  multiSpriteImportData: []
+  layeredSpriteImportData:
+  - name: EmptySpace
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2050
+      y: 412
+      width: 1080
+      height: 75
+    spriteID: d1be4bf22f190534faad8eca2cb1e333
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2050, y: 412}
+    spritePosition: {x: 0, y: 2265}
+  - name: TimeText
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 562
+      y: 3918
+      width: 300
+      height: 94
+    spriteID: f3904a8a60abc5a4bba6ea481f8fc339
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 562, y: 3918}
+    spritePosition: {x: 774, y: 2131}
+  - name: TimeFrame
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 572
+      y: 3760
+      width: 341
+      height: 97
+    spriteID: 7c09a128bf67328499efa8e69ac4e06f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 572, y: 3760}
+    spritePosition: {x: 739, y: 2123}
+  - name: Player3 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1092
+      y: 2093
+      width: 395
+      height: 394
+    spriteID: 3267eb741489c2044a165879e9cdf06c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1092, y: 2093}
+    spritePosition: {x: 0, y: 78}
+  - name: RivalSkillEffectFrame
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3918
+      width: 550
+      height: 150
+    spriteID: deae411ea16bf7b439467417655d055b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3918}
+    spritePosition: {x: 0, y: 61}
+  - name: Player1 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1092
+      y: 1678
+      width: 401
+      height: 407
+    spriteID: 565828e8b87ebd34fb81faaccfe843e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1092, y: 1678}
+    spritePosition: {x: 675, y: 64}
+  - name: SkillEfectFrame
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3760
+      width: 560
+      height: 150
+    spriteID: cd54ceadf53fec441aa414143df8a43f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3760}
+    spritePosition: {x: 520, y: 61}
+  - name: RivalSkillIcon
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4038
+      y: 412
+      width: 50
+      height: 50
+    spriteID: 00844bf88f430894fa456c9efb0f0f24
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4038, y: 412}
+    spritePosition: {x: 486, y: 1756}
+  - name: SkillText copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 870
+      y: 3959
+      width: 83
+      height: 36
+    spriteID: 7686a6546ffc1184fb78d167da6a6629
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 870, y: 3959}
+    spritePosition: {x: 548, y: 1793}
+  - name: SkillIconFrame_2 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 3058
+      y: 211
+      width: 87
+      height: 98
+    spriteID: 94a428b9675d9ce4abd80c666c010796
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3058, y: 211}
+    spritePosition: {x: 468, y: 1732}
+  - name: SkillIconFrame_1 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 3058
+      y: 101
+      width: 97
+      height: 102
+    spriteID: 74e81bde963f3b04fae625f20ee72532
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3058, y: 101}
+    spritePosition: {x: 463, y: 1724}
+  - name: SkillbarPoint copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1049
+      y: 3918
+      width: 28
+      height: 24
+    spriteID: 6574f462f98101547be0330e0ec25a10
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1049, y: 3918}
+    spritePosition: {x: 905, y: 1757}
+  - name: GaugeBar copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 3058
+      y: 60
+      width: 366
+      height: 33
+    spriteID: 2d8637181a148d84081c96e2cdcbb9a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3058, y: 60}
+    spritePosition: {x: 553, y: 1769}
+  - name: InnerGaugeFrame copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 572
+      y: 3865
+      width: 441
+      height: 36
+    spriteID: 0386d9be73696f740ada7ae1bfa778af
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 572, y: 3865}
+    spritePosition: {x: 553, y: 1769}
+  - name: GaugeFrame_2 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 3580
+      y: 412
+      width: 450
+      height: 48
+    spriteID: b4df1680944b566489fe8331968557ca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3580, y: 412}
+    spritePosition: {x: 548, y: 1763}
+  - name: GaugeFrame_1 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 562
+      y: 4020
+      width: 434
+      height: 53
+    spriteID: b9de59ed20d5f4a49b4e07920d4b25d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 562, y: 4020}
+    spritePosition: {x: 548, y: 1763}
+  - name: RivalScore
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1021
+      y: 3865
+      width: 60
+      height: 31
+    spriteID: 0928ecec41e85864991e44c72fa4dad0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1021, y: 3865}
+    spritePosition: {x: 469, y: 1923}
+  - name: RivalRankAmountText
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 3852
+      y: 101
+      width: 63
+      height: 24
+    spriteID: 2aad202eac830804bb04cb3a492e74f8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3852, y: 101}
+    spritePosition: {x: 865, y: 1992}
+  - name: RivalNicknameText
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 3268
+      y: 101
+      width: 284
+      height: 34
+    spriteID: 6be279ae7c3bb9a4ca94412a03219520
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3268, y: 101}
+    spritePosition: {x: 468, y: 1998}
+  - name: RivalCompleteText
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 3965
+      y: 4
+      width: 103
+      height: 33
+    spriteID: 46c5e6f810fd3aa49a25ef8711f98833
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3965, y: 4}
+    spritePosition: {x: 763, y: 1863}
+  - name: RivalClearText
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 921
+      y: 3760
+      width: 136
+      height: 43
+    spriteID: 51a44ccf26ef06945b2f1c473de5f469
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 921, y: 3760}
+    spritePosition: {x: 470, y: 1863}
+  - name: RivalTrophyIcon
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1004
+      y: 4020
+      width: 60
+      height: 60
+    spriteID: 2697038cfd8edf44c969c6755472d8cc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1004, y: 4020}
+    spritePosition: {x: 797, y: 1985}
+  - name: RivalBoard
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1675
+      y: 962
+      width: 350
+      height: 350
+    spriteID: aba2299b0d3e6db4b84dd05d393230ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1675, y: 962}
+    spritePosition: {x: 65, y: 1710}
+  - name: RivalUiFrame
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1092
+      y: 962
+      width: 575
+      height: 350
+    spriteID: a16e03e6b735d6e49942bb5158ded980
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1092, y: 962}
+    spritePosition: {x: 440, y: 1710}
+  - name: RivalFrame
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2050
+      y: 4
+      width: 1000
+      height: 400
+    spriteID: ce093c65fc996904abbf9da9c476209b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2050, y: 4}
+    spritePosition: {x: 40, y: 1686}
+  - name: SkillText
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 961
+      y: 3959
+      width: 83
+      height: 36
+    spriteID: 929651f7963b70f49a1dee2328271b2f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 961, y: 3959}
+    spritePosition: {x: 548, y: 1368}
+  - name: PlayerSkillIcon_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 3268
+      y: 143
+      width: 50
+      height: 50
+    spriteID: 78712204fdaa54a449a765520b7a54a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3268, y: 143}
+    spritePosition: {x: 486, y: 1331}
+  - name: SkillIconFrame_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 3153
+      y: 211
+      width: 87
+      height: 98
+    spriteID: 56bc2bcd5e1a6ed42ac6a86227aa21d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3153, y: 211}
+    spritePosition: {x: 468, y: 1307}
+  - name: SkillIconFrame_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 3163
+      y: 101
+      width: 97
+      height: 102
+    spriteID: cea68fcd47b514343b501572a24526b9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3163, y: 101}
+    spritePosition: {x: 463, y: 1299}
+  - name: SkillbarPoint
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1052
+      y: 3959
+      width: 28
+      height: 24
+    spriteID: d5a8efa2f5a199c4897d600572e7927a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1052, y: 3959}
+    spritePosition: {x: 905, y: 1332}
+  - name: GaugeBar
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 3432
+      y: 60
+      width: 366
+      height: 33
+    spriteID: 4824e8da101e72c49953f2ed92649c79
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3432, y: 60}
+    spritePosition: {x: 553, y: 1344}
+  - name: InnerGaugeFrame
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 3516
+      y: 4
+      width: 441
+      height: 36
+    spriteID: 0243eb3bde86610489f22536b0c39a07
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3516, y: 4}
+    spritePosition: {x: 553, y: 1344}
+  - name: GaugeFrame_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 3058
+      y: 4
+      width: 450
+      height: 48
+    spriteID: fcc5c85d6921289479266056ddb9a333
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3058, y: 4}
+    spritePosition: {x: 548, y: 1338}
+  - name: GaugeFrame_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 3138
+      y: 412
+      width: 434
+      height: 53
+    spriteID: b8fd72b69a4fb4e47afb8a4d868b8114
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3138, y: 412}
+    spritePosition: {x: 548, y: 1338}
+  - name: TrophyIcon
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 3058
+      y: 317
+      width: 60
+      height: 60
+    spriteID: e168eb3aabc35254bb16cc692d52d82d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3058, y: 317}
+    spritePosition: {x: 797, y: 1551}
+  - name: CompleteScoreText
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 870
+      y: 3918
+      width: 103
+      height: 33
+    spriteID: 6f49b31f8298f4640ada5418f8a35241
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 870, y: 3918}
+    spritePosition: {x: 763, y: 1429}
+  - name: ClearScoreText
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 921
+      y: 3811
+      width: 136
+      height: 43
+    spriteID: ca4761638c0242348ae94b610d46e1ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 921, y: 3811}
+    spritePosition: {x: 470, y: 1428}
+  - name: ScoreText
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 981
+      y: 3918
+      width: 60
+      height: 31
+    spriteID: 1caaad60b52728641ac0a4f6051af5ce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 981, y: 3918}
+    spritePosition: {x: 469, y: 1488}
+  - name: PlayerNicknameText
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 3560
+      y: 101
+      width: 284
+      height: 34
+    spriteID: d9cd5aa3126e30a44a4fb46e5c9bca23
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3560, y: 101}
+    spritePosition: {x: 468, y: 1563}
+  - name: UIBoard
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1092
+      y: 1320
+      width: 570
+      height: 350
+    spriteID: afefa998751ca674b8b019e20d36cb4b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1092, y: 1320}
+    spritePosition: {x: 445, y: 1283}
+  - name: ClearPatternBoard
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1670
+      y: 1320
+      width: 350
+      height: 350
+    spriteID: aaeac20305631a448b9ec7730a38ceb7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1670, y: 1320}
+    spritePosition: {x: 65, y: 1283}
+  - name: GameBoard
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1092
+      y: 4
+      width: 950
+      height: 950
+    spriteID: b58bea367d14f894d9b7e4d66fbb5488
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1092, y: 4}
+    spritePosition: {x: 65, y: 295}
+  - name: GameBoardFrame
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2352
+      width: 1000
+      height: 1400
+    spriteID: dacb2cb4c5ff31b4db676cd108491bf4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2352}
+    spritePosition: {x: 40, y: 258}
+  - name: BG
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1080
+      height: 2340
+    spriteID: 026e7182591bd2048a8d9d7e442569ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  spriteImportData: []
+  rigSpriteImportData: []
+  sharedRigSpriteImportData: []
+  mosaicSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  characterMode: 0
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 0
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  padding: 4
+  spriteSizeExpand: 0
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  pSDLayerImportSetting: []
+  psdLayers:
+  - name: YouWin
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 7f74db291668eb847ae196fe6b7b9b9f
+    layerID: 504
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: YouWinFrame
+    spriteName: YouWinFrame
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 074133433a8914743b964b543a4d871f
+    layerID: 538
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Go
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 6a0bd76528f639748bdbb87b926a3694
+    layerID: 498
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: GOFrame
+    spriteName: GOFrame
+    isGroup: 0
+    parentIndex: 2
+    spriteID: 817d7e6e86d6a37478c1094294b3a4b1
+    layerID: 532
+    mosaicPosition: {x: 1783, y: 3462}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Ready
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 817636becdfd69449ba8a9a441b6edcf
+    layerID: 493
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: ReadyFrame
+    spriteName: ReadyFrame
+    isGroup: 0
+    parentIndex: 4
+    spriteID: bd1c082e20e1be64da7abae3cfdf4677
+    layerID: 529
+    mosaicPosition: {x: 1092, y: 3462}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: EmptySpace
+    spriteName: EmptySpace
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d1be4bf22f190534faad8eca2cb1e333
+    layerID: 824
+    mosaicPosition: {x: 2050, y: 412}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Time
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: f7bffcaa141190c4f943e2e7cf647305
+    layerID: 822
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: TimeText
+    spriteName: TimeText
+    isGroup: 0
+    parentIndex: 7
+    spriteID: f3904a8a60abc5a4bba6ea481f8fc339
+    layerID: 820
+    mosaicPosition: {x: 562, y: 3918}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: TimeFrame
+    spriteName: TimeFrame
+    isGroup: 0
+    parentIndex: 7
+    spriteID: 7c09a128bf67328499efa8e69ac4e06f
+    layerID: 821
+    mosaicPosition: {x: 572, y: 3760}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Skill
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 641015098ba52ae49b8eb1d57a8f2aed
+    layerID: 818
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Player3 copy
+    spriteName: Player3 copy
+    isGroup: 0
+    parentIndex: 10
+    spriteID: 3267eb741489c2044a165879e9cdf06c
+    layerID: 816
+    mosaicPosition: {x: 1092, y: 2093}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: RivalSkillEffectFrame
+    spriteName: RivalSkillEffectFrame
+    isGroup: 0
+    parentIndex: 10
+    spriteID: deae411ea16bf7b439467417655d055b
+    layerID: 817
+    mosaicPosition: {x: 4, y: 3918}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Player1 copy
+    spriteName: Player1 copy
+    isGroup: 0
+    parentIndex: 10
+    spriteID: 565828e8b87ebd34fb81faaccfe843e4
+    layerID: 815
+    mosaicPosition: {x: 1092, y: 1678}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SkillEfectFrame
+    spriteName: SkillEfectFrame
+    isGroup: 0
+    parentIndex: 10
+    spriteID: cd54ceadf53fec441aa414143df8a43f
+    layerID: 814
+    mosaicPosition: {x: 4, y: 3760}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: RivalBoard
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 3da4036a3b9fdba419974b94921ffb36
+    layerID: 777
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: RivalSkillIcon
+    spriteName: RivalSkillIcon
+    isGroup: 0
+    parentIndex: 15
+    spriteID: 00844bf88f430894fa456c9efb0f0f24
+    layerID: 776
+    mosaicPosition: {x: 4038, y: 412}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SkillText copy
+    spriteName: SkillText copy
+    isGroup: 0
+    parentIndex: 15
+    spriteID: 7686a6546ffc1184fb78d167da6a6629
+    layerID: 787
+    mosaicPosition: {x: 870, y: 3959}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SkillIconFrame_2 copy
+    spriteName: SkillIconFrame_2 copy
+    isGroup: 0
+    parentIndex: 15
+    spriteID: 94a428b9675d9ce4abd80c666c010796
+    layerID: 785
+    mosaicPosition: {x: 3058, y: 211}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SkillIconFrame_1 copy
+    spriteName: SkillIconFrame_1 copy
+    isGroup: 0
+    parentIndex: 15
+    spriteID: 74e81bde963f3b04fae625f20ee72532
+    layerID: 784
+    mosaicPosition: {x: 3058, y: 101}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SkillbarPoint copy
+    spriteName: SkillbarPoint copy
+    isGroup: 0
+    parentIndex: 15
+    spriteID: 6574f462f98101547be0330e0ec25a10
+    layerID: 783
+    mosaicPosition: {x: 1049, y: 3918}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: GaugeBar copy
+    spriteName: GaugeBar copy
+    isGroup: 0
+    parentIndex: 15
+    spriteID: 2d8637181a148d84081c96e2cdcbb9a0
+    layerID: 782
+    mosaicPosition: {x: 3058, y: 60}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: InnerGaugeFrame copy
+    spriteName: InnerGaugeFrame copy
+    isGroup: 0
+    parentIndex: 15
+    spriteID: 0386d9be73696f740ada7ae1bfa778af
+    layerID: 781
+    mosaicPosition: {x: 572, y: 3865}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: GaugeFrame_2 copy
+    spriteName: GaugeFrame_2 copy
+    isGroup: 0
+    parentIndex: 15
+    spriteID: b4df1680944b566489fe8331968557ca
+    layerID: 780
+    mosaicPosition: {x: 3580, y: 412}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: GaugeFrame_1 copy
+    spriteName: GaugeFrame_1 copy
+    isGroup: 0
+    parentIndex: 15
+    spriteID: b9de59ed20d5f4a49b4e07920d4b25d5
+    layerID: 779
+    mosaicPosition: {x: 562, y: 4020}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: RivalScore
+    spriteName: RivalScore
+    isGroup: 0
+    parentIndex: 15
+    spriteID: 0928ecec41e85864991e44c72fa4dad0
+    layerID: 772
+    mosaicPosition: {x: 1021, y: 3865}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: RivalRankAmountText
+    spriteName: RivalRankAmountText
+    isGroup: 0
+    parentIndex: 15
+    spriteID: 2aad202eac830804bb04cb3a492e74f8
+    layerID: 771
+    mosaicPosition: {x: 3852, y: 101}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: RivalNicknameText
+    spriteName: RivalNicknameText
+    isGroup: 0
+    parentIndex: 15
+    spriteID: 6be279ae7c3bb9a4ca94412a03219520
+    layerID: 770
+    mosaicPosition: {x: 3268, y: 101}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: RivalCompleteText
+    spriteName: RivalCompleteText
+    isGroup: 0
+    parentIndex: 15
+    spriteID: 46c5e6f810fd3aa49a25ef8711f98833
+    layerID: 768
+    mosaicPosition: {x: 3965, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: RivalClearText
+    spriteName: RivalClearText
+    isGroup: 0
+    parentIndex: 15
+    spriteID: 51a44ccf26ef06945b2f1c473de5f469
+    layerID: 767
+    mosaicPosition: {x: 921, y: 3760}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: RivalTrophyIcon
+    spriteName: RivalTrophyIcon
+    isGroup: 0
+    parentIndex: 15
+    spriteID: 2697038cfd8edf44c969c6755472d8cc
+    layerID: 759
+    mosaicPosition: {x: 1004, y: 4020}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: RivalBoard
+    spriteName: RivalBoard
+    isGroup: 0
+    parentIndex: 15
+    spriteID: aba2299b0d3e6db4b84dd05d393230ee
+    layerID: 789
+    mosaicPosition: {x: 1675, y: 962}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: RivalUiFrame
+    spriteName: RivalUiFrame
+    isGroup: 0
+    parentIndex: 15
+    spriteID: a16e03e6b735d6e49942bb5158ded980
+    layerID: 788
+    mosaicPosition: {x: 1092, y: 962}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: RivalFrame
+    spriteName: RivalFrame
+    isGroup: 0
+    parentIndex: 15
+    spriteID: ce093c65fc996904abbf9da9c476209b
+    layerID: 790
+    mosaicPosition: {x: 2050, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: GameBoard
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: a46a51dcb08f41944a2e9cee9cbd84f1
+    layerID: 755
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: SkillText
+    spriteName: SkillText
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 929651f7963b70f49a1dee2328271b2f
+    layerID: 733
+    mosaicPosition: {x: 961, y: 3959}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: PlayerSkillIcon_1
+    spriteName: PlayerSkillIcon_1
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 78712204fdaa54a449a765520b7a54a0
+    layerID: 749
+    mosaicPosition: {x: 3268, y: 143}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SkillIconFrame_2
+    spriteName: SkillIconFrame_2
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 56bc2bcd5e1a6ed42ac6a86227aa21d5
+    layerID: 754
+    mosaicPosition: {x: 3153, y: 211}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SkillIconFrame_1
+    spriteName: SkillIconFrame_1
+    isGroup: 0
+    parentIndex: 34
+    spriteID: cea68fcd47b514343b501572a24526b9
+    layerID: 753
+    mosaicPosition: {x: 3163, y: 101}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SkillbarPoint
+    spriteName: SkillbarPoint
+    isGroup: 0
+    parentIndex: 34
+    spriteID: d5a8efa2f5a199c4897d600572e7927a
+    layerID: 752
+    mosaicPosition: {x: 1052, y: 3959}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: GaugeBar
+    spriteName: GaugeBar
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 4824e8da101e72c49953f2ed92649c79
+    layerID: 743
+    mosaicPosition: {x: 3432, y: 60}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: InnerGaugeFrame
+    spriteName: InnerGaugeFrame
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 0243eb3bde86610489f22536b0c39a07
+    layerID: 747
+    mosaicPosition: {x: 3516, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: GaugeFrame_2
+    spriteName: GaugeFrame_2
+    isGroup: 0
+    parentIndex: 34
+    spriteID: fcc5c85d6921289479266056ddb9a333
+    layerID: 745
+    mosaicPosition: {x: 3058, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: GaugeFrame_1
+    spriteName: GaugeFrame_1
+    isGroup: 0
+    parentIndex: 34
+    spriteID: b8fd72b69a4fb4e47afb8a4d868b8114
+    layerID: 744
+    mosaicPosition: {x: 3138, y: 412}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: TrophyIcon
+    spriteName: TrophyIcon
+    isGroup: 0
+    parentIndex: 34
+    spriteID: e168eb3aabc35254bb16cc692d52d82d
+    layerID: 734
+    mosaicPosition: {x: 3058, y: 317}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: CompleteScoreText
+    spriteName: CompleteScoreText
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 6f49b31f8298f4640ada5418f8a35241
+    layerID: 740
+    mosaicPosition: {x: 870, y: 3918}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: ClearScoreText
+    spriteName: ClearScoreText
+    isGroup: 0
+    parentIndex: 34
+    spriteID: ca4761638c0242348ae94b610d46e1ad
+    layerID: 738
+    mosaicPosition: {x: 921, y: 3811}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: ScoreText
+    spriteName: ScoreText
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 1caaad60b52728641ac0a4f6051af5ce
+    layerID: 751
+    mosaicPosition: {x: 981, y: 3918}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: PlayerNicknameText
+    spriteName: PlayerNicknameText
+    isGroup: 0
+    parentIndex: 34
+    spriteID: d9cd5aa3126e30a44a4fb46e5c9bca23
+    layerID: 748
+    mosaicPosition: {x: 3560, y: 101}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: UIBoard
+    spriteName: UIBoard
+    isGroup: 0
+    parentIndex: 34
+    spriteID: afefa998751ca674b8b019e20d36cb4b
+    layerID: 735
+    mosaicPosition: {x: 1092, y: 1320}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: ClearPatternBoard
+    spriteName: ClearPatternBoard
+    isGroup: 0
+    parentIndex: 34
+    spriteID: aaeac20305631a448b9ec7730a38ceb7
+    layerID: 736
+    mosaicPosition: {x: 1670, y: 1320}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: GameBoard
+    spriteName: GameBoard
+    isGroup: 0
+    parentIndex: 34
+    spriteID: b58bea367d14f894d9b7e4d66fbb5488
+    layerID: 741
+    mosaicPosition: {x: 1092, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: GameBoardFrame
+    spriteName: GameBoardFrame
+    isGroup: 0
+    parentIndex: 34
+    spriteID: dacb2cb4c5ff31b4db676cd108491bf4
+    layerID: 742
+    mosaicPosition: {x: 4, y: 2352}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: BG
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: e51f6231c66379d43941e6c64cd8f51f
+    layerID: 671
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: BG
+    spriteName: BG
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 026e7182591bd2048a8d9d7e442569ed
+    layerID: 732
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  mosaicPSDLayers: []
+  rigPSDLayers: []
+  sharedRigPSDLayers: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638833585886904545
+  spriteSizeExpandChanged: 0
+  generateGOHierarchy: 1
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []

@@ -117,7 +117,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 2050, y: 411}
     spritePosition: {x: 0, y: 2265}
-  - name: 3:00:00
+  - name: TimeText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -139,7 +139,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1092, y: 3959}
     spritePosition: {x: 787, y: 2142}
-  - name: Rectangle 21
+  - name: TimeFrame
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -205,7 +205,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1501, y: 2414}
     spritePosition: {x: 0, y: 0}
-  - name: Rectangle 4 copy 6
+  - name: RivalSkillEffectFrameHalftonePattern
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -227,7 +227,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 3058, y: 4}
     spritePosition: {x: 0, y: 61}
-  - name: Rectangle 4 copy 5
+  - name: RivalSkillEffectFrame
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -293,7 +293,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1092, y: 2894}
     spritePosition: {x: 675, y: 0}
-  - name: Rectangle 4 copy 7
+  - name: SkillEfectFrameHalftonePattern
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -315,7 +315,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 562, y: 3918}
     spritePosition: {x: 558, y: 61}
-  - name: Rectangle 4 copy 4
+  - name: SkillEfectFrame
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -335,7 +335,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 2, y: 3759}
+    uvTransform: {x: 3, y: 3759}
     spritePosition: {x: 520, y: 61}
   - name: 8
     originalName: 
@@ -381,7 +381,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 4037, y: 4}
     spritePosition: {x: 627, y: 1865}
-  - name: TrophyIcon copy
+  - name: RivalTrophyIcon
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -403,7 +403,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1014, y: 3760}
     spritePosition: {x: 802, y: 1991}
-  - name: Player3SkillIcon
+  - name: RivalSkillIcon
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -425,7 +425,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1014, y: 3821}
     spritePosition: {x: 476, y: 1751}
-  - name: Polygon 1 copy
+  - name: RivalSkillIconFrame_2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -447,7 +447,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1698, y: 1181}
     spritePosition: {x: 463, y: 1733}
-  - name: Polygon 1
+  - name: RivalSkillIconFrame_1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -469,7 +469,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1699, y: 961}
     spritePosition: {x: 455, y: 1722}
-  - name: Triangle 1
+  - name: RivalSkillBarPoint
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -491,7 +491,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1990, y: 1329}
     spritePosition: {x: 886, y: 1743}
-  - name: Skill
+  - name: SkillText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -513,7 +513,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1700, y: 1278}
     spritePosition: {x: 548, y: 1784}
-  - name: Rectangle 4 copy 8
+  - name: SkillBarFrame
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -535,7 +535,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 3586, y: 411}
     spritePosition: {x: 537, y: 1755}
-  - name: Rectangle 4 copy 2
+  - name: RivaInnerSillGauge
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -557,7 +557,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 3578, y: 115}
     spritePosition: {x: 537, y: 1755}
-  - name: Rectangle 4 copy 9
+  - name: RivalSillGaugeFrame_2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -579,7 +579,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 3578, y: 2}
     spritePosition: {x: 537, y: 1749}
-  - name: Rectangle 20
+  - name: RivalSillGaugeFrame_1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -601,7 +601,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 570, y: 3759}
     spritePosition: {x: 533, y: 1750}
-  - name: "\uC644\uC131\uB3C4"
+  - name: RivalCompleteText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -623,7 +623,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 3957, y: 412}
     spritePosition: {x: 763, y: 1864}
-  - name: "\uD074\uB9AC\uC5B4"
+  - name: RivalClearText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -645,7 +645,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1890, y: 962}
     spritePosition: {x: 470, y: 1864}
-  - name: "\uC810\uC218"
+  - name: RivalScore
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -667,7 +667,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 4028, y: 116}
     spritePosition: {x: 469, y: 1924}
-  - name: 888
+  - name: RivalRankAmountText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -689,7 +689,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 3879, y: 453}
     spritePosition: {x: 864, y: 1992}
-  - name: "\uB2C9\uB124\uC784\uC740\uC5EC\uB35F\uAE00\uC790"
+  - name: RivalNicknameText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -711,7 +711,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 3587, y: 453}
     spritePosition: {x: 468, y: 1998}
-  - name: Rectangle 3 copy 3
+  - name: HalftonePattern_Rival
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -733,7 +733,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 652, y: -348}
     spritePosition: {x: 440, y: 1710}
-  - name: Rectangle 3 copy
+  - name: RivalUiFrame
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -753,9 +753,9 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1091, y: 1696}
+    uvTransform: {x: 1090, y: 1696}
     spritePosition: {x: 440, y: 1710}
-  - name: Rectangle 2 copy 2
+  - name: RivalBoard
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -775,9 +775,9 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1674, y: 1697}
+    uvTransform: {x: 1674, y: 1696}
     spritePosition: {x: 65, y: 1710}
-  - name: Rectangle 2 copy
+  - name: RivalFrame
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -797,9 +797,9 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 2048, y: 3}
+    uvTransform: {x: 2048, y: 2}
     spritePosition: {x: 40, y: 1686}
-  - name: 8
+  - name: CompleteScoreAmountText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -821,7 +821,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1466, y: 4039}
     spritePosition: {x: 904, y: 1431}
-  - name: 8
+  - name: ClearScoreAmountText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -865,7 +865,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1441, y: 3854}
     spritePosition: {x: 802, y: 1556}
-  - name: Player1SkillIcon
+  - name: PlayerSkillIcon_1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -887,7 +887,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1805, y: 1058}
     spritePosition: {x: 478, y: 1317}
-  - name: Polygon 1 copy
+  - name: SkillIconFrame_2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -909,7 +909,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1803, y: 961}
     spritePosition: {x: 464, y: 1296}
-  - name: Polygon 1
+  - name: SkillIconFrame_1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -931,7 +931,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1699, y: 1071}
     spritePosition: {x: 456, y: 1285}
-  - name: Triangle 1
+  - name: SkillbarPoint
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -953,7 +953,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1439, y: 3911}
     spritePosition: {x: 890, y: 1306}
-  - name: Skill
+  - name: SkillText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -975,7 +975,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1378, y: 4000}
     spritePosition: {x: 549, y: 1347}
-  - name: Rectangle 4 copy 8
+  - name: GaugeBar
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -995,9 +995,9 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1091, y: 4038}
+    uvTransform: {x: 1091, y: 4037}
     spritePosition: {x: 538, y: 1318}
-  - name: Rectangle 4 copy 2
+  - name: InnerGaugeFrame
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1019,7 +1019,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 3137, y: 411}
     spritePosition: {x: 538, y: 1318}
-  - name: Rectangle 4 copy 9
+  - name: GaugeFrame_2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1039,9 +1039,9 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 3578, y: 58}
+    uvTransform: {x: 3577, y: 58}
     spritePosition: {x: 538, y: 1312}
-  - name: Rectangle 20
+  - name: GaugeFrame_1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1063,7 +1063,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 570, y: 3820}
     spritePosition: {x: 534, y: 1313}
-  - name: "\uC644\uC131\uB3C4"
+  - name: CompleteScoreText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1085,7 +1085,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1378, y: 3959}
     spritePosition: {x: 763, y: 1430}
-  - name: "\uD074\uB9AC\uC5B4"
+  - name: ClearScoreText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1107,7 +1107,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1890, y: 1013}
     spritePosition: {x: 470, y: 1429}
-  - name: "\uC810\uC218"
+  - name: ScoreText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1129,7 +1129,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1014, y: 3879}
     spritePosition: {x: 469, y: 1489}
-  - name: 888
+  - name: RankAmount
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1151,7 +1151,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 3950, y: 453}
     spritePosition: {x: 866, y: 1557}
-  - name: "\uB2C9\uB124\uC784\uC740\uC5EC\uB35F\uAE00\uC790"
+  - name: PlayerNicknameText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1173,7 +1173,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1700, y: 1330}
     spritePosition: {x: 468, y: 1563}
-  - name: Rectangle 3 copy 2
+  - name: HalftonePattern_1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1195,7 +1195,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 652, y: 32}
     spritePosition: {x: 440, y: 1298}
-  - name: Rectangle 3
+  - name: UIBoard
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1215,9 +1215,9 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1091, y: 2054}
+    uvTransform: {x: 1090, y: 2055}
     spritePosition: {x: 445, y: 1283}
-  - name: Rectangle 2
+  - name: ClearPatternBoard
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1239,7 +1239,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1669, y: 2055}
     spritePosition: {x: 65, y: 1283}
-  - name: Rectangle 5
+  - name: GameBoard
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1261,7 +1261,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1090, y: 2}
     spritePosition: {x: 65, y: 295}
-  - name: Rectangle 1
+  - name: GameBoardFrame
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1281,9 +1281,9 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 3, y: 2350}
+    uvTransform: {x: 2, y: 2351}
     spritePosition: {x: 40, y: 258}
-  - name: Rectangle 14
+  - name: BG
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1380,16 +1380,6 @@ ScriptedImporter:
   resliceFromLayer: 0
   pSDLayerImportSetting: []
   psdLayers:
-  - name: EmptySpace
-    spriteName: EmptySpace
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 66f9659896d5a3d4089024be8572914b
-    layerID: 575
-    mosaicPosition: {x: 2050, y: 412}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
   - name: YouWin
     spriteName: 
     isGroup: 1
@@ -1403,7 +1393,7 @@ ScriptedImporter:
   - name: YouWinFrame
     spriteName: YouWinFrame
     isGroup: 0
-    parentIndex: 1
+    parentIndex: 0
     spriteID: 074133433a8914743b964b543a4d871f
     layerID: 538
     mosaicPosition: {x: 4, y: 4}
@@ -1423,7 +1413,7 @@ ScriptedImporter:
   - name: GOFrame
     spriteName: GOFrame
     isGroup: 0
-    parentIndex: 3
+    parentIndex: 2
     spriteID: 817d7e6e86d6a37478c1094294b3a4b1
     layerID: 532
     mosaicPosition: {x: 1783, y: 3462}
@@ -1443,14 +1433,24 @@ ScriptedImporter:
   - name: ReadyFrame
     spriteName: ReadyFrame
     isGroup: 0
-    parentIndex: 5
+    parentIndex: 4
     spriteID: bd1c082e20e1be64da7abae3cfdf4677
     layerID: 529
     mosaicPosition: {x: 1092, y: 3462}
     flatten: 0
     isImported: 0
     isVisible: 1
-  - name: "\uB0A8\uC740 \uC2DC\uAC04"
+  - name: EmptySpace
+    spriteName: EmptySpace
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 66f9659896d5a3d4089024be8572914b
+    layerID: 575
+    mosaicPosition: {x: 2050, y: 412}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Time
     spriteName: 
     isGroup: 1
     parentIndex: -1
@@ -1460,8 +1460,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 0
     isVisible: 1
-  - name: 3:00:00
-    spriteName: 3:00:00
+  - name: TimeText
+    spriteName: TimeText
     isGroup: 0
     parentIndex: 7
     spriteID: ad923c88d68d8b844985c8c70439a357
@@ -1470,8 +1470,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Rectangle 21
-    spriteName: Rectangle 21
+  - name: TimeFrame
+    spriteName: TimeFrame
     isGroup: 0
     parentIndex: 7
     spriteID: 7b5164899b3f3cd4b9a0f13ef9d71ad3
@@ -1480,17 +1480,7 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Rectangle 4
-    spriteName: Rectangle 4
-    isGroup: 0
-    parentIndex: 7
-    spriteID: f29363d0710a697418180fcfe58d004a
-    layerID: 586
-    mosaicPosition: {x: 587, y: 2352}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
-  - name: "\uC2A4\uD0AC\uC5F0\uCD9C"
+  - name: Skill
     spriteName: 
     isGroup: 1
     parentIndex: -1
@@ -1503,7 +1493,7 @@ ScriptedImporter:
   - name: Player3 copy
     spriteName: Player3 copy
     isGroup: 0
-    parentIndex: 11
+    parentIndex: 10
     spriteID: b98fc4f87ff06fc45b10d6fe80d90059
     layerID: 584
     mosaicPosition: {x: 1092, y: 3374}
@@ -1513,27 +1503,27 @@ ScriptedImporter:
   - name: Player3
     spriteName: Player3
     isGroup: 0
-    parentIndex: 11
+    parentIndex: 10
     spriteID: 6e06842f4c1d412449ae1b62bbed897d
     layerID: 583
     mosaicPosition: {x: 1501, y: 2414}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Rectangle 4 copy 6
-    spriteName: Rectangle 4 copy 6
+  - name: RivalSkillEffectFrameHalftonePattern
+    spriteName: RivalSkillEffectFrameHalftonePattern
     isGroup: 0
-    parentIndex: 11
+    parentIndex: 10
     spriteID: ed0ba7c0613076b478465350ed3c525e
     layerID: 582
     mosaicPosition: {x: 3058, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Rectangle 4 copy 5
-    spriteName: Rectangle 4 copy 5
+  - name: RivalSkillEffectFrame
+    spriteName: RivalSkillEffectFrame
     isGroup: 0
-    parentIndex: 11
+    parentIndex: 10
     spriteID: 0c2e724beadd7db4895445a10d736593
     layerID: 581
     mosaicPosition: {x: 4, y: 3918}
@@ -1543,7 +1533,7 @@ ScriptedImporter:
   - name: Player1 copy
     spriteName: Player1 copy
     isGroup: 0
-    parentIndex: 11
+    parentIndex: 10
     spriteID: a31a765493a758d4da70d45b9f319d0b
     layerID: 580
     mosaicPosition: {x: 1092, y: 2414}
@@ -1553,34 +1543,34 @@ ScriptedImporter:
   - name: Player1
     spriteName: Player1
     isGroup: 0
-    parentIndex: 11
+    parentIndex: 10
     spriteID: db6ffbab26d5a4d4a928adfcb7a8eb7c
     layerID: 579
     mosaicPosition: {x: 1092, y: 2894}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Rectangle 4 copy 7
-    spriteName: Rectangle 4 copy 7
+  - name: SkillEfectFrameHalftonePattern
+    spriteName: SkillEfectFrameHalftonePattern
     isGroup: 0
-    parentIndex: 11
+    parentIndex: 10
     spriteID: 0594d9804589df24abfa88254827f99b
     layerID: 578
     mosaicPosition: {x: 562, y: 3918}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Rectangle 4 copy 4
-    spriteName: Rectangle 4 copy 4
+  - name: SkillEfectFrame
+    spriteName: SkillEfectFrame
     isGroup: 0
-    parentIndex: 11
+    parentIndex: 10
     spriteID: fd6bc6ce6cb156d44ae7dd2f1547fced
     layerID: 577
     mosaicPosition: {x: 4, y: 3760}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: "\uC0C1\uB300\uBCF4\uB4DC"
+  - name: RivalBoard
     spriteName: 
     isGroup: 1
     parentIndex: -1
@@ -1593,7 +1583,7 @@ ScriptedImporter:
   - name: 8
     spriteName: 8
     isGroup: 0
-    parentIndex: 20
+    parentIndex: 19
     spriteID: f1b7d4cfdc613494a801236428cdf667
     layerID: 574
     mosaicPosition: {x: 1459, y: 4000}
@@ -1603,214 +1593,204 @@ ScriptedImporter:
   - name: 8
     spriteName: 8
     isGroup: 0
-    parentIndex: 20
+    parentIndex: 19
     spriteID: 04aee4acc90fd4743a91861098754a45
     layerID: 572
     mosaicPosition: {x: 4037, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: TrophyIcon copy
-    spriteName: TrophyIcon copy
+  - name: RivalTrophyIcon
+    spriteName: RivalTrophyIcon
     isGroup: 0
-    parentIndex: 20
+    parentIndex: 19
     spriteID: d688aad67fb78cd46b9748283f3b2b4f
     layerID: 569
     mosaicPosition: {x: 1014, y: 3760}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Player3SkillIcon
-    spriteName: Player3SkillIcon
+  - name: RivalSkillIcon
+    spriteName: RivalSkillIcon
     isGroup: 0
-    parentIndex: 20
+    parentIndex: 19
     spriteID: f629fb3dcd1059644b16ad190ac65fd4
     layerID: 570
     mosaicPosition: {x: 1014, y: 3821}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Group 1
-    spriteName: 
-    isGroup: 1
-    parentIndex: 20
-    spriteID: 0901070844dc6884cbea579d6fb79852
-    layerID: 698
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 1
-  - name: Polygon 1 copy
-    spriteName: Polygon 1 copy
+  - name: RivalSkillIconFrame_2
+    spriteName: RivalSkillIconFrame_2
     isGroup: 0
-    parentIndex: 25
+    parentIndex: 19
     spriteID: 95be62c5b33871a4899eac3e92dd2e2c
     layerID: 697
     mosaicPosition: {x: 1700, y: 1182}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Polygon 1
-    spriteName: Polygon 1
+  - name: RivalSkillIconFrame_1
+    spriteName: RivalSkillIconFrame_1
     isGroup: 0
-    parentIndex: 25
+    parentIndex: 19
     spriteID: 0c40779f34e40ee4eb9724659ab4c642
     layerID: 696
     mosaicPosition: {x: 1700, y: 962}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Triangle 1
-    spriteName: Triangle 1
+  - name: RivalSkillBarPoint
+    spriteName: RivalSkillBarPoint
     isGroup: 0
-    parentIndex: 25
+    parentIndex: 19
     spriteID: 43b9fbb8ab923cb4ea2177f26e11e101
     layerID: 695
     mosaicPosition: {x: 1992, y: 1330}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Skill
-    spriteName: Skill
+  - name: SkillText
+    spriteName: SkillText
     isGroup: 0
-    parentIndex: 25
+    parentIndex: 19
     spriteID: 61930b09bbc9c26499af768782faaa5c
     layerID: 694
     mosaicPosition: {x: 1700, y: 1278}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Rectangle 4 copy 8
-    spriteName: Rectangle 4 copy 8
+  - name: SkillBarFrame
+    spriteName: SkillBarFrame
     isGroup: 0
-    parentIndex: 25
+    parentIndex: 19
     spriteID: 491149f509b86c84db4183e080784293
     layerID: 693
     mosaicPosition: {x: 3587, y: 412}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Rectangle 4 copy 2
-    spriteName: Rectangle 4 copy 2
+  - name: RivaInnerSillGauge
+    spriteName: RivaInnerSillGauge
     isGroup: 0
-    parentIndex: 25
+    parentIndex: 19
     spriteID: 30254c0a4f5ee104987137ae452d5248
     layerID: 692
     mosaicPosition: {x: 3579, y: 116}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Rectangle 4 copy 9
-    spriteName: Rectangle 4 copy 9
+  - name: RivalSillGaugeFrame_2
+    spriteName: RivalSillGaugeFrame_2
     isGroup: 0
-    parentIndex: 25
+    parentIndex: 19
     spriteID: 023329781c1f2e84e848bb4655d650f2
     layerID: 691
     mosaicPosition: {x: 3579, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Rectangle 20
-    spriteName: Rectangle 20
+  - name: RivalSillGaugeFrame_1
+    spriteName: RivalSillGaugeFrame_1
     isGroup: 0
-    parentIndex: 25
+    parentIndex: 19
     spriteID: a8f7e67c5c95616488bdcb9e8561698f
     layerID: 690
     mosaicPosition: {x: 572, y: 3760}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: "\uC644\uC131\uB3C4"
-    spriteName: "\uC644\uC131\uB3C4"
+  - name: RivalCompleteText
+    spriteName: RivalCompleteText
     isGroup: 0
-    parentIndex: 20
+    parentIndex: 19
     spriteID: cfd75320023bbc343bfa6f062800c85b
     layerID: 565
     mosaicPosition: {x: 3957, y: 412}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: "\uD074\uB9AC\uC5B4"
-    spriteName: "\uD074\uB9AC\uC5B4"
+  - name: RivalClearText
+    spriteName: RivalClearText
     isGroup: 0
-    parentIndex: 20
+    parentIndex: 19
     spriteID: 5c2cd547d76bb164f928acd2193521de
     layerID: 564
     mosaicPosition: {x: 1890, y: 962}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: "\uC810\uC218"
-    spriteName: "\uC810\uC218"
+  - name: RivalScore
+    spriteName: RivalScore
     isGroup: 0
-    parentIndex: 20
+    parentIndex: 19
     spriteID: 3dde48bf52faadc4198539be33c7cfbe
     layerID: 563
     mosaicPosition: {x: 4028, y: 116}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: 888
-    spriteName: 888
+  - name: RivalRankAmountText
+    spriteName: RivalRankAmountText
     isGroup: 0
-    parentIndex: 20
+    parentIndex: 19
     spriteID: 807df800b0d095e49a086defa1a73fc9
     layerID: 562
     mosaicPosition: {x: 3879, y: 453}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: "\uB2C9\uB124\uC784\uC740\uC5EC\uB35F\uAE00\uC790"
-    spriteName: "\uB2C9\uB124\uC784\uC740\uC5EC\uB35F\uAE00\uC790"
+  - name: RivalNicknameText
+    spriteName: RivalNicknameText
     isGroup: 0
-    parentIndex: 20
+    parentIndex: 19
     spriteID: f2b7778ffa36d5b47aae7b0fc7c1422a
     layerID: 561
     mosaicPosition: {x: 3587, y: 453}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Rectangle 3 copy 3
-    spriteName: Rectangle 3 copy 3
+  - name: HalftonePattern_Rival
+    spriteName: HalftonePattern_Rival
     isGroup: 0
-    parentIndex: 20
+    parentIndex: 19
     spriteID: af49a9b646d2e2a4999f9cb16d52f0b3
     layerID: 560
     mosaicPosition: {x: 1092, y: 962}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Rectangle 3 copy
-    spriteName: Rectangle 3 copy
+  - name: RivalUiFrame
+    spriteName: RivalUiFrame
     isGroup: 0
-    parentIndex: 20
+    parentIndex: 19
     spriteID: 946c5dabf8554b74bb8126bbb9325f8c
     layerID: 559
     mosaicPosition: {x: 1092, y: 1698}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Rectangle 2 copy 2
-    spriteName: Rectangle 2 copy 2
+  - name: RivalBoard
+    spriteName: RivalBoard
     isGroup: 0
-    parentIndex: 20
+    parentIndex: 19
     spriteID: 5cc6433721af09541b1b010627671772
     layerID: 617
     mosaicPosition: {x: 1675, y: 1698}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Rectangle 2 copy
-    spriteName: Rectangle 2 copy
+  - name: RivalFrame
+    spriteName: RivalFrame
     isGroup: 0
-    parentIndex: 20
+    parentIndex: 19
     spriteID: 869baacf54bd1c64899c6bbf6c7ca549
     layerID: 558
     mosaicPosition: {x: 2050, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: "\uAC8C\uC784\uBCF4\uB4DC"
+  - name: GameBoard
     spriteName: 
     isGroup: 1
     parentIndex: -1
@@ -1820,20 +1800,20 @@ ScriptedImporter:
     flatten: 0
     isImported: 0
     isVisible: 1
-  - name: 8
-    spriteName: 8
+  - name: CompleteScoreAmountText
+    spriteName: CompleteScoreAmountText
     isGroup: 0
-    parentIndex: 43
+    parentIndex: 41
     spriteID: c31d3e8213c6cfd4fa369d7b5a3b783c
     layerID: 573
     mosaicPosition: {x: 1466, y: 4039}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: 8
-    spriteName: 8
+  - name: ClearScoreAmountText
+    spriteName: ClearScoreAmountText
     isGroup: 0
-    parentIndex: 43
+    parentIndex: 41
     spriteID: 7f8523fa4a8e28148824fb3ae179726d
     layerID: 571
     mosaicPosition: {x: 4037, y: 60}
@@ -1843,197 +1823,197 @@ ScriptedImporter:
   - name: TrophyIcon
     spriteName: TrophyIcon
     isGroup: 0
-    parentIndex: 43
+    parentIndex: 41
     spriteID: 09fb9a04482dd6e4d9d2a30467a77cb5
     layerID: 557
     mosaicPosition: {x: 1441, y: 3854}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Player1SkillIcon
-    spriteName: Player1SkillIcon
+  - name: PlayerSkillIcon_1
+    spriteName: PlayerSkillIcon_1
     isGroup: 0
-    parentIndex: 43
+    parentIndex: 41
     spriteID: 1bfae2bf664f9d24bb8aadcc6dbcb2a8
     layerID: 556
     mosaicPosition: {x: 1805, y: 1058}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Polygon 1 copy
-    spriteName: Polygon 1 copy
+  - name: SkillIconFrame_2
+    spriteName: SkillIconFrame_2
     isGroup: 0
-    parentIndex: 43
+    parentIndex: 41
     spriteID: 0a8713a621f71ea4fba2e5510846c1eb
     layerID: 674
     mosaicPosition: {x: 1805, y: 962}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Polygon 1
-    spriteName: Polygon 1
+  - name: SkillIconFrame_1
+    spriteName: SkillIconFrame_1
     isGroup: 0
-    parentIndex: 43
+    parentIndex: 41
     spriteID: a52c237225cfa614f9ac1f4ea412eeee
     layerID: 673
     mosaicPosition: {x: 1700, y: 1072}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Triangle 1
-    spriteName: Triangle 1
+  - name: SkillbarPoint
+    spriteName: SkillbarPoint
     isGroup: 0
-    parentIndex: 43
+    parentIndex: 41
     spriteID: 6e643a5f37ae92b41a2e44fc61ea877b
     layerID: 686
     mosaicPosition: {x: 1441, y: 3912}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Skill
-    spriteName: Skill
+  - name: SkillText
+    spriteName: SkillText
     isGroup: 0
-    parentIndex: 43
+    parentIndex: 41
     spriteID: ed699a83fbe40704697b3484db32946d
     layerID: 688
     mosaicPosition: {x: 1378, y: 4000}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Rectangle 4 copy 8
-    spriteName: Rectangle 4 copy 8
+  - name: GaugeBar
+    spriteName: GaugeBar
     isGroup: 0
-    parentIndex: 43
+    parentIndex: 41
     spriteID: 6eef548034be49642aa7edf72260d490
     layerID: 681
     mosaicPosition: {x: 1092, y: 4039}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Rectangle 4 copy 2
-    spriteName: Rectangle 4 copy 2
+  - name: InnerGaugeFrame
+    spriteName: InnerGaugeFrame
     isGroup: 0
-    parentIndex: 43
+    parentIndex: 41
     spriteID: b2ee411a8f107fb47be16b87e32f417d
     layerID: 680
     mosaicPosition: {x: 3138, y: 412}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Rectangle 4 copy 9
-    spriteName: Rectangle 4 copy 9
+  - name: GaugeFrame_2
+    spriteName: GaugeFrame_2
     isGroup: 0
-    parentIndex: 43
+    parentIndex: 41
     spriteID: fdc1ead884bffe442beb6830fc67aca8
     layerID: 682
     mosaicPosition: {x: 3579, y: 60}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Rectangle 20
-    spriteName: Rectangle 20
+  - name: GaugeFrame_1
+    spriteName: GaugeFrame_1
     isGroup: 0
-    parentIndex: 43
+    parentIndex: 41
     spriteID: 6ce36b46478e6fb4ba70be883e201dd0
     layerID: 684
     mosaicPosition: {x: 572, y: 3821}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: "\uC644\uC131\uB3C4"
-    spriteName: "\uC644\uC131\uB3C4"
+  - name: CompleteScoreText
+    spriteName: CompleteScoreText
     isGroup: 0
-    parentIndex: 43
+    parentIndex: 41
     spriteID: c8594c83ee821044888ce65dc41578fe
     layerID: 552
     mosaicPosition: {x: 1378, y: 3959}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: "\uD074\uB9AC\uC5B4"
-    spriteName: "\uD074\uB9AC\uC5B4"
+  - name: ClearScoreText
+    spriteName: ClearScoreText
     isGroup: 0
-    parentIndex: 43
+    parentIndex: 41
     spriteID: 5faeb01944dc44e48a6539902f62b1e3
     layerID: 551
     mosaicPosition: {x: 1890, y: 1013}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: "\uC810\uC218"
-    spriteName: "\uC810\uC218"
+  - name: ScoreText
+    spriteName: ScoreText
     isGroup: 0
-    parentIndex: 43
+    parentIndex: 41
     spriteID: b2410920e84990442bb0594bea3da460
     layerID: 550
     mosaicPosition: {x: 1014, y: 3879}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: 888
-    spriteName: 888
+  - name: RankAmount
+    spriteName: RankAmount
     isGroup: 0
-    parentIndex: 43
+    parentIndex: 41
     spriteID: 89f3791d597bc20428865f69f2ac025b
     layerID: 549
     mosaicPosition: {x: 3950, y: 453}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: "\uB2C9\uB124\uC784\uC740\uC5EC\uB35F\uAE00\uC790"
-    spriteName: "\uB2C9\uB124\uC784\uC740\uC5EC\uB35F\uAE00\uC790"
+  - name: PlayerNicknameText
+    spriteName: PlayerNicknameText
     isGroup: 0
-    parentIndex: 43
+    parentIndex: 41
     spriteID: 265b0f6fbc8ea60448828b6b72895d62
     layerID: 548
     mosaicPosition: {x: 1700, y: 1330}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Rectangle 3 copy 2
-    spriteName: Rectangle 3 copy 2
+  - name: HalftonePattern_1
+    spriteName: HalftonePattern_1
     isGroup: 0
-    parentIndex: 43
+    parentIndex: 41
     spriteID: 7c26639e167e8d345999add9fe8af16f
     layerID: 547
     mosaicPosition: {x: 1092, y: 1330}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Rectangle 3
-    spriteName: Rectangle 3
+  - name: UIBoard
+    spriteName: UIBoard
     isGroup: 0
-    parentIndex: 43
+    parentIndex: 41
     spriteID: e523b681e87b01b4997054041212d721
     layerID: 546
     mosaicPosition: {x: 1092, y: 2056}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Rectangle 2
-    spriteName: Rectangle 2
+  - name: ClearPatternBoard
+    spriteName: ClearPatternBoard
     isGroup: 0
-    parentIndex: 43
+    parentIndex: 41
     spriteID: 11c84d47100569f49a380f15d38c9788
     layerID: 545
     mosaicPosition: {x: 1670, y: 2056}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Rectangle 5
-    spriteName: Rectangle 5
+  - name: GameBoard
+    spriteName: GameBoard
     isGroup: 0
-    parentIndex: 43
+    parentIndex: 41
     spriteID: 9a1e19535dcdcee4bbf2626773b28a33
     layerID: 615
     mosaicPosition: {x: 1092, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Rectangle 1
-    spriteName: Rectangle 1
+  - name: GameBoardFrame
+    spriteName: GameBoardFrame
     isGroup: 0
-    parentIndex: 43
+    parentIndex: 41
     spriteID: bf38b5e7bf67dfc42bf7718c7e4a4d31
     layerID: 544
     mosaicPosition: {x: 4, y: 2352}
@@ -2053,33 +2033,23 @@ ScriptedImporter:
   - name: Rectangle 14 copy
     spriteName: Rectangle 14 copy
     isGroup: 0
-    parentIndex: 66
+    parentIndex: 64
     spriteID: 2e3561a8814eaa7499a2fb299d032391
     layerID: 707
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 0
     isVisible: 0
-  - name: Rectangle 14
-    spriteName: Rectangle 14
+  - name: BG
+    spriteName: BG
     isGroup: 0
-    parentIndex: 66
+    parentIndex: 64
     spriteID: 010aae5277bf9454f807ed3aa2586106
     layerID: 670
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: BG
-    spriteName: 
-    isGroup: 0
-    parentIndex: 66
-    spriteID: 84655cae713ed9641b73c4d53e7ee8c8
-    layerID: 669
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
   mosaicPSDLayers: []
   rigPSDLayers: []
   sharedRigPSDLayers: []
