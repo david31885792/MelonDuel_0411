@@ -425,7 +425,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 2, y: 4026}
     spritePosition: {x: 869, y: 2164}
-  - name: "\uD50C\uB808\uC774\uC5B4"
+  - name: PlayerText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -447,7 +447,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1254, y: 3670}
     spritePosition: {x: 675, y: 1831}
-  - name: "\uCF54\uC778"
+  - name: CoinText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -469,7 +469,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 434, y: 4027}
     spritePosition: {x: 224, y: 1831}
-  - name: Rectangle 2
+  - name: SelectFrame2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -491,7 +491,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 3031, y: 160}
     spritePosition: {x: 540, y: 1783}
-  - name: Rectangle 1
+  - name: SelectFrame
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -513,7 +513,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 3030, y: 2}
     spritePosition: {x: 25, y: 1783}
-  - name: "\uC0AC\uC6A9\uD574\uBCF4\uAE30"
+  - name: TryText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -535,7 +535,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1254, y: 3868}
     spritePosition: {x: 163, y: 1290}
-  - name: AD
+  - name: ADIcon
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -557,7 +557,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 974, y: 3546}
     spritePosition: {x: 66, y: 1284}
-  - name: 10,000
+  - name: CostText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -579,7 +579,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 560, y: 4027}
     spritePosition: {x: 141, y: 1379}
-  - name: "\uC2AC\uB77C\uC774\uB4DC \uBD80\uC2A4\uD130"
+  - name: PoporiSkillText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -601,7 +601,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 191, y: 4027}
     spritePosition: {x: 294, y: 1533}
-  - name: "\uD3EC\uD3EC\uB9AC"
+  - name: PoporiText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -623,7 +623,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1254, y: 3802}
     spritePosition: {x: 80, y: 1535}
-  - name: Coin copy
+  - name: CoinIcon
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -645,7 +645,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 974, y: 3786}
     spritePosition: {x: 66, y: 1372}
-  - name: "\uC544\uB974\uB974 copy"
+  - name: Popori_Up
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -667,7 +667,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1092, y: 2466}
     spritePosition: {x: 620, y: 1300}
-  - name: "\uC544\uB974\uB974"
+  - name: Popori_Under
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -689,7 +689,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1092, y: 402}
     spritePosition: {x: 620, y: 1047}
-  - name: Shape 1
+  - name: DotPattern
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -711,7 +711,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 2646, y: 401}
     spritePosition: {x: 30, y: 1507}
-  - name: 1 copy 2
+  - name: HalfTonePattern
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -733,7 +733,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 4, y: 3546}
     spritePosition: {x: 25, y: 1247}
-  - name: 1
+  - name: PoporiFrame
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -755,7 +755,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: -9, y: 2351}
     spritePosition: {x: 25, y: 1247}
-  - name: "\uC0AC\uC6A9\uD574\uBCF4\uAE30"
+  - name: TryText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -777,7 +777,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1254, y: 3916}
     spritePosition: {x: 163, y: 816}
-  - name: AD copy
+  - name: ADIcon
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -799,7 +799,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 974, y: 3626}
     spritePosition: {x: 66, y: 810}
-  - name: 10,000
+  - name: CostText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -821,7 +821,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 721, y: 4027}
     spritePosition: {x: 135, y: 905}
-  - name: "\uAC00\uB9BC\uB9C9"
+  - name: RurunoSkillText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -843,7 +843,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1441, y: 4012}
     spritePosition: {x: 294, y: 1064}
-  - name: "\uB8E8\uB8E8\uB178"
+  - name: RurunoText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -865,7 +865,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1254, y: 3736}
     spritePosition: {x: 80, y: 1066}
-  - name: Coin copy 2
+  - name: CoinICon
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -887,7 +887,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 974, y: 3854}
     spritePosition: {x: 60, y: 898}
-  - name: "\uB9C1\uACE0 copy"
+  - name: Ruruno_Up
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -909,7 +909,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1092, y: 2906}
     spritePosition: {x: 678, y: 810}
-  - name: "\uB9C1\uACE0"
+  - name: Ruruno_Under
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -931,7 +931,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1092, y: 1095}
     spritePosition: {x: 607, y: 536}
-  - name: Shape 1 copy
+  - name: DotPattern
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -953,7 +953,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 2646, y: 414}
     spritePosition: {x: 30, y: 1039}
-  - name: 1 copy 4
+  - name: HalfTonePattern
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -975,7 +975,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1092, y: 4}
     spritePosition: {x: 25, y: 779}
-  - name: 1 copy 4
+  - name: RurunoFrame
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -997,7 +997,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: -9, y: 2749}
     spritePosition: {x: 25, y: 779}
-  - name: "\uC0AC\uC6A9\uD574\uBCF4\uAE30"
+  - name: TryIcon
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1019,7 +1019,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1254, y: 3964}
     spritePosition: {x: 163, y: 338}
-  - name: AD copy
+  - name: ADIcon
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1041,7 +1041,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 974, y: 3706}
     spritePosition: {x: 66, y: 332}
-  - name: 10,000
+  - name: CoinCostIcon
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1063,7 +1063,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 882, y: 4027}
     spritePosition: {x: 141, y: 439}
-  - name: "\uB9CC\uB2A5 \uD0C0\uC77C"
+  - name: CherrynaSkillText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1085,7 +1085,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 3922, y: 339}
     spritePosition: {x: 293, y: 589}
-  - name: "\uCCB4\uB9AC\uB098"
+  - name: CherrynaText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1107,7 +1107,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 3329, y: 320}
     spritePosition: {x: 80, y: 589}
-  - name: Coin copy 2
+  - name: CoinIcon
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1129,7 +1129,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1489, y: 3320}
     spritePosition: {x: 66, y: 427}
-  - name: "\uBFCC\uD14C2 \uB8E8\uB8E8 copy"
+  - name: Cherryna_Up
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1151,7 +1151,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1092, y: 3320}
     spritePosition: {x: 691, y: 474}
-  - name: "\uBFCC\uD14C2 \uB8E8\uB8E8"
+  - name: Cherryna_Under
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1173,7 +1173,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1092, y: 1783}
     spritePosition: {x: 691, y: 73}
-  - name: Shape 1 copy 2
+  - name: DotPattern
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1195,7 +1195,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 2646, y: 427}
     spritePosition: {x: 30, y: 561}
-  - name: 1 copy 5
+  - name: HalfTonePattern
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1217,7 +1217,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 2062, y: 4}
     spritePosition: {x: 25, y: 301}
-  - name: 1 copy 5
+  - name: CherrynaFrame
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1239,7 +1239,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: -9, y: 3147}
     spritePosition: {x: 25, y: 301}
-  - name: DuelIcon_Big
+  - name: DuelIcon
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1261,7 +1261,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1092, y: 3926}
     spritePosition: {x: 475, y: 46}
-  - name: ShopIcon
+  - name: ShopIcon_Shop
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1305,7 +1305,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1092, y: 3780}
     spritePosition: {x: 99, y: 41}
-  - name: "\uC0C1\uC810"
+  - name: ShopText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1327,7 +1327,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1460, y: 3916}
     spritePosition: {x: 864, y: 28}
-  - name: Rectangle 18
+  - name: SelectFrame
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1347,9 +1347,9 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 3554, y: 162}
+    uvTransform: {x: 3553, y: 162}
     spritePosition: {x: 721, y: 0}
-  - name: Rectangle 11
+  - name: BottomFrame
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1371,7 +1371,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 1560, y: 402}
     spritePosition: {x: 0, y: 0}
-  - name: Rectangle 14
+  - name: BG
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1658,7 +1658,7 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: "\uC120\uD0DD\uCC3D"
+  - name: Select
     spriteName: 
     isGroup: 1
     parentIndex: -1
@@ -1668,8 +1668,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 0
     isVisible: 1
-  - name: "\uD50C\uB808\uC774\uC5B4"
-    spriteName: "\uD50C\uB808\uC774\uC5B4"
+  - name: PlayerText
+    spriteName: PlayerText
     isGroup: 0
     parentIndex: 19
     spriteID: 7d14d1938063bfc48a2263b31dc9d7d3
@@ -1678,8 +1678,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: "\uCF54\uC778"
-    spriteName: "\uCF54\uC778"
+  - name: CoinText
+    spriteName: CoinText
     isGroup: 0
     parentIndex: 19
     spriteID: 2d463a23e51790149b073b4beb9496e9
@@ -1688,8 +1688,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Rectangle 2
-    spriteName: Rectangle 2
+  - name: SelectFrame2
+    spriteName: SelectFrame2
     isGroup: 0
     parentIndex: 19
     spriteID: 4b1c315f2cb30cc46be0f911818f6a6c
@@ -1698,8 +1698,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Rectangle 1
-    spriteName: Rectangle 1
+  - name: SelectFrame
+    spriteName: SelectFrame
     isGroup: 0
     parentIndex: 19
     spriteID: 498fba9e1bb78dc4683427a928e47de9
@@ -1708,7 +1708,7 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: "\uD3EC\uD3EC\uB9AC"
+  - name: Popori
     spriteName: 
     isGroup: 1
     parentIndex: -1
@@ -1718,8 +1718,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 0
     isVisible: 1
-  - name: "\uC0AC\uC6A9\uD574\uBCF4\uAE30"
-    spriteName: "\uC0AC\uC6A9\uD574\uBCF4\uAE30"
+  - name: TryText
+    spriteName: TryText
     isGroup: 0
     parentIndex: 24
     spriteID: adff6b47a66e5b54494d3d9eacf8f125
@@ -1728,8 +1728,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: AD
-    spriteName: AD
+  - name: ADIcon
+    spriteName: ADIcon
     isGroup: 0
     parentIndex: 24
     spriteID: 2624900dfd4af1b47a0e666e4b684f11
@@ -1738,8 +1738,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: 10,000
-    spriteName: 10,000
+  - name: CostText
+    spriteName: CostText
     isGroup: 0
     parentIndex: 24
     spriteID: 0dc4ece52c09da74ead41535b415165e
@@ -1748,8 +1748,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: "\uC2AC\uB77C\uC774\uB4DC \uBD80\uC2A4\uD130"
-    spriteName: "\uC2AC\uB77C\uC774\uB4DC \uBD80\uC2A4\uD130"
+  - name: PoporiSkillText
+    spriteName: PoporiSkillText
     isGroup: 0
     parentIndex: 24
     spriteID: 4196adea179df2944abd802c296aaa4d
@@ -1758,8 +1758,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: "\uD3EC\uD3EC\uB9AC"
-    spriteName: "\uD3EC\uD3EC\uB9AC"
+  - name: PoporiText
+    spriteName: PoporiText
     isGroup: 0
     parentIndex: 24
     spriteID: 17f4554c0b315ed488ad142fe205af4c
@@ -1768,8 +1768,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Coin copy
-    spriteName: Coin copy
+  - name: CoinIcon
+    spriteName: CoinIcon
     isGroup: 0
     parentIndex: 24
     spriteID: a4e884dd6d8ccbe4684c5544065d069e
@@ -1778,8 +1778,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: "\uC544\uB974\uB974 copy"
-    spriteName: "\uC544\uB974\uB974 copy"
+  - name: Popori_Up
+    spriteName: Popori_Up
     isGroup: 0
     parentIndex: 24
     spriteID: e427939fced4ff24fb94dc15183e4c7c
@@ -1788,8 +1788,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: "\uC544\uB974\uB974"
-    spriteName: "\uC544\uB974\uB974"
+  - name: Popori_Under
+    spriteName: Popori_Under
     isGroup: 0
     parentIndex: 24
     spriteID: b951674fa3171804fb758929e3a4d466
@@ -1798,8 +1798,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Shape 1
-    spriteName: Shape 1
+  - name: DotPattern
+    spriteName: DotPattern
     isGroup: 0
     parentIndex: 24
     spriteID: 59e34aca4ab0c384880f996ee06693fb
@@ -1808,8 +1808,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: 1 copy 2
-    spriteName: 1 copy 2
+  - name: HalfTonePattern
+    spriteName: HalfTonePattern
     isGroup: 0
     parentIndex: 24
     spriteID: 813774fe647d5aa4d84edc6bb8b25a96
@@ -1818,8 +1818,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: 1
-    spriteName: 1
+  - name: PoporiFrame
+    spriteName: PoporiFrame
     isGroup: 0
     parentIndex: 24
     spriteID: d632d26d6a3a00741a76ea2c41f0ca7d
@@ -1828,7 +1828,7 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: "\uB8E8\uB8E8\uB178"
+  - name: Ruruno
     spriteName: 
     isGroup: 1
     parentIndex: -1
@@ -1838,8 +1838,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 0
     isVisible: 1
-  - name: "\uC0AC\uC6A9\uD574\uBCF4\uAE30"
-    spriteName: "\uC0AC\uC6A9\uD574\uBCF4\uAE30"
+  - name: TryText
+    spriteName: TryText
     isGroup: 0
     parentIndex: 36
     spriteID: 5cea3dee3a80a9e46b7be6ca82c98eba
@@ -1848,8 +1848,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: AD copy
-    spriteName: AD copy
+  - name: ADIcon
+    spriteName: ADIcon
     isGroup: 0
     parentIndex: 36
     spriteID: af8b8122cc5827b43b7f035aa164af79
@@ -1858,8 +1858,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: 10,000
-    spriteName: 10,000
+  - name: CostText
+    spriteName: CostText
     isGroup: 0
     parentIndex: 36
     spriteID: 498716355d570a4448a68d0ae0d20f59
@@ -1868,8 +1868,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: "\uAC00\uB9BC\uB9C9"
-    spriteName: "\uAC00\uB9BC\uB9C9"
+  - name: RurunoSkillText
+    spriteName: RurunoSkillText
     isGroup: 0
     parentIndex: 36
     spriteID: 8ed6bcab44659b7429793ca106d53d57
@@ -1878,8 +1878,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: "\uB8E8\uB8E8\uB178"
-    spriteName: "\uB8E8\uB8E8\uB178"
+  - name: RurunoText
+    spriteName: RurunoText
     isGroup: 0
     parentIndex: 36
     spriteID: 958db1b9eaecbe24a9601101991d62b5
@@ -1888,8 +1888,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Coin copy 2
-    spriteName: Coin copy 2
+  - name: CoinICon
+    spriteName: CoinICon
     isGroup: 0
     parentIndex: 36
     spriteID: 0823f3f9f56839241b32ac862012320d
@@ -1898,8 +1898,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: "\uB9C1\uACE0 copy"
-    spriteName: "\uB9C1\uACE0 copy"
+  - name: Ruruno_Up
+    spriteName: Ruruno_Up
     isGroup: 0
     parentIndex: 36
     spriteID: 8d16083bd3e79a8479329d64191e2419
@@ -1908,8 +1908,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: "\uB9C1\uACE0"
-    spriteName: "\uB9C1\uACE0"
+  - name: Ruruno_Under
+    spriteName: Ruruno_Under
     isGroup: 0
     parentIndex: 36
     spriteID: 209f348e2257cb7459a64b6e7b3f214c
@@ -1918,8 +1918,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Shape 1 copy
-    spriteName: Shape 1 copy
+  - name: DotPattern
+    spriteName: DotPattern
     isGroup: 0
     parentIndex: 36
     spriteID: 478389d7c8a9d4e41afe16ff5049f4a6
@@ -1928,8 +1928,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: 1 copy 4
-    spriteName: 1 copy 4
+  - name: HalfTonePattern
+    spriteName: HalfTonePattern
     isGroup: 0
     parentIndex: 36
     spriteID: 286fe1abcce2c62458cb60fbc006b4bc
@@ -1938,8 +1938,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: 1 copy 4
-    spriteName: 1 copy 4
+  - name: RurunoFrame
+    spriteName: RurunoFrame
     isGroup: 0
     parentIndex: 36
     spriteID: 9ea0e02038f37f942ba33701356f4f52
@@ -1948,27 +1948,7 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: 1 copy 3
-    spriteName: 1 copy 3
-    isGroup: 0
-    parentIndex: 36
-    spriteID: fb99431e74586ff4bb3467999f582c72
-    layerID: 355
-    mosaicPosition: {x: 1092, y: 4}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
-  - name: 1 copy
-    spriteName: 1 copy
-    isGroup: 0
-    parentIndex: 36
-    spriteID: 9051d0a660dc32049a230a032838dc1b
-    layerID: 354
-    mosaicPosition: {x: 4, y: 2750}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
-  - name: "\uCCB4\uB9AC\uB098"
+  - name: Cherryna
     spriteName: 
     isGroup: 1
     parentIndex: -1
@@ -1978,110 +1958,110 @@ ScriptedImporter:
     flatten: 0
     isImported: 0
     isVisible: 1
-  - name: "\uC0AC\uC6A9\uD574\uBCF4\uAE30"
-    spriteName: "\uC0AC\uC6A9\uD574\uBCF4\uAE30"
+  - name: TryIcon
+    spriteName: TryIcon
     isGroup: 0
-    parentIndex: 50
+    parentIndex: 48
     spriteID: a30d61a0a8d7c164c8388030fea2a4b5
     layerID: 373
     mosaicPosition: {x: 1254, y: 3964}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: AD copy
-    spriteName: AD copy
+  - name: ADIcon
+    spriteName: ADIcon
     isGroup: 0
-    parentIndex: 50
+    parentIndex: 48
     spriteID: 99225f4e6dbe8ea44a31b0efc214812b
     layerID: 372
     mosaicPosition: {x: 974, y: 3706}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: 10,000
-    spriteName: 10,000
+  - name: CoinCostIcon
+    spriteName: CoinCostIcon
     isGroup: 0
-    parentIndex: 50
+    parentIndex: 48
     spriteID: 990476ce67eb06f4ca71b7757c2cdb8a
     layerID: 371
     mosaicPosition: {x: 882, y: 4027}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: "\uB9CC\uB2A5 \uD0C0\uC77C"
-    spriteName: "\uB9CC\uB2A5 \uD0C0\uC77C"
+  - name: CherrynaSkillText
+    spriteName: CherrynaSkillText
     isGroup: 0
-    parentIndex: 50
+    parentIndex: 48
     spriteID: 02b53c761295d664fb25f5a92ea732c3
     layerID: 370
     mosaicPosition: {x: 3922, y: 339}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: "\uCCB4\uB9AC\uB098"
-    spriteName: "\uCCB4\uB9AC\uB098"
+  - name: CherrynaText
+    spriteName: CherrynaText
     isGroup: 0
-    parentIndex: 50
+    parentIndex: 48
     spriteID: e686e23c3c34d664d9398407256f89d1
     layerID: 369
     mosaicPosition: {x: 3329, y: 320}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Coin copy 2
-    spriteName: Coin copy 2
+  - name: CoinIcon
+    spriteName: CoinIcon
     isGroup: 0
-    parentIndex: 50
+    parentIndex: 48
     spriteID: cfc9b16d488e460439b0cd1d09778508
     layerID: 368
     mosaicPosition: {x: 1489, y: 3320}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: "\uBFCC\uD14C2 \uB8E8\uB8E8 copy"
-    spriteName: "\uBFCC\uD14C2 \uB8E8\uB8E8 copy"
+  - name: Cherryna_Up
+    spriteName: Cherryna_Up
     isGroup: 0
-    parentIndex: 50
+    parentIndex: 48
     spriteID: 01ea7c629626a8c41af13e7768e74d28
     layerID: 367
     mosaicPosition: {x: 1092, y: 3320}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: "\uBFCC\uD14C2 \uB8E8\uB8E8"
-    spriteName: "\uBFCC\uD14C2 \uB8E8\uB8E8"
+  - name: Cherryna_Under
+    spriteName: Cherryna_Under
     isGroup: 0
-    parentIndex: 50
+    parentIndex: 48
     spriteID: cfa0f03442624d84db755735d4c91469
     layerID: 366
     mosaicPosition: {x: 1092, y: 1783}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Shape 1 copy 2
-    spriteName: Shape 1 copy 2
+  - name: DotPattern
+    spriteName: DotPattern
     isGroup: 0
-    parentIndex: 50
+    parentIndex: 48
     spriteID: 46fbf07dfae4cf040a62e151894681a9
     layerID: 540
     mosaicPosition: {x: 2648, y: 428}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: 1 copy 5
-    spriteName: 1 copy 5
+  - name: HalfTonePattern
+    spriteName: HalfTonePattern
     isGroup: 0
-    parentIndex: 50
+    parentIndex: 48
     spriteID: 5f11df7bfac4e604abe527dc463fee07
     layerID: 539
     mosaicPosition: {x: 2062, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: 1 copy 5
-    spriteName: 1 copy 5
+  - name: CherrynaFrame
+    spriteName: CherrynaFrame
     isGroup: 0
-    parentIndex: 50
+    parentIndex: 48
     spriteID: 405a1cb1a9bc53248af4415661152bbc
     layerID: 538
     mosaicPosition: {x: 4, y: 3148}
@@ -2098,20 +2078,20 @@ ScriptedImporter:
     flatten: 0
     isImported: 0
     isVisible: 1
-  - name: DuelIcon_Big
-    spriteName: DuelIcon_Big
+  - name: DuelIcon
+    spriteName: DuelIcon
     isGroup: 0
-    parentIndex: 62
+    parentIndex: 60
     spriteID: eb8f58470dd970b4c80200c94176fe36
     layerID: 499
     mosaicPosition: {x: 1092, y: 3926}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: ShopIcon
-    spriteName: ShopIcon
+  - name: ShopIcon_Shop
+    spriteName: ShopIcon_Shop
     isGroup: 0
-    parentIndex: 62
+    parentIndex: 60
     spriteID: de7727ec4507c1d4383a7a4eb904540b
     layerID: 498
     mosaicPosition: {x: 1092, y: 3602}
@@ -2121,57 +2101,37 @@ ScriptedImporter:
   - name: ChallengeIcon
     spriteName: ChallengeIcon
     isGroup: 0
-    parentIndex: 62
+    parentIndex: 60
     spriteID: 5bbd65ab9f9da9e439e0a1a0717016de
     layerID: 497
     mosaicPosition: {x: 1092, y: 3780}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: "\uC0C1\uC810"
-    spriteName: "\uC0C1\uC810"
+  - name: ShopText
+    spriteName: ShopText
     isGroup: 0
-    parentIndex: 62
+    parentIndex: 60
     spriteID: 2ddc85a762ea50740aac94939f5402cb
     layerID: 496
     mosaicPosition: {x: 1460, y: 3916}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: DuelText
-    spriteName: 
+  - name: SelectFrame
+    spriteName: SelectFrame
     isGroup: 0
-    parentIndex: 62
-    spriteID: d15dd792f79a9b9429c6f136aaf69a73
-    layerID: 495
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
-  - name: Rectangle 18
-    spriteName: Rectangle 18
-    isGroup: 0
-    parentIndex: 62
+    parentIndex: 60
     spriteID: 5e9b3d6c285f69e41abdd664cbe66bb2
     layerID: 494
     mosaicPosition: {x: 3555, y: 162}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: SelectFrame
-    spriteName: 
+  - name: BottomFrame
+    spriteName: BottomFrame
     isGroup: 0
-    parentIndex: 62
-    spriteID: fa29d98685c097e42817d31a8b1820d2
-    layerID: 493
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
-  - name: Rectangle 11
-    spriteName: Rectangle 11
-    isGroup: 0
-    parentIndex: 62
+    parentIndex: 60
     spriteID: 941b9bd1b81b39340b51208e8bbb7f0c
     layerID: 492
     mosaicPosition: {x: 1560, y: 402}
@@ -2188,26 +2148,16 @@ ScriptedImporter:
     flatten: 0
     isImported: 0
     isVisible: 1
-  - name: Rectangle 14
-    spriteName: Rectangle 14
+  - name: BG
+    spriteName: BG
     isGroup: 0
-    parentIndex: 71
+    parentIndex: 67
     spriteID: 14d90e3627bc08143bbe99c5146ecd0a
     layerID: 490
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Square_1
-    spriteName: Square_1
-    isGroup: 0
-    parentIndex: 71
-    spriteID: d2d557473f321d740abead098e4d0906
-    layerID: 154
-    mosaicPosition: {x: 1092, y: 4}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
   mosaicPSDLayers: []
   rigPSDLayers: []
   sharedRigPSDLayers: []
