@@ -10,17 +10,18 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
-    // "듀얼" 버튼 클릭 시 호출 → DiceScene으로 이동
-    public void StartGameSequence()
+    // "플레이" 버튼 클릭 시 호출 → MatchingScene으로 이동
+    public void LoadMatchingScene()
     {
-        Debug.Log("🎮 게임 시작 - DiceScene으로 이동");
-        SceneManager.LoadScene("DiceScene");
+        Debug.Log("🔁 MatchingScene으로 이동");
+        SceneManager.LoadScene("MatchingScene");
     }
 
-    // DiceScene에서 주사위 처리 후 GameScene으로 넘어갈 때 사용
+
+    // MatchingScene 이후 GameScene으로 넘어갈 때 사용
     public static void LoadGameScene()
     {
-        Debug.Log("🎲 Dice 완료 → GameScene 이동");
+        Debug.Log("🎲 Matching 완료 → GameScene 이동");
         SceneManager.LoadScene("GameScene");
     }
 

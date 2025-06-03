@@ -235,10 +235,22 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 21339200}
+  m_TargetGraphic: {fileID: 1071998959}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 299652221}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: MainScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &25226378
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,10 +503,22 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 116864869}
+  m_TargetGraphic: {fileID: 447028376}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 299652221}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ShopScene_Coin
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &299652220
 GameObject:
   m_ObjectHideFlags: 0
@@ -658,7 +682,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 447028376}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 299652221}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ShopScene_Coin
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &475105051
 GameObject:
   m_ObjectHideFlags: 0
@@ -1657,7 +1693,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1071998959}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 299652221}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ChallengeScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1275358722
 GameObject:
   m_ObjectHideFlags: 0
@@ -2380,10 +2428,22 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1739536638}
+  m_TargetGraphic: {fileID: 447028376}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 299652221}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ShopScene_Player
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1754431150
 GameObject:
   m_ObjectHideFlags: 0
@@ -2685,6 +2745,7 @@ GameObject:
   - component: {fileID: 6451882505061395509}
   - component: {fileID: 6451882505061395508}
   - component: {fileID: 6451882505061395510}
+  - component: {fileID: 6451882505061395511}
   m_Layer: 0
   m_Name: CostText
   m_TagString: Untagged
@@ -2797,6 +2858,7 @@ GameObject:
   - component: {fileID: 2010053036612101302}
   - component: {fileID: 2010053036612101301}
   - component: {fileID: 2010053036612101303}
+  - component: {fileID: 2010053036612101304}
   m_Layer: 0
   m_Name: TryText_1
   m_TagString: Untagged
@@ -2923,7 +2985,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2010053036612101301}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2010053036612101304}
+        m_TargetAssemblyTypeName: CharacterSelector, Assembly-CSharp
+        m_MethodName: OnSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2010053036612101304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475365461324269012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc2c3b2d882ad54d8ab4b8a387f1959, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterId: Player2
 --- !u!224 &2037745810498933454
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3063,6 +3150,7 @@ GameObject:
   - component: {fileID: 8446845164318847078}
   - component: {fileID: 8446845164318847077}
   - component: {fileID: 8446845164318847079}
+  - component: {fileID: 8446845164318847080}
   m_Layer: 0
   m_Name: TryIcon
   m_TagString: Untagged
@@ -3535,6 +3623,7 @@ GameObject:
   - component: {fileID: 5303592774562920416}
   - component: {fileID: 5303592774562920415}
   - component: {fileID: 5303592774562920417}
+  - component: {fileID: 5303592774562920418}
   m_Layer: 0
   m_Name: CostText_1
   m_TagString: Untagged
@@ -3623,7 +3712,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5303592774562920415}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5303592774562920418}
+        m_TargetAssemblyTypeName: CharacterSelector, Assembly-CSharp
+        m_MethodName: OnSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5303592774562920418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5303592774562920414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc2c3b2d882ad54d8ab4b8a387f1959, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterId: Player2
 --- !u!1 &5348592093602295900
 GameObject:
   m_ObjectHideFlags: 0
@@ -3692,6 +3806,7 @@ GameObject:
   - component: {fileID: 8153162393873392179}
   - component: {fileID: 8153162393873392178}
   - component: {fileID: 8153162393873392180}
+  - component: {fileID: 8153162393873392181}
   m_Layer: 0
   m_Name: TryText
   m_TagString: Untagged
@@ -3950,7 +4065,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6451882505061395508}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6451882505061395511}
+        m_TargetAssemblyTypeName: CharacterSelector, Assembly-CSharp
+        m_MethodName: OnSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6451882505061395511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416757624721802735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc2c3b2d882ad54d8ab4b8a387f1959, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterId: Player1
 --- !u!4 &6469917187811483363
 Transform:
   m_ObjectHideFlags: 0
@@ -4044,6 +4184,7 @@ GameObject:
   - component: {fileID: 6533687469100293126}
   - component: {fileID: 6533687469100293125}
   - component: {fileID: 6533687469100293127}
+  - component: {fileID: 6533687469100293128}
   m_Layer: 0
   m_Name: CoinCostIcon
   m_TagString: Untagged
@@ -4132,7 +4273,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6533687469100293125}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6533687469100293128}
+        m_TargetAssemblyTypeName: CharacterSelector, Assembly-CSharp
+        m_MethodName: OnSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6533687469100293128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6533687469100293124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc2c3b2d882ad54d8ab4b8a387f1959, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterId: Player3
 --- !u!4 &6636633897128391174
 Transform:
   m_ObjectHideFlags: 0
@@ -4330,7 +4496,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8153162393873392178}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8153162393873392181}
+        m_TargetAssemblyTypeName: CharacterSelector, Assembly-CSharp
+        m_MethodName: OnSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8153162393873392181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5520894457279882722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc2c3b2d882ad54d8ab4b8a387f1959, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterId: Player1
 --- !u!224 &8446845164318847076
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4431,7 +4622,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8446845164318847077}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8446845164318847080}
+        m_TargetAssemblyTypeName: CharacterSelector, Assembly-CSharp
+        m_MethodName: OnSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8446845164318847080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3416821282960649878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc2c3b2d882ad54d8ab4b8a387f1959, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterId: Player3
 --- !u!224 &8603090380579144943
 RectTransform:
   m_ObjectHideFlags: 0
