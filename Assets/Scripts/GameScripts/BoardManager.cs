@@ -10,7 +10,10 @@ public class BoardManager : MonoBehaviour
     public GameObject tilePrefab;
     public RectTransform boardParent;
     public float spacing = 4f;
-    public Color[] colorValues; // 1~6 색상 매핑
+    public Color[] colorValues;
+
+    [Header("Tile Layout")]
+    public float tileSize = 160f; // 🔹 인스펙터 조절 가능
 
     [Header("Tile Movement")]
     public float moveDuration = 0.2f;
@@ -34,17 +37,30 @@ public class BoardManager : MonoBehaviour
     {
         yield return null;
 
-        if (patternPanel != null)
-        {
-            int[] flatPattern = patternPanel.GetPattern();
-            clearPattern = new int[3, 3];
-            for (int i = 0; i < 9; i++)
-            {
-                clearPattern[i / 3, i % 3] = flatPattern[i];
-            }
-        }
+        // 자동 보드 생성 제거 → GameSceneManager에서 호출함
+    }
 
+    public void ShuffleBoard()
+    {
+        foreach (Transform child in boardParent)
+            Destroy(child.gameObject);
+
+        UpdateClearPattern();
         GenerateBoard();
+
+        // 🎯 클리어 직후 완성도 점수 초기화/계산
+        IsPatternMatched();
+    }
+
+    public void UpdateClearPattern()
+    {
+        if (patternPanel == null) return;
+
+        int[] flatPattern = patternPanel.GetPattern();
+        for (int i = 0; i < 9; i++)
+        {
+            clearPattern[i / 3, i % 3] = flatPattern[i];
+        }
     }
 
     private void GenerateBoard()
@@ -56,7 +72,6 @@ public class BoardManager : MonoBehaviour
                 numbers.Add(i);
         }
 
-        // Fisher-Yates Shuffle
         System.Random rng = new System.Random();
         int n = numbers.Count;
         while (n > 1)
@@ -67,9 +82,7 @@ public class BoardManager : MonoBehaviour
         }
 
         int numberIndex = 0;
-
-        float tileSize = 160f; // ✅ 타일 크기 고정
-        Vector2 start = new Vector2(-2 * (tileSize + spacing), 2 * (tileSize + spacing)); // 위치 기준 수정 없음
+        Vector2 start = new Vector2(-2 * (this.tileSize + spacing), 2 * (this.tileSize + spacing));
 
         for (int y = 0; y < 5; y++)
         {
@@ -83,9 +96,8 @@ public class BoardManager : MonoBehaviour
 
                 GameObject tileGO = Instantiate(tilePrefab, boardParent);
                 RectTransform rt = tileGO.GetComponent<RectTransform>();
-
-                rt.sizeDelta = new Vector2(tileSize, tileSize); // ✅ 고정 크기 적용
-                rt.anchoredPosition = start + new Vector2(x * (tileSize + spacing), -y * (tileSize + spacing));
+                rt.sizeDelta = new Vector2(this.tileSize, this.tileSize);
+                rt.anchoredPosition = start + new Vector2(x * (this.tileSize + spacing), -y * (this.tileSize + spacing));
 
                 Tile tile = tileGO.GetComponent<Tile>();
                 int tileNumber = numbers[numberIndex];
@@ -103,7 +115,6 @@ public class BoardManager : MonoBehaviour
 
         emptyTilePos = new Vector2(4, 4);
     }
-
 
     public void TryMoveTile(Tile tile)
     {
@@ -124,12 +135,12 @@ public class BoardManager : MonoBehaviour
             tiles[from.y, from.x] = null;
             emptyTilePos = from;
 
-            // ✅ 타일 이동 사운드
             AudioManager.Instance?.PlaySFX(AudioManager.Instance.moveTileClip);
+
+            SkillGaugeManager.Instance?.AddGaugeForTileMove();
 
             IsPatternMatched();
         });
-
     }
 
     private Vector2Int GetTilePosition(Tile tile)
@@ -143,35 +154,41 @@ public class BoardManager : MonoBehaviour
 
     private Vector2 GetAnchoredPosition(Vector2Int boardPos)
     {
-        float tileSize = 160f; // ✅ 타일 고정 크기
-        Vector2 start = new Vector2(-2 * (tileSize + spacing), 2 * (tileSize + spacing)); // 시작 위치 계산
-        return start + new Vector2(boardPos.x * (tileSize + spacing), -boardPos.y * (tileSize + spacing));
+        Vector2 start = new Vector2(-2 * (this.tileSize + spacing), 2 * (this.tileSize + spacing));
+        return start + new Vector2(boardPos.x * (this.tileSize + spacing), -boardPos.y * (this.tileSize + spacing));
     }
-
 
     private bool IsPatternMatched()
     {
+        int matchCount = 0;
+
         for (int row = 1; row <= 3; row++)
         {
             for (int col = 1; col <= 3; col++)
             {
                 Tile tile = tiles[row, col];
                 if (tile == null || tile.tmpText == null)
-                    return false;
+                    continue;
 
                 int gameNum = int.Parse(tile.tmpText.text);
                 int expected = clearPattern[row - 1, col - 1];
 
-                if (gameNum != expected)
+                if (gameNum == expected)
                 {
-                    Debug.Log($"❌ 불일치: tile[{row},{col}] = {gameNum}, 기대: {expected}");
-                    return false;
+                    matchCount++;
                 }
             }
         }
 
-        Debug.Log("✅ 클리어 패턴과 완벽히 일치!");
-        GameSceneManager.Instance?.OnGameClear();
-        return true;
+        GameSceneManager.Instance?.UpdateMatchCount(matchCount);
+
+        if (matchCount == 9)
+        {
+            Debug.Log("✅ 클리어 패턴과 완벽히 일치!");
+            GameSceneManager.Instance?.OnPatternMatched(matchCount);
+            return true;
+        }
+
+        return false;
     }
 }
