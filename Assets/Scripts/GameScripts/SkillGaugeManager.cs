@@ -120,6 +120,9 @@ public class SkillGaugeManager : MonoBehaviour
         currentGauge = 0; // 스킬 발동 후 게이지 초기화
         Debug.Log("스킬 사용 후 게이지 초기화됨");
         ResetGaugeState(); // 완성도 보상 단계도 초기화
+
+        FindFirstObjectByType<SkillController>()?.ActivateSkill();
+
     }
 
 }

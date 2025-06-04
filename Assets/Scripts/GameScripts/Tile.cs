@@ -17,9 +17,21 @@ public class Tile : MonoBehaviour
     [SerializeField] private string[] colorNames = { "Red", "Blue", "Yellow", "Green", "Orange", "White" };
     [SerializeField] private Color[] colorValues;
 
-    private int tmpNumber; // 🔧 TMP 숫자 저장용 필드 추가
+    [Header("만능 타일 스프라이트")]
+    [SerializeField] private Sprite wildTileSprite;
 
-    public int TMPNumber => tmpNumber; // 🔧 외부에서 읽을 수 있도록 프로퍼티 추가
+    private int tmpNumber;
+    public int TMPNumber => tmpNumber;
+
+    public bool isWildTile = false;
+
+    private Sprite originalSprite;
+
+    private void Awake()
+    {
+        if (tileImage != null)
+            originalSprite = tileImage.sprite;
+    }
 
     public void Initialize(int x, int y, string name)
     {
@@ -31,17 +43,22 @@ public class Tile : MonoBehaviour
     public void UpdateColor(string name)
     {
         tileName = name;
+        isWildTile = false;
+
         for (int i = 0; i < colorNames.Length; i++)
         {
             if (colorNames[i].Equals(name, System.StringComparison.OrdinalIgnoreCase))
             {
                 SetColor(colorValues[i]);
-                SetTMPNumber(i + 1); // 유튜브 방식의 넘버링
+                SetTMPNumber(i + 1);
+                ResetSpriteToOriginal();
                 return;
             }
         }
+
         SetColor(Color.black);
         SetTMPNumber(0);
+        ResetSpriteToOriginal();
     }
 
     public void SetColor(Color color)
@@ -55,11 +72,31 @@ public class Tile : MonoBehaviour
 
     public void SetTMPNumber(int number)
     {
-        tmpNumber = number; // 🔧 숫자 저장
+        tmpNumber = number;
         if (tmpText != null)
         {
             tmpText.text = number.ToString();
-            tmpText.enabled = false; // 보이지 않게
+            tmpText.enabled = false;
         }
+    }
+
+    public void SetAsWildTile()
+    {
+        isWildTile = true;
+
+        if (tileImage != null && wildTileSprite != null)
+            tileImage.sprite = wildTileSprite;
+
+        if (tmpText != null)
+        {
+            tmpText.text = "★";
+            tmpText.enabled = true;
+        }
+    }
+
+    private void ResetSpriteToOriginal()
+    {
+        if (tileImage != null && originalSprite != null)
+            tileImage.sprite = originalSprite;
     }
 }

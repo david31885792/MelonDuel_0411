@@ -21,6 +21,14 @@ public class BoardManager : MonoBehaviour
 
     public static BoardManager Instance { get; private set; }
 
+    public bool useTileAnimation = true; // 인스펙터에서 설정 가능하도록 선언 추가
+
+    public void SetMoveAnimation(bool use)
+    {
+        useTileAnimation = use;
+    }
+
+    
     private Tile[,] tiles = new Tile[5, 5];
     private Vector2 emptyTilePos = new Vector2(4, 4);
 
@@ -125,23 +133,35 @@ public class BoardManager : MonoBehaviour
             return;
 
         RectTransform rt = tile.GetComponent<RectTransform>();
-        Vector2 anchoredStartPos = rt.anchoredPosition;
 
-        rt.DOAnchorPos(GetAnchoredPosition(to), moveDuration)
-        .SetEase(moveEase)
-        .OnComplete(() =>
+        if (useTileAnimation)
         {
+            rt.DOAnchorPos(GetAnchoredPosition(to), moveDuration)
+            .SetEase(moveEase)
+            .OnComplete(() =>
+            {
+                tiles[to.y, to.x] = tile;
+                tiles[from.y, from.x] = null;
+                emptyTilePos = from;
+
+                AudioManager.Instance?.PlaySFX(AudioManager.Instance.moveTileClip);
+                SkillGaugeManager.Instance?.AddGaugeForTileMove();
+                IsPatternMatched();
+            });
+        }
+        else
+        {
+            rt.anchoredPosition = GetAnchoredPosition(to);
             tiles[to.y, to.x] = tile;
             tiles[from.y, from.x] = null;
             emptyTilePos = from;
 
             AudioManager.Instance?.PlaySFX(AudioManager.Instance.moveTileClip);
-
             SkillGaugeManager.Instance?.AddGaugeForTileMove();
-
             IsPatternMatched();
-        });
+        }
     }
+
 
     private Vector2Int GetTilePosition(Tile tile)
     {
@@ -191,4 +211,43 @@ public class BoardManager : MonoBehaviour
 
         return false;
     }
+
+    public void ConvertRandomTilesToWild(int count)
+    {
+        List<Tile> allTiles = new List<Tile>();
+
+        int boardSizeY = tiles.GetLength(0); // 행 (세로)
+        int boardSizeX = tiles.GetLength(1); // 열 (가로)
+
+
+        for (int y = 0; y < boardSizeY; y++)
+        {
+            for (int x = 0; x < boardSizeX; x++)
+            {
+                if (tiles[y, x] != null && !tiles[y, x].isWildTile)
+                {
+                    allTiles.Add(tiles[y, x]);
+                }
+            }
+        }
+
+
+        if (allTiles.Count == 0)
+        {
+            Debug.LogWarning("변환할 수 있는 일반 타일이 없습니다.");
+            return;
+        }
+
+        // 랜덤 셔플 후 N개만큼 만능 타일로 전환
+        allTiles.Shuffle(); // ListExtensions.cs에 Shuffle() 정의 필요
+
+        int numToConvert = Mathf.Min(count, allTiles.Count);
+        for (int i = 0; i < numToConvert; i++)
+        {
+            allTiles[i].SetAsWildTile();
+        }
+
+        Debug.Log($"{numToConvert}개의 타일이 만능 타일로 변환되었습니다.");
+    }
+
 }

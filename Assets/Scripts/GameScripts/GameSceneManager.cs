@@ -42,12 +42,30 @@ public class GameSceneManager : MonoBehaviour
 
         patternPanel.CreateTiles();
         patternPanel.GenerateRandomPattern();
-        boardManager.ShuffleBoard(); // 내부에서 UpdateClearPattern 포함돼야 함
-        SkillGaugeManager.Instance?.ResetGaugeState(); // 게임 시작 시 초기화
+        boardManager.ShuffleBoard();
+        SkillGaugeManager.Instance?.ResetGaugeState();
 
+        // ✅ Skill 연결
+        int selectedCharacter = PlayerPrefs.GetInt("SelectedCharacter", 1);
+        SkillController skillController = FindFirstObjectByType<SkillController>(); // Unity 2023+
+
+        switch (selectedCharacter)
+        {
+            case 1:
+                skillController.SetSkill((ICharacterSkill)skillController.GetComponent<Player1Skill_SlideBooster>());
+                break;
+            case 2:
+                skillController.SetSkill((ICharacterSkill)skillController.GetComponent<Player2Skill_Blind>());
+                break;
+            case 3:
+                skillController.SetSkill((ICharacterSkill)skillController.GetComponent<Player3Skill_WildTiles>());
+                break;
+        }
 
         UpdateAllUI();
     }
+
+
 
     private void Update()
     {

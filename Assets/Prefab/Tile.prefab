@@ -109,6 +109,8 @@ MonoBehaviour:
   - {r: 0, g: 1, b: 0, a: 1}
   - {r: 1, g: 0.5019608, b: 0, a: 1}
   - {r: 1, g: 1, b: 1, a: 1}
+  wildTileSprite: {fileID: 2894448953572414143, guid: ba1bbda6e3f15864fa729af70530dc4d, type: 3}
+  isWildTile: 0
 --- !u!114 &5995502395054606766
 MonoBehaviour:
   m_ObjectHideFlags: 0
