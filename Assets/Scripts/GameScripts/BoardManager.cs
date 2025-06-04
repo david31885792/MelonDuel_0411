@@ -190,7 +190,18 @@ public class BoardManager : MonoBehaviour
                 if (tile == null || tile.tmpText == null)
                     continue;
 
-                int gameNum = int.Parse(tile.tmpText.text);
+                if (tile.isWildTile)
+                {
+                    matchCount++;
+                    continue;
+                }
+
+                if (!int.TryParse(tile.tmpText.text, out int gameNum))
+                {
+                    Debug.LogWarning($"타일 이름을 숫자로 변환할 수 없습니다: {tile.tmpText.text}", tile);
+                    continue;
+                }
+
                 int expected = clearPattern[row - 1, col - 1];
 
                 if (gameNum == expected)
@@ -211,6 +222,7 @@ public class BoardManager : MonoBehaviour
 
         return false;
     }
+
 
     public void ConvertRandomTilesToWild(int count)
     {

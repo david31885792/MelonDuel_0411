@@ -16,6 +16,8 @@ public class GameSceneManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI timeText;
     [SerializeField] private TextMeshProUGUI clearText;
     [SerializeField] private TextMeshProUGUI completeText;
+    [SerializeField] private GameObject boostTimeText;
+
 
     [Header("게임 규칙")]
     [SerializeField] private float totalGameTime = 180f;
@@ -23,6 +25,9 @@ public class GameSceneManager : MonoBehaviour
     private float timeLeft;
     private int clearCount = 0;
     private bool isGameEnded = false;
+    private bool hasEnteredBoostTime = false;
+
+
 
     private void Awake()
     {
@@ -45,33 +50,56 @@ public class GameSceneManager : MonoBehaviour
         boardManager.ShuffleBoard();
         SkillGaugeManager.Instance?.ResetGaugeState();
 
-        // ✅ Skill 연결
-        int selectedCharacter = PlayerPrefs.GetInt("SelectedCharacter", 1);
-        SkillController skillController = FindFirstObjectByType<SkillController>(); // Unity 2023+
+        // ✅ Skill 연결 (문자열 기반으로 수정됨)
+        string selectedCharacterId = PlayerPrefs.GetString("SelectedCharacterID", "player1");
+        Debug.Log($"[GameSceneManager] 선택된 캐릭터 ID: {selectedCharacterId}");
 
-        switch (selectedCharacter)
+        SkillController skillController = FindFirstObjectByType<SkillController>();
+
+        switch (selectedCharacterId)
         {
-            case 1:
-                skillController.SetSkill((ICharacterSkill)skillController.GetComponent<Player1Skill_SlideBooster>());
+            case "player1":
+                skillController.SetSkill(skillController.GetComponent<Player1Skill_SlideBooster>());
                 break;
-            case 2:
-                skillController.SetSkill((ICharacterSkill)skillController.GetComponent<Player2Skill_Blind>());
+            case "player2":
+                skillController.SetSkill(skillController.GetComponent<Player2Skill_Blind>());
                 break;
-            case 3:
-                skillController.SetSkill((ICharacterSkill)skillController.GetComponent<Player3Skill_WildTiles>());
+            case "player3":
+                skillController.SetSkill(skillController.GetComponent<Player3Skill_WildTiles>());
+                break;
+            default:
+                Debug.LogWarning("알 수 없는 캐릭터 ID, 기본값 사용됨 (포포리)");
+                skillController.SetSkill(skillController.GetComponent<Player1Skill_SlideBooster>());
                 break;
         }
 
         UpdateAllUI();
     }
 
-
-
     private void Update()
     {
+        if (!hasEnteredBoostTime && timeLeft <= 60f)
+        {
+            hasEnteredBoostTime = true;
+
+            SkillGaugeManager.Instance?.EnterBoostTime();
+            Debug.Log("💥 Boost Time Activated!");
+
+            ShowBoostTimeUI();
+        }
+
         if (isGameEnded) return;
 
         timeLeft -= Time.deltaTime;
+
+        // ⏱ Boost Time 진입 조건
+        if (!hasEnteredBoostTime && timeLeft <= 60f)
+        {
+            hasEnteredBoostTime = true;
+            SkillGaugeManager.Instance?.EnterBoostTime();
+            Debug.Log("💥 Boost Time Activated!");
+        }
+
         if (timeLeft <= 0f)
         {
             timeLeft = 0f;
@@ -81,12 +109,12 @@ public class GameSceneManager : MonoBehaviour
         UpdateTimerUI();
     }
 
+
     public void UpdateMatchCount(int matchCount)
     {
         completeText.text = matchCount.ToString();
-        SkillGaugeManager.Instance?.AddGaugeForMatchCount(matchCount); // 🔥 완성도 반영
+        SkillGaugeManager.Instance?.AddGaugeForMatchCount(matchCount);
     }
-
 
     public void OnPatternMatched(int matchedTiles)
     {
@@ -95,7 +123,7 @@ public class GameSceneManager : MonoBehaviour
         clearCount++;
         UpdateMatchCount(matchedTiles);
 
-        SkillGaugeManager.Instance?.ResetGaugeState(); // 🎯 클리어 후 상태 초기화
+        SkillGaugeManager.Instance?.ResetGaugeState();
 
         if (clearCount >= 3)
         {
@@ -109,14 +137,11 @@ public class GameSceneManager : MonoBehaviour
         UpdateAllUI();
     }
 
-
     private void EndGame(string reason)
     {
         isGameEnded = true;
         Debug.Log(reason);
 
-        // 점수 비교 로직은 이후 구현 예정
-        // 임시로 youWinPanel 비활성화 처리
         glowingStroke?.SetActive(false);
         AudioManager.Instance?.StopBGM();
 
@@ -138,20 +163,17 @@ public class GameSceneManager : MonoBehaviour
         timeText.text = $"{minutes}:{seconds:00}:{milliseconds:00}";
     }
 
-
     private void UpdateAllUI()
     {
         UpdateTimerUI();
         clearText.text = clearCount.ToString();
     }
 
-    // 기존 기능: 외부에서 패턴 타일 배열 가져오기
     public Tile[] GetPatternTiles()
     {
         return patternPanel.GetPatternTiles();
     }
 
-    // 기존 승리 처리 함수 (클리어 3회 시 사용)
     public void OnGameClear()
     {
         Debug.Log("🎉 YOU WIN! (게임 클리어 처리)");
@@ -171,5 +193,19 @@ public class GameSceneManager : MonoBehaviour
         glowingStroke?.SetActive(false);
 
         StartCoroutine(LoadMainSceneAfterDelay(3f));
+    }
+
+    private void ShowBoostTimeUI()
+    {
+        if (boostTimeText != null)
+        {
+            boostTimeText.SetActive(true);
+            Invoke(nameof(HideBoostTimeUI), 1.5f); // 1.5초 후 자동 숨김
+        }
+    }
+
+    private void HideBoostTimeUI()
+    {
+        boostTimeText?.SetActive(false);
     }
 }

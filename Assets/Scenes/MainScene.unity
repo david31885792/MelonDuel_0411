@@ -423,15 +423,15 @@ MonoBehaviour:
   characterImageSlot: {fileID: 1495160077}
   skillIconFrame: {fileID: 712783999}
   characterList:
-  - characterId: Player1
+  - characterId: player1
     characterSprite: {fileID: 5134702317639834578, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
     skillIcon: {fileID: 7599836718083253543, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
-  - characterId: Player2
+  - characterId: player2
     characterSprite: {fileID: 2959159301768195959, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
-    skillIcon: {fileID: -5444136565096208221, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
-  - characterId: Player3
-    characterSprite: {fileID: -1864783994686344621, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
     skillIcon: {fileID: -4359451860678562695, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
+  - characterId: player3
+    characterSprite: {fileID: -1864783994686344621, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
+    skillIcon: {fileID: -5444136565096208221, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
 --- !u!4 &339469026
 Transform:
   m_ObjectHideFlags: 0

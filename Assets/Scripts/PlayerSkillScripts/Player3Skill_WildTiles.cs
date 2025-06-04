@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Player3Skill_WildTiles : MonoBehaviour
+public class Player3Skill_WildTiles : MonoBehaviour, ICharacterSkill
 {
     [SerializeField] private int wildTileCount = 3;
 

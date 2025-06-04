@@ -38,8 +38,10 @@ public class SkillGaugeManager : MonoBehaviour
     /// </summary>
     public void AddGaugeForTileMove()
     {
-        AddGauge(tileMoveGain);
+        int gain = isBoostTime ? tileMoveGain * 2 : tileMoveGain;
+        AddGauge(gain);
     }
+
 
     /// <summary>
     /// 완성도 점수에 따라 최초 3/6/9 도달 시 점수 추가
@@ -123,6 +125,15 @@ public class SkillGaugeManager : MonoBehaviour
 
         FindFirstObjectByType<SkillController>()?.ActivateSkill();
 
+    }
+
+    [HideInInspector]
+    public bool isBoostTime = false;
+
+    public void EnterBoostTime()
+    {
+        isBoostTime = true;
+        Debug.Log("🔁 SkillGaugeManager: Boost Time Started (2x Gain)");
     }
 
 }
