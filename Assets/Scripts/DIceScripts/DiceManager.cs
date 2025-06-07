@@ -31,7 +31,7 @@ public class DiceManager : MonoBehaviour
     {
         GenerateClearPattern();
         SpawnDiceGrid();
-        SaveClearPattern();
+        
         DebugClearPattern();
 
         OnDiceBoardReady?.Invoke();
@@ -116,10 +116,7 @@ public class DiceManager : MonoBehaviour
         diceList.Clear();
     }
 
-    private void SaveClearPattern()
-    {
-        PlayerPrefsPatternLoader.SavePattern(clearPattern);
-    }
+    
 
     private void DebugClearPattern()
     {
