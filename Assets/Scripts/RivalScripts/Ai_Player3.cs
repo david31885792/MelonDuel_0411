@@ -4,7 +4,7 @@ using UnityEngine;
 /// <summary>
 /// AI 캐릭터 3 (체리노) – 와일드 타일 생성 스킬 사용
 /// </summary>
-public class AI_Player3 : IAIBehavior
+public class AI_Player3 : MonoBehaviour, IAIBehavior
 {
     private RivalBoardManager boardManager;
     private RivalPatternBoard patternBoard;

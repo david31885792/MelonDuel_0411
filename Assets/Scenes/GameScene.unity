@@ -726,9 +726,10 @@ GameObject:
   m_Component:
   - component: {fileID: 209448729}
   - component: {fileID: 209448728}
+  - component: {fileID: 209448730}
+  - component: {fileID: 209448733}
   - component: {fileID: 209448732}
   - component: {fileID: 209448731}
-  - component: {fileID: 209448730}
   m_Layer: 0
   m_Name: RivalSkillController
   m_TagString: Untagged
@@ -748,7 +749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e47f04af64402f44bb0810ab1f59bf45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gaugeManager: {fileID: 0}
+  gaugeManager: {fileID: 209448730}
 --- !u!4 &209448729
 Transform:
   m_ObjectHideFlags: 0
@@ -757,7 +758,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 209448726}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -773,11 +774,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 209448726}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd7d1545e3a8edf4686ef99048eb9135, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxGauge: 10
+  currentGauge: 0
+  tileMoveGain: 1
+  match3Gain: 5
+  match6Gain: 10
+  match9Gain: 20
+  skillController: {fileID: 209448728}
+  isBoostTime: 0
+--- !u!114 &209448731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209448726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66c3146afbf5dc745b3357be6c21caaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   wildTileCount: 3
---- !u!114 &209448731
+--- !u!114 &209448732
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -790,7 +811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blindDuration: 3
---- !u!114 &209448732
+--- !u!114 &209448733
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2397,58 +2418,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1208351520}
   m_CullTransparentMesh: 1
---- !u!1 &1259969017
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1259969019}
-  - component: {fileID: 1259969018}
-  m_Layer: 0
-  m_Name: RivalGaugeManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1259969018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259969017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd7d1545e3a8edf4686ef99048eb9135, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxGauge: 50
-  currentGauge: 0
-  tileMoveGain: 1
-  match3Gain: 5
-  match6Gain: 10
-  match9Gain: 20
-  skillController: {fileID: 209448728}
-  isBoostTime: 0
---- !u!4 &1259969019
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259969017}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1362600401
 GameObject:
   m_ObjectHideFlags: 0
@@ -2459,6 +2428,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1362600406}
   - component: {fileID: 1362600405}
+  - component: {fileID: 1362600409}
+  - component: {fileID: 1362600408}
+  - component: {fileID: 1362600407}
   m_Layer: 0
   m_Name: AiController
   m_TagString: Untagged
@@ -2497,6 +2469,42 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1362600407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362600401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23936a92c7c0c34595a1f93bb232544, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1362600408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362600401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9966b9071099354cac8d0b2cf047000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1362600409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362600401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d67d6636b859d546958661f7fa8b6dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1382149654
 GameObject:
   m_ObjectHideFlags: 0
@@ -2590,7 +2598,7 @@ MonoBehaviour:
   gaugeSlider: {fileID: 123857985}
   fillRect: {fileID: 17347436}
   skillbarPoint: {fileID: 159400505}
-  gaugeManager: {fileID: 1259969018}
+  gaugeManager: {fileID: 209448730}
 --- !u!1 &1441423546
 GameObject:
   m_ObjectHideFlags: 0
@@ -2950,7 +2958,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1555241685
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2967,7 +2975,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -300, y: 1013}
+  m_AnchoredPosition: {x: -300, y: 1369}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1555241686
@@ -6623,5 +6631,4 @@ SceneRoots:
   - {fileID: 1844151108}
   - {fileID: 1362600406}
   - {fileID: 879587238}
-  - {fileID: 1259969019}
   - {fileID: 209448729}

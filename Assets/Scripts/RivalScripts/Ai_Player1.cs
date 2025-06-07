@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// AI 캐릭터 1 (포포리) - 슬라이더 부스트
 /// </summary>
-public class AI_Player1 : IAIBehavior
+public class AI_Player1 : MonoBehaviour, IAIBehavior
 {
     private RivalBoardManager boardManager;
     private RivalPatternBoard patternBoard;
@@ -61,12 +61,12 @@ public class AI_Player1 : IAIBehavior
         if (Random.value < 0.1f)
         {
             chosenTile = GetRandomNonAdjacentTile(tiles, emptyPos, movableTiles);
-            Debug.Log("😵 [AI] 실수로 잘못된 타일 선택");
+            //Debug.Log("😵 [AI] 실수로 잘못된 타일 선택");
         }
         else
         {
             chosenTile = movableTiles[Random.Range(0, movableTiles.Count)];
-            Debug.Log("🧠 [AI] 정상 타일 이동");
+            //Debug.Log("🧠 [AI] 정상 타일 이동");
         }
 
         bool moved = boardManager.TryMoveTile(chosenTile);
@@ -74,7 +74,7 @@ public class AI_Player1 : IAIBehavior
         if (moved)
         {
             gaugeManager?.AddGaugeForTileMove(); // ✅ 게이지 충전
-            Debug.Log("⚡ [AI] 타일 이동 후 게이지 충전");
+            //Debug.Log("⚡ [AI] 타일 이동 후 게이지 충전");
         }
     }
 

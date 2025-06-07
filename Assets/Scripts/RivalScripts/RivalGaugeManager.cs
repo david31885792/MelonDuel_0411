@@ -29,6 +29,7 @@ public class RivalGaugeManager : MonoBehaviour
     public void AddGaugeForTileMove()
     {
         int gain = isBoostTime ? tileMoveGain * 2 : tileMoveGain;
+        //Debug.Log($"[Gauge] AddGaugeForTileMove() 호출됨: gain={gain} (base={tileMoveGain}, boost={isBoostTime})");
         AddGauge(gain);
     }
 
@@ -56,6 +57,7 @@ public class RivalGaugeManager : MonoBehaviour
     private void AddGauge(int amount)
     {
         currentGauge += amount;
+        //Debug.Log($"[Gauge] AddGauge({amount}) → 누적 gauge: {currentGauge}/{maxGauge}");
 
         if (currentGauge >= maxGauge)
         {
@@ -97,4 +99,10 @@ public class RivalGaugeManager : MonoBehaviour
         isBoostTime = true;
         Debug.Log("🔥 [AI] Boost Time 진입 - 게이지 획득 2배");
     }
+
+    public void SetSkillController(RivalSkillController controller)
+    {
+        skillController = controller;
+    }
+
 }

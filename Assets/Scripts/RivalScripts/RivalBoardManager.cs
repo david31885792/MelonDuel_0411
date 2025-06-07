@@ -166,7 +166,7 @@ public class RivalBoardManager : MonoBehaviour
             }
         }
 
-        Debug.Log($"[AI] 패턴 매치 수: {matchCount}");
+        //Debug.Log($"[AI] 패턴 매치 수: {matchCount}");
 
         // TODO: AI가 이 값을 바탕으로 스스로 판단 (ex. 패턴 완성 시 처리)
         // currentAI.OnPatternMatched(matchCount); 같은 방식

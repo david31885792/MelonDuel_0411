@@ -17,6 +17,7 @@ public class RivalSkillController : MonoBehaviour
     public void SetSkill(ICharacterSkill skill)
     {
         currentSkill = skill;
+        Debug.Log($"[RivalSkillController] 스킬 세팅됨: {skill?.GetType().Name ?? "NULL"}");
     }
 
     /// <summary>

@@ -4,7 +4,7 @@ using UnityEngine;
 /// <summary>
 /// AI 캐릭터 2 (시로코) – 블라인드 스킬 사용
 /// </summary>
-public class AI_Player2 : IAIBehavior
+public class AI_Player2 : MonoBehaviour, IAIBehavior
 {
     private RivalBoardManager boardManager;
     private RivalPatternBoard patternBoard;
