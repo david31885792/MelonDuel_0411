@@ -108,4 +108,49 @@ public class RivalPatternBoard : MonoBehaviour
         GenerateRandomPattern();   // 그 위에 랜덤 패턴 적용
     }
 
+    public Tile[,] GetCurrentPattern()
+    {
+        // Assuming the pattern is stored in a 3x3 matrix format
+        Tile[,] currentPattern = new Tile[3, 3];
+        for (int y = 0; y < 3; y++)
+        {
+            for (int x = 0; x < 3; x++)
+            {
+                currentPattern[y, x] = patternTiles[y * 3 + x];
+            }
+        }
+        return currentPattern;
+    }
+
+    public int GetWidth()
+    {
+        return 3;
+    }
+
+    public int GetHeight()
+    {
+        return 3;
+    }
+
+    public Tile GetPatternTile(int x, int y)
+    {
+        if (x >= 0 && x < 3 && y >= 0 && y < 3)
+        {
+            return patternTiles[y * 3 + x];
+        }
+        return null;
+    }
+
+    public Vector2Int GetBoardPositionFromPatternOffset(int x, int y)
+    {
+        // 보드 중앙 (4,4)를 기준으로 3x3 패턴 배치 시 적용
+        return new Vector2Int(4 + x - 1, 4 + y - 1);
+    }
+
+    public Tile GetTileAtBoardPos(Vector2Int pos)
+    {
+        return FindFirstObjectByType<RivalBoardManager>().GetTileAt(pos);
+    }
+
+
 }

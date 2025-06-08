@@ -12,6 +12,7 @@ public class AIController : MonoBehaviour
     public RivalSkillController skillController;
 
     private IAIBehavior currentAI;
+    private RivalGaugeManager gaugeManager;
 
     private void Awake()
     {
@@ -57,7 +58,7 @@ public class AIController : MonoBehaviour
         Debug.Log($"[AI DEBUG] 스킬 할당됨? => {skillController.HasSkill()}");
 
         // 게이지 매니저에 컨트롤러 연결
-        var gaugeManager = skillController.GetComponent<RivalGaugeManager>();
+        gaugeManager = skillController.GetComponent<RivalGaugeManager>();
         if (gaugeManager != null)
         {
             gaugeManager.SetSkillController(skillController);
@@ -108,8 +109,13 @@ public class AIController : MonoBehaviour
                 break;
         }
 
-        currentAI?.Initialize(boardManager, patternBoard, skillController);
+        currentAI?.Initialize(boardManager, patternBoard, gaugeManager, skillController);
         Debug.Log($"🤖 AIController: Player{selectedCharacterId + 1} 초기화 완료");
+        Debug.Log($"[AI DEBUG] boardManager: {(boardManager == null ? "NULL" : "OK")}");
+        Debug.Log($"[AI DEBUG] patternBoard: {(patternBoard == null ? "NULL" : "OK")}");
+        Debug.Log($"[AI DEBUG] gaugeManager: {(gaugeManager == null ? "NULL" : "OK")}");
+        Debug.Log($"[AI DEBUG] skillController: {(skillController == null ? "NULL" : "OK")}");
+
     }
 
     void Update()

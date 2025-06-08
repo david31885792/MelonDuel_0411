@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using DG.Tweening;
 
 public class Tile : MonoBehaviour
 {
@@ -80,6 +81,12 @@ public class Tile : MonoBehaviour
         }
     }
 
+    public void SetTileNumber(int number)
+    {
+        SetTMPNumber(number);
+    }
+
+
     public void SetAsWildTile()
     {
         isWildTile = true;
@@ -99,4 +106,20 @@ public class Tile : MonoBehaviour
         if (tileImage != null && originalSprite != null)
             tileImage.sprite = originalSprite;
     }
+
+    public int GetTileNumber()
+    {
+        return tmpNumber; // Assuming tmpNumber holds the tile's number.
+    }
+
+    public TileData ToData()
+    {
+        return new TileData(GetTileNumber(), name);
+    }
+
+    void OnDestroy()
+    {
+        transform.DOKill(); // 애니메이션 깨끗이 제거
+    }
+
 }

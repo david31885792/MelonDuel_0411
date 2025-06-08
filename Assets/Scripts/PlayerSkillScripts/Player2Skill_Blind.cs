@@ -11,6 +11,12 @@ public class Player2Skill_Blind : MonoBehaviour, ICharacterSkill
         StartCoroutine(ApplyBlind());
     }
 
+    public bool IsReady()
+    {
+        // 간단한 예: 항상 준비 상태로 반환
+        return true;
+    }
+
     private IEnumerator ApplyBlind()
     {
         // UI 가림막 및 입력 차단

@@ -105,4 +105,9 @@ public class RivalGaugeManager : MonoBehaviour
         skillController = controller;
     }
 
+    public bool IsGaugeFull()
+    {
+        return currentGauge >= maxGauge;
+    }
+
 }

@@ -43,9 +43,20 @@ public class RivalSkillController : MonoBehaviour
     {
         return currentSkill != null;
     }
+
+    public bool IsSkillReady() // Add this method to fix the error
+    {
+        return currentSkill != null && currentSkill.IsReady();
+    }
+
     public RivalGaugeManager GetGaugeManager()
     {
         return gaugeManager;
+    }
+
+    public void UseSkill()
+    {
+        ActivateSkill(); // 기존 메서드 재사용
     }
 
 }
