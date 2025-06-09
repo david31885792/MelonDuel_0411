@@ -1,12 +1,23 @@
 # ninja log v5
+11	1269	7688052132125378	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	62cb63b75981f53
 73	392	7688052123418629	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	8c34751f0143369f
 394	542	7688052124899668	C:/Users/USER-PC/MelonDuel_0411/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/463x493q/obj/arm64-v8a/libswappywrapper.so	89031134c940d3a9
 29	1078	7688052130198333	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	253753bd50983c7d
 38	1085	7688052130223362	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	1090c149008b5bdd
-0	1087	7688052130243393	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	12bc3123905d1fb3
-55	1099	7688052130468914	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	6c67e55463db93b1
 64	1103	7688052130513964	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	89bfde8b02301426
+0	1087	7688052130243393	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	12bc3123905d1fb3
 20	1110	7688052130599117	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	3c82379d390940be
+55	1099	7688052130468914	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	6c67e55463db93b1
 46	1216	7688052131645132	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	4cd230b2b96ebd84
-11	1269	7688052132125378	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	62cb63b75981f53
 1270	1394	7688052133365236	C:/Users/USER-PC/MelonDuel_0411/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/463x493q/obj/arm64-v8a/libgame.so	6fcebca9f1fde9c7
+65	292	7712115870481757	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	8c34751f0143369f
+293	424	7712115871793671	C:/Users/USER-PC/MelonDuel_0411/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/463x493q/obj/arm64-v8a/libswappywrapper.so	89031134c940d3a9
+15	855	7712115876111417	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	12bc3123905d1fb3
+29	859	7712115876142695	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	253753bd50983c7d
+37	860	7712115876132086	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	1090c149008b5bdd
+51	881	7712115876362098	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	6c67e55463db93b1
+57	882	7712115876387446	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	89bfde8b02301426
+22	886	7712115876422733	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	3c82379d390940be
+44	943	7712115876987608	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	4cd230b2b96ebd84
+7	959	7712115877133424	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	62cb63b75981f53
+960	1043	7712115877971854	C:/Users/USER-PC/MelonDuel_0411/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/463x493q/obj/arm64-v8a/libgame.so	6fcebca9f1fde9c7
