@@ -13,6 +13,11 @@ public class Player3Skill_WildTiles : MonoBehaviour, ICharacterSkill
 
     public int GetSkillMaxGauge() => skillMaxGauge;
 
+    private bool isAI = false;
+
+    public void SetIsAI(bool value) => isAI = value;
+
+
 
     public void ActivateSkill()
     {
@@ -27,7 +32,7 @@ public class Player3Skill_WildTiles : MonoBehaviour, ICharacterSkill
             playerBoardManager.ConvertRandomTilesToWild(wildTileCount);
         }
 
-        FindFirstObjectByType<SkillEffectManager>()?.ShowEffect(SkillEffectManager.SkillType.Player3, isForAI);
+        FindFirstObjectByType<SkillEffectManager>()?.ShowEffect(SkillEffectManager.SkillType.Player3, isAI);
     }
 
 

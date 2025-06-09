@@ -19,7 +19,7 @@ public class AI_Player2 : MonoBehaviour, IAIBehavior
 
     private float[,] priorityMap;
 
-    private int failCount = 0; // 클래스 멤버 변수로 추가
+    //private int failCount = 0; // 클래스 멤버 변수로 추가
 
     private RivalScoreManager scoreManager;
 
@@ -79,51 +79,24 @@ public class AI_Player2 : MonoBehaviour, IAIBehavior
 
     public void MakeMoveDecision()
     {
-        // 1. 먼저 Backtracking 기반 다중 이동 경로 탐색 시도
-        List<Tile> backtrackPath = FindBestMoveSequence_BacktrackingGreedy(3); // 깊이 제한 3
+        if (!board.CanMove()) return;
 
-        if (backtrackPath != null && backtrackPath.Count > 0 && !IsSamePath(backtrackPath, lastMovePath))
+        Vector2Int emptyPos = board.GetEmptyTilePosition();
+        List<Vector2Int> neighborPositions = board.GetAdjacentTilePositions(emptyPos);
+
+        if (neighborPositions == null || neighborPositions.Count == 0)
         {
-            moveQueue = new Queue<Tile>(backtrackPath);
-            lastMovePath = new List<Tile>(backtrackPath);
-            failCount = 0; // 성공 시 실패 카운터 초기화
-            Debug.Log($"[AI][Backtrack] 선택된 경로: {string.Join(" → ", backtrackPath.Select(t => t.name))}");
+            Debug.LogWarning("[AI] 이동 가능한 타일 없음");
             return;
         }
 
-        // 2. Backtracking 실패 시 → BFS 경로 탐색 시도
-        Vector2Int target = FindMostValuableTilePosition(); // 우선순위 타일 위치
-        List<Tile> bfsPath = GenerateMoveQueue_BFS(target);
+        Vector2Int target = neighborPositions[UnityEngine.Random.Range(0, neighborPositions.Count)];
+        board.TryMoveTile(target, 0.3f); // 빠른 이동
 
-        if (bfsPath.Count > 0)
-        {
-            moveQueue = new Queue<Tile>(bfsPath);
-            lastMovePath = new List<Tile>(bfsPath);
-            failCount = 0; // 성공 시 실패 카운터 초기화
-            Debug.Log($"[AI][BFS] 이동 경로: {string.Join(" → ", bfsPath.Select(t => t.name))}");
-        }
-        else
-        {
-            // 3. 최종 Fallback (랜덤 이동 + 루프 탈출)
-            failCount++;
-            if (failCount > 3)
-            {
-                Debug.LogWarning("[AI] 반복 실패 – 랜덤 이동");
-                var fallback = board.GetMovableTiles();
-                if (fallback.Count > 0)
-                {
-                    Tile randomTile = fallback[UnityEngine.Random.Range(0, fallback.Count)];
-                    moveQueue.Enqueue(randomTile);
-                    lastMovePath = new List<Tile> { randomTile };
-                }
-                failCount = 0; // 루프 탈출 시 초기화
-            }
-            else
-            {
-                Debug.Log("[AI] 경로 없음, 실패 카운트 증가");
-            }
-        }
+        gauge?.AddGaugeForTileMove();
     }
+
+
 
 
 

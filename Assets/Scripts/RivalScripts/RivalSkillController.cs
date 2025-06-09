@@ -24,7 +24,11 @@ public class RivalSkillController : MonoBehaviour
             int maxGauge = GetGaugeFromSkill(currentSkill);
             gaugeManager.maxGauge = maxGauge;
         }
+
+        // AI 여부 전달
+        currentSkill?.SetIsAI(true);
     }
+
 
     private int GetGaugeFromSkill(ICharacterSkill skill)
     {

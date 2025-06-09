@@ -460,4 +460,42 @@ public class RivalBoardManager : MonoBehaviour
         return GetComponentsInChildren<Tile>();
     }
 
+
+
+    public List<Vector2Int> GetAdjacentTilePositions(Vector2Int center)
+    {
+        List<Vector2Int> list = new List<Vector2Int>();
+        Vector2Int[] dirs = { Vector2Int.up, Vector2Int.down, Vector2Int.left, Vector2Int.right };
+
+        foreach (var dir in dirs)
+        {
+            Vector2Int check = center + dir;
+            if (IsInBounds(check) && tiles[check.y, check.x] != null)
+                list.Add(check);
+        }
+
+        return list;
+    }
+
+    public bool CanMove()
+    {
+        // 이동 가능한 타일이 하나라도 존재하면 true 반환
+        var tiles = GetMovableTiles();
+        return tiles != null && tiles.Count > 0;
+    }
+
+    public bool TryMoveTile(Vector2Int tilePos, float duration)
+    {
+        Tile tile = GetTileAt(tilePos);
+        if (tile == null) return false;
+
+        return TryMoveTile(tile, duration);
+    }
+
+    public bool TryMoveTile(Tile tile, float duration)
+    {
+        if (tile == null) return false;
+        return TryMoveTile(tile); // 또는 기존 구현에 맞게 duration 활용
+    }
+
 }

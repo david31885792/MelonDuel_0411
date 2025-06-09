@@ -16,6 +16,21 @@ public class AIController : MonoBehaviour
 
     [SerializeField] private RivalScoreManager scoreManager;
 
+    private float aiUpdateTimer = 0f;
+    private float aiUpdateInterval = 0.35f; // 0.3f + 여유시간
+
+    private void Update()
+    {
+        aiUpdateTimer += Time.deltaTime;
+
+        if (aiUpdateTimer >= aiUpdateInterval)
+        {
+            aiUpdateTimer = 0f;
+            currentAI?.UpdateAI(aiUpdateInterval);
+        }
+    }
+
+
 
     private void Awake()
     {
@@ -121,8 +136,5 @@ public class AIController : MonoBehaviour
         Debug.Log($"[AI DEBUG] scoremanager: {(scoreManager == null ? "NULL" : "OK")}");
     }
 
-    void Update()
-    {
-        currentAI?.UpdateAI(Time.deltaTime);
-    }
+    
 }

@@ -15,6 +15,10 @@ public class Player1Skill_SlideBooster : MonoBehaviour, ICharacterSkill
 
     public int GetSkillMaxGauge() => skillMaxGauge;
 
+    private bool isAI = false;
+
+    public void SetIsAI(bool value) => isAI = value;
+
 
     public void ActivateSkill()
     {
@@ -32,7 +36,7 @@ public class Player1Skill_SlideBooster : MonoBehaviour, ICharacterSkill
         effectTimer = effectDuration;
         effectActive = true;
 
-        FindFirstObjectByType<SkillEffectManager>()?.ShowEffect(SkillEffectManager.SkillType.Player1, isForAI);
+        FindFirstObjectByType<SkillEffectManager>()?.ShowEffect(SkillEffectManager.SkillType.Player1, isAI);
     }
 
     private void Update()

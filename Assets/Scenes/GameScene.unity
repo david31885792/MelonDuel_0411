@@ -1816,12 +1816,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gaugeManager: {fileID: 456336271}
   isAI: 0
-  player1UserEffect: {fileID: 0}
-  player1AIEffect: {fileID: 0}
-  player2UserEffect: {fileID: 0}
-  player2AIEffect: {fileID: 0}
-  player3UserEffect: {fileID: 0}
-  player3AIEffect: {fileID: 0}
+  player1UserEffect: {fileID: 9060346498051609984}
+  player1AIEffect: {fileID: 2346843170072625886}
+  player2UserEffect: {fileID: 492547643509346788}
+  player2AIEffect: {fileID: 8635043125777266666}
+  player3UserEffect: {fileID: 1465504419647043911}
+  player3AIEffect: {fileID: 4305028734776971875}
 --- !u!4 &674395849
 Transform:
   m_ObjectHideFlags: 0

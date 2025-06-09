@@ -17,13 +17,17 @@ public class Player2Skill_Blind : MonoBehaviour, ICharacterSkill
 
     public int GetSkillMaxGauge() => skillMaxGauge;
 
+    private bool isAI = false;
+
+    public void SetIsAI(bool value) => isAI = value;
+
 
     public void ActivateSkill()
     {
         Debug.Log("루루노: 블라인드 스킬 발동!");
         StartCoroutine(ApplyBlind());
 
-        FindFirstObjectByType<SkillEffectManager>()?.ShowEffect(SkillEffectManager.SkillType.Player2, isForAI);
+        FindFirstObjectByType<SkillEffectManager>()?.ShowEffect(SkillEffectManager.SkillType.Player2, isAI);
     }
 
     private IEnumerator ApplyBlind()
