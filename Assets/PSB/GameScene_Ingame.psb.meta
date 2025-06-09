@@ -125,8 +125,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1650
-      y: 1485
+      x: 1660
+      y: 3152
       width: 300
       height: 94
     spriteID: bf1b9edb97292df4cb26d79107ac76b3
@@ -137,7 +137,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1650, y: 1485}
+    uvTransform: {x: 1660, y: 3152}
     spritePosition: {x: 774, y: 2131}
   - name: TimeFrame
     originalName: 
@@ -147,8 +147,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1650
-      y: 1380
+      x: 1672
+      y: 3001
       width: 341
       height: 97
     spriteID: 2a2c90e102390e245b73397ebd3bff5c
@@ -159,31 +159,9 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1650, y: 1380}
+    uvTransform: {x: 1672, y: 3001}
     spritePosition: {x: 739, y: 2123}
-  - name: SkillEfect_Rival
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 1092
-      y: 1380
-      width: 550
-      height: 411
-    spriteID: 966a966518e170542b5f691cfdd2c343
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1092, y: 1380}
-    spritePosition: {x: 0, y: 61}
-  - name: SkillEfect_Player
+  - name: SkillEffect_Rival_Cherryna
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -193,9 +171,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 1092
       y: 962
-      width: 560
-      height: 410
-    spriteID: 100708f8a19b3a143916f195c242a310
+      width: 657
+      height: 578
+    spriteID: cfaff7de90ce2554a8cb2fccae659a19
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -204,6 +182,116 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 1092, y: 962}
+    spritePosition: {x: 0, y: 0}
+  - name: SkillEffect_Rival_Ruruno
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1092
+      y: 2134
+      width: 698
+      height: 501
+    spriteID: 6054a67391377a6409c0153812419daa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1092, y: 2134}
+    spritePosition: {x: 0, y: 61}
+  - name: SkillEffect_Rival_Popori
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1092
+      y: 2643
+      width: 572
+      height: 501
+    spriteID: 9156c04d912bd0f4898f881f3c3737eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1092, y: 2643}
+    spritePosition: {x: 0, y: 61}
+  - name: SkillEffect_User_Cherryna
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1092
+      y: 1548
+      width: 631
+      height: 578
+    spriteID: f33fd5ff8e6feb14b9150243208d1c95
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1092, y: 1548}
+    spritePosition: {x: 449, y: 0}
+  - name: SkillEffect_User_Ruruno
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2050
+      y: 412
+      width: 545
+      height: 501
+    spriteID: a1a6f979f42aaff4a95d4cef70c894bb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2050, y: 412}
+    spritePosition: {x: 535, y: 61}
+  - name: SkillEffect_User_Popori
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1092
+      y: 3152
+      width: 560
+      height: 501
+    spriteID: df2d75ba741c0d24084f120a2eb23df6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1092, y: 3152}
     spritePosition: {x: 520, y: 61}
   - name: RivalSkillIcon
     originalName: 
@@ -213,8 +301,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1971
-      y: 1679
+      x: 1660
+      y: 3526
       width: 50
       height: 50
     spriteID: 4ac0c680ef727064583a6f04514e1958
@@ -225,7 +313,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1971, y: 1679}
+    uvTransform: {x: 1660, y: 3526}
     spritePosition: {x: 486, y: 1756}
   - name: SkillIconFrame_Rival
     originalName: 
@@ -235,8 +323,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1650
-      y: 1628
+      x: 1660
+      y: 3254
       width: 97
       height: 106
     spriteID: 0d594d31014754a4caad18e3fb3410c1
@@ -247,7 +335,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1650, y: 1628}
+    uvTransform: {x: 1660, y: 3254}
     spritePosition: {x: 463, y: 1724}
   - name: SkillbarPoint copy
     originalName: 
@@ -257,8 +345,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 2004
-      y: 1628
+      x: 3006
+      y: 412
       width: 28
       height: 24
     spriteID: 4e98c1e7dac771a42a831959c2fc4041
@@ -269,7 +357,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 2004, y: 1628}
+    uvTransform: {x: 3006, y: 412}
     spritePosition: {x: 905, y: 1757}
   - name: GaugeBar copy
     originalName: 
@@ -279,8 +367,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1660
-      y: 1320
+      x: 1672
+      y: 3106
       width: 366
       height: 33
     spriteID: c875e64e543f74f45b20fdcbe6a14e2f
@@ -291,7 +379,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1660, y: 1320}
+    uvTransform: {x: 1672, y: 3106}
     spritePosition: {x: 553, y: 1769}
   - name: SkillText copy
     originalName: 
@@ -301,8 +389,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1650
-      y: 1742
+      x: 1909
+      y: 3254
       width: 83
       height: 36
     spriteID: f8c6cf19094b6094283f567f2fd2adad
@@ -313,7 +401,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1650, y: 1742}
+    uvTransform: {x: 1909, y: 3254}
     spritePosition: {x: 548, y: 1793}
   - name: InnerGaugeFrame_Rival
     originalName: 
@@ -323,8 +411,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 4
-      y: 3843
+      x: 1092
+      y: 4019
       width: 450
       height: 53
     spriteID: 5dfc0bd336b9b7c4e946c72175299f68
@@ -335,7 +423,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 3843}
+    uvTransform: {x: 1092, y: 4019}
     spritePosition: {x: 548, y: 1763}
   - name: RivalScore
     originalName: 
@@ -345,8 +433,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 407
-      y: 3904
+      x: 1550
+      y: 4060
       width: 60
       height: 31
     spriteID: c25cc9227bee09649b8000d37ca07a16
@@ -357,7 +445,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 407, y: 3904}
+    uvTransform: {x: 1550, y: 4060}
     spritePosition: {x: 469, y: 1923}
   - name: RivalRankAmountText
     originalName: 
@@ -367,8 +455,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1958
-      y: 1553
+      x: 1968
+      y: 3220
       width: 63
       height: 24
     spriteID: 4337846f18134b3428fa41f70c244558
@@ -379,7 +467,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1958, y: 1553}
+    uvTransform: {x: 1968, y: 3220}
     spritePosition: {x: 865, y: 1992}
   - name: RivalNicknameText
     originalName: 
@@ -389,8 +477,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1755
-      y: 1742
+      x: 1675
+      y: 4019
       width: 284
       height: 34
     spriteID: c93f6f9e565ec964bba0f2c7453d28a3
@@ -401,7 +489,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1755, y: 1742}
+    uvTransform: {x: 1675, y: 4019}
     spritePosition: {x: 468, y: 1998}
   - name: RivalCompleteText
     originalName: 
@@ -411,8 +499,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1860
-      y: 1679
+      x: 1550
+      y: 4019
       width: 103
       height: 33
     spriteID: 2b7a163f96042fd4b8578a7edc4adb72
@@ -423,7 +511,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1860, y: 1679}
+    uvTransform: {x: 1550, y: 4019}
     spritePosition: {x: 763, y: 1863}
   - name: RivalClearText
     originalName: 
@@ -433,7 +521,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 920
+      x: 915
       y: 3843
       width: 136
       height: 43
@@ -445,7 +533,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 920, y: 3843}
+    uvTransform: {x: 915, y: 3843}
     spritePosition: {x: 470, y: 1863}
   - name: RivalTrophyIcon
     originalName: 
@@ -455,8 +543,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1958
-      y: 1485
+      x: 1967
+      y: 4019
       width: 60
       height: 60
     spriteID: ecf1864c6aa47314992db2790db85aa1
@@ -467,7 +555,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1958, y: 1485}
+    uvTransform: {x: 1967, y: 4019}
     spritePosition: {x: 797, y: 1985}
   - name: RivalBoard
     originalName: 
@@ -478,7 +566,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 1675
-      y: 1799
+      y: 3661
       width: 350
       height: 350
     spriteID: ea33fea4ebc18f54abff5881af474691
@@ -489,7 +577,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1675, y: 1799}
+    uvTransform: {x: 1675, y: 3661}
     spritePosition: {x: 65, y: 1710}
   - name: RivalUiFrame
     originalName: 
@@ -500,7 +588,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 1092
-      y: 1799
+      y: 3661
       width: 575
       height: 350
     spriteID: 5c91c6bb2f27eea468b3345694f803da
@@ -511,7 +599,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1092, y: 1799}
+    uvTransform: {x: 1092, y: 3661}
     spritePosition: {x: 440, y: 1710}
   - name: RivalFrame
     originalName: 
@@ -543,8 +631,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 163
-      y: 3946
+      x: 1660
+      y: 3584
       width: 50
       height: 50
     spriteID: 2ac3036f2e8dea440b9f357f81617407
@@ -555,7 +643,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 163, y: 3946}
+    uvTransform: {x: 1660, y: 3584}
     spritePosition: {x: 486, y: 1331}
   - name: SkillIconFrame
     originalName: 
@@ -565,8 +653,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1755
-      y: 1628
+      x: 1660
+      y: 3368
       width: 97
       height: 106
     spriteID: 900d1901a1b426a478e3d7adb92f6eb7
@@ -577,7 +665,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1755, y: 1628}
+    uvTransform: {x: 1660, y: 3368}
     spritePosition: {x: 463, y: 1299}
   - name: SkillbarPoint
     originalName: 
@@ -587,8 +675,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1999
-      y: 1380
+      x: 1618
+      y: 4060
       width: 28
       height: 24
     spriteID: 0d7b2a04e88c68c43be9e35c76c67669
@@ -599,8 +687,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1999, y: 1380}
-    spritePosition: {x: 905, y: 1332}
+    uvTransform: {x: 1618, y: 4060}
+    spritePosition: {x: 976, y: 1332}
   - name: GaugeBar
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -609,8 +697,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1650
-      y: 1587
+      x: 462
+      y: 3843
       width: 366
       height: 33
     spriteID: 0e860ebee961b2e4f91967e086e7fc45
@@ -621,8 +709,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1650, y: 1587}
-    spritePosition: {x: 553, y: 1344}
+    uvTransform: {x: 462, y: 3843}
+    spritePosition: {x: 550, y: 1342}
   - name: SkillText
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -631,8 +719,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 72
-      y: 3946
+      x: 1660
+      y: 3482
       width: 83
       height: 36
     spriteID: 7ed2d3f5683f7dd42b0d3f615cad8e13
@@ -643,7 +731,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 72, y: 3946}
+    uvTransform: {x: 1660, y: 3482}
     spritePosition: {x: 548, y: 1368}
   - name: GaugeFrame
     originalName: 
@@ -653,7 +741,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 462
+      x: 4
       y: 3843
       width: 450
       height: 53
@@ -665,7 +753,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 462, y: 3843}
+    uvTransform: {x: 4, y: 3843}
     spritePosition: {x: 548, y: 1338}
   - name: TrophyIcon
     originalName: 
@@ -675,8 +763,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 4
-      y: 3946
+      x: 1968
+      y: 3152
       width: 60
       height: 60
     spriteID: 42e2ecadb9ab5b34f96e516aaca6b27a
@@ -687,7 +775,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 3946}
+    uvTransform: {x: 1968, y: 3152}
     spritePosition: {x: 797, y: 1551}
   - name: CompleteScoreText
     originalName: 
@@ -697,8 +785,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 296
-      y: 3904
+      x: 2895
+      y: 412
       width: 103
       height: 33
     spriteID: 292fcc82b42beee49b9b6d8fe4ea1bf2
@@ -709,7 +797,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 296, y: 3904}
+    uvTransform: {x: 2895, y: 412}
     spritePosition: {x: 763, y: 1429}
   - name: ClearScoreText
     originalName: 
@@ -719,8 +807,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1860
-      y: 1628
+      x: 1765
+      y: 3254
       width: 136
       height: 43
     spriteID: c2df3fa41f2d63943ba36214baa33655
@@ -731,7 +819,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1860, y: 1628}
+    uvTransform: {x: 1765, y: 3254}
     spritePosition: {x: 470, y: 1428}
   - name: ScoreText
     originalName: 
@@ -741,8 +829,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 475
-      y: 3904
+      x: 1675
+      y: 4061
       width: 60
       height: 31
     spriteID: ff72e3e71866af049a757298ae0e0a1b
@@ -753,7 +841,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 475, y: 3904}
+    uvTransform: {x: 1675, y: 4061}
     spritePosition: {x: 469, y: 1488}
   - name: PlayerNicknameText
     originalName: 
@@ -763,8 +851,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 4
-      y: 3904
+      x: 2603
+      y: 412
       width: 284
       height: 34
     spriteID: 12a1f4bbec9957d49bff49490367516d
@@ -775,7 +863,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 3904}
+    uvTransform: {x: 2603, y: 412}
     spritePosition: {x: 468, y: 1563}
   - name: UIBoard
     originalName: 
@@ -785,8 +873,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1092
-      y: 2157
+      x: 2050
+      y: 921
       width: 570
       height: 350
     spriteID: 6a2bbd63fb4a3c94e91c94092cbdc0ca
@@ -797,7 +885,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1092, y: 2157}
+    uvTransform: {x: 2050, y: 921}
     spritePosition: {x: 445, y: 1283}
   - name: ClearPatternBoard
     originalName: 
@@ -807,8 +895,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1660
-      y: 962
+      x: 1672
+      y: 2643
       width: 350
       height: 350
     spriteID: 9d9703b18ddca9a49b6abf41f2349584
@@ -819,7 +907,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1660, y: 962}
+    uvTransform: {x: 1672, y: 2643}
     spritePosition: {x: 65, y: 1283}
   - name: GameBoard
     originalName: 
@@ -1048,7 +1136,7 @@ ScriptedImporter:
     parentIndex: 7
     spriteID: bf1b9edb97292df4cb26d79107ac76b3
     layerID: 820
-    mosaicPosition: {x: 1650, y: 1485}
+    mosaicPosition: {x: 1660, y: 3152}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -1058,7 +1146,7 @@ ScriptedImporter:
     parentIndex: 7
     spriteID: 2a2c90e102390e245b73397ebd3bff5c
     layerID: 821
-    mosaicPosition: {x: 1650, y: 1380}
+    mosaicPosition: {x: 1672, y: 3001}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -1072,23 +1160,63 @@ ScriptedImporter:
     flatten: 0
     isImported: 0
     isVisible: 1
-  - name: SkillEfect_Rival
-    spriteName: SkillEfect_Rival
+  - name: SkillEffect_Rival_Cherryna
+    spriteName: SkillEffect_Rival_Cherryna
     isGroup: 0
     parentIndex: 10
-    spriteID: 966a966518e170542b5f691cfdd2c343
-    layerID: 816
-    mosaicPosition: {x: 1092, y: 1380}
+    spriteID: cfaff7de90ce2554a8cb2fccae659a19
+    layerID: 830
+    mosaicPosition: {x: 1092, y: 962}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: SkillEfect_Player
-    spriteName: SkillEfect_Player
+  - name: SkillEffect_Rival_Ruruno
+    spriteName: SkillEffect_Rival_Ruruno
     isGroup: 0
     parentIndex: 10
-    spriteID: 100708f8a19b3a143916f195c242a310
-    layerID: 815
-    mosaicPosition: {x: 1092, y: 962}
+    spriteID: 6054a67391377a6409c0153812419daa
+    layerID: 829
+    mosaicPosition: {x: 1092, y: 2134}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SkillEffect_Rival_Popori
+    spriteName: SkillEffect_Rival_Popori
+    isGroup: 0
+    parentIndex: 10
+    spriteID: 9156c04d912bd0f4898f881f3c3737eb
+    layerID: 828
+    mosaicPosition: {x: 1092, y: 2643}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SkillEffect_User_Cherryna
+    spriteName: SkillEffect_User_Cherryna
+    isGroup: 0
+    parentIndex: 10
+    spriteID: f33fd5ff8e6feb14b9150243208d1c95
+    layerID: 827
+    mosaicPosition: {x: 1092, y: 1548}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SkillEffect_User_Ruruno
+    spriteName: SkillEffect_User_Ruruno
+    isGroup: 0
+    parentIndex: 10
+    spriteID: a1a6f979f42aaff4a95d4cef70c894bb
+    layerID: 826
+    mosaicPosition: {x: 2050, y: 412}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SkillEffect_User_Popori
+    spriteName: SkillEffect_User_Popori
+    isGroup: 0
+    parentIndex: 10
+    spriteID: df2d75ba741c0d24084f120a2eb23df6
+    layerID: 825
+    mosaicPosition: {x: 1092, y: 3152}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -1105,147 +1233,147 @@ ScriptedImporter:
   - name: RivalSkillIcon
     spriteName: RivalSkillIcon
     isGroup: 0
-    parentIndex: 13
+    parentIndex: 17
     spriteID: 4ac0c680ef727064583a6f04514e1958
     layerID: 776
-    mosaicPosition: {x: 1971, y: 1679}
+    mosaicPosition: {x: 1660, y: 3526}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: SkillIconFrame_Rival
     spriteName: SkillIconFrame_Rival
     isGroup: 0
-    parentIndex: 13
+    parentIndex: 17
     spriteID: 0d594d31014754a4caad18e3fb3410c1
     layerID: 785
-    mosaicPosition: {x: 1650, y: 1628}
+    mosaicPosition: {x: 1660, y: 3254}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: SkillbarPoint copy
     spriteName: SkillbarPoint copy
     isGroup: 0
-    parentIndex: 13
+    parentIndex: 17
     spriteID: 4e98c1e7dac771a42a831959c2fc4041
     layerID: 783
-    mosaicPosition: {x: 2004, y: 1628}
+    mosaicPosition: {x: 3006, y: 412}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: GaugeBar copy
     spriteName: GaugeBar copy
     isGroup: 0
-    parentIndex: 13
+    parentIndex: 17
     spriteID: c875e64e543f74f45b20fdcbe6a14e2f
     layerID: 782
-    mosaicPosition: {x: 1660, y: 1320}
+    mosaicPosition: {x: 1672, y: 3106}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: SkillText copy
     spriteName: SkillText copy
     isGroup: 0
-    parentIndex: 13
+    parentIndex: 17
     spriteID: f8c6cf19094b6094283f567f2fd2adad
     layerID: 787
-    mosaicPosition: {x: 1650, y: 1742}
+    mosaicPosition: {x: 1909, y: 3254}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: InnerGaugeFrame_Rival
     spriteName: InnerGaugeFrame_Rival
     isGroup: 0
-    parentIndex: 13
+    parentIndex: 17
     spriteID: 5dfc0bd336b9b7c4e946c72175299f68
     layerID: 781
-    mosaicPosition: {x: 4, y: 3843}
+    mosaicPosition: {x: 1092, y: 4019}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: RivalScore
     spriteName: RivalScore
     isGroup: 0
-    parentIndex: 13
+    parentIndex: 17
     spriteID: c25cc9227bee09649b8000d37ca07a16
     layerID: 772
-    mosaicPosition: {x: 407, y: 3904}
+    mosaicPosition: {x: 1550, y: 4060}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: RivalRankAmountText
     spriteName: RivalRankAmountText
     isGroup: 0
-    parentIndex: 13
+    parentIndex: 17
     spriteID: 4337846f18134b3428fa41f70c244558
     layerID: 771
-    mosaicPosition: {x: 1958, y: 1553}
+    mosaicPosition: {x: 1968, y: 3220}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: RivalNicknameText
     spriteName: RivalNicknameText
     isGroup: 0
-    parentIndex: 13
+    parentIndex: 17
     spriteID: c93f6f9e565ec964bba0f2c7453d28a3
     layerID: 770
-    mosaicPosition: {x: 1755, y: 1742}
+    mosaicPosition: {x: 1675, y: 4019}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: RivalCompleteText
     spriteName: RivalCompleteText
     isGroup: 0
-    parentIndex: 13
+    parentIndex: 17
     spriteID: 2b7a163f96042fd4b8578a7edc4adb72
     layerID: 768
-    mosaicPosition: {x: 1860, y: 1679}
+    mosaicPosition: {x: 1550, y: 4019}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: RivalClearText
     spriteName: RivalClearText
     isGroup: 0
-    parentIndex: 13
+    parentIndex: 17
     spriteID: 664d8d091430bce44bfd23a175ac497e
     layerID: 767
-    mosaicPosition: {x: 920, y: 3843}
+    mosaicPosition: {x: 915, y: 3843}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: RivalTrophyIcon
     spriteName: RivalTrophyIcon
     isGroup: 0
-    parentIndex: 13
+    parentIndex: 17
     spriteID: ecf1864c6aa47314992db2790db85aa1
     layerID: 759
-    mosaicPosition: {x: 1958, y: 1485}
+    mosaicPosition: {x: 1967, y: 4019}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: RivalBoard
     spriteName: RivalBoard
     isGroup: 0
-    parentIndex: 13
+    parentIndex: 17
     spriteID: ea33fea4ebc18f54abff5881af474691
     layerID: 789
-    mosaicPosition: {x: 1675, y: 1799}
+    mosaicPosition: {x: 1675, y: 3661}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: RivalUiFrame
     spriteName: RivalUiFrame
     isGroup: 0
-    parentIndex: 13
+    parentIndex: 17
     spriteID: 5c91c6bb2f27eea468b3345694f803da
     layerID: 788
-    mosaicPosition: {x: 1092, y: 1799}
+    mosaicPosition: {x: 1092, y: 3661}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: RivalFrame
     spriteName: RivalFrame
     isGroup: 0
-    parentIndex: 13
+    parentIndex: 17
     spriteID: e0d482eacf4ef0f4db954b6f3afbe42b
     layerID: 790
     mosaicPosition: {x: 2050, y: 4}
@@ -1265,137 +1393,137 @@ ScriptedImporter:
   - name: PlayerSkillIcon_1
     spriteName: PlayerSkillIcon_1
     isGroup: 0
-    parentIndex: 29
+    parentIndex: 33
     spriteID: 2ac3036f2e8dea440b9f357f81617407
     layerID: 749
-    mosaicPosition: {x: 163, y: 3946}
+    mosaicPosition: {x: 1660, y: 3584}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: SkillIconFrame
     spriteName: SkillIconFrame
     isGroup: 0
-    parentIndex: 29
+    parentIndex: 33
     spriteID: 900d1901a1b426a478e3d7adb92f6eb7
     layerID: 754
-    mosaicPosition: {x: 1755, y: 1628}
+    mosaicPosition: {x: 1660, y: 3368}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: SkillbarPoint
     spriteName: SkillbarPoint
     isGroup: 0
-    parentIndex: 29
+    parentIndex: 33
     spriteID: 0d7b2a04e88c68c43be9e35c76c67669
     layerID: 752
-    mosaicPosition: {x: 1999, y: 1380}
+    mosaicPosition: {x: 1618, y: 4060}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: GaugeBar
     spriteName: GaugeBar
     isGroup: 0
-    parentIndex: 29
+    parentIndex: 33
     spriteID: 0e860ebee961b2e4f91967e086e7fc45
     layerID: 743
-    mosaicPosition: {x: 1650, y: 1587}
+    mosaicPosition: {x: 462, y: 3843}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: SkillText
     spriteName: SkillText
     isGroup: 0
-    parentIndex: 29
+    parentIndex: 33
     spriteID: 7ed2d3f5683f7dd42b0d3f615cad8e13
     layerID: 733
-    mosaicPosition: {x: 72, y: 3946}
+    mosaicPosition: {x: 1660, y: 3482}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: GaugeFrame
     spriteName: GaugeFrame
     isGroup: 0
-    parentIndex: 29
+    parentIndex: 33
     spriteID: 7dd7cce2e8085134284bd708f175fd16
     layerID: 747
-    mosaicPosition: {x: 462, y: 3843}
+    mosaicPosition: {x: 4, y: 3843}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: TrophyIcon
     spriteName: TrophyIcon
     isGroup: 0
-    parentIndex: 29
+    parentIndex: 33
     spriteID: 42e2ecadb9ab5b34f96e516aaca6b27a
     layerID: 734
-    mosaicPosition: {x: 4, y: 3946}
+    mosaicPosition: {x: 1968, y: 3152}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: CompleteScoreText
     spriteName: CompleteScoreText
     isGroup: 0
-    parentIndex: 29
+    parentIndex: 33
     spriteID: 292fcc82b42beee49b9b6d8fe4ea1bf2
     layerID: 740
-    mosaicPosition: {x: 296, y: 3904}
+    mosaicPosition: {x: 2895, y: 412}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: ClearScoreText
     spriteName: ClearScoreText
     isGroup: 0
-    parentIndex: 29
+    parentIndex: 33
     spriteID: c2df3fa41f2d63943ba36214baa33655
     layerID: 738
-    mosaicPosition: {x: 1860, y: 1628}
+    mosaicPosition: {x: 1765, y: 3254}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: ScoreText
     spriteName: ScoreText
     isGroup: 0
-    parentIndex: 29
+    parentIndex: 33
     spriteID: ff72e3e71866af049a757298ae0e0a1b
     layerID: 751
-    mosaicPosition: {x: 475, y: 3904}
+    mosaicPosition: {x: 1675, y: 4061}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: PlayerNicknameText
     spriteName: PlayerNicknameText
     isGroup: 0
-    parentIndex: 29
+    parentIndex: 33
     spriteID: 12a1f4bbec9957d49bff49490367516d
     layerID: 748
-    mosaicPosition: {x: 4, y: 3904}
+    mosaicPosition: {x: 2603, y: 412}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: UIBoard
     spriteName: UIBoard
     isGroup: 0
-    parentIndex: 29
+    parentIndex: 33
     spriteID: 6a2bbd63fb4a3c94e91c94092cbdc0ca
     layerID: 735
-    mosaicPosition: {x: 1092, y: 2157}
+    mosaicPosition: {x: 2050, y: 921}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: ClearPatternBoard
     spriteName: ClearPatternBoard
     isGroup: 0
-    parentIndex: 29
+    parentIndex: 33
     spriteID: 9d9703b18ddca9a49b6abf41f2349584
     layerID: 736
-    mosaicPosition: {x: 1660, y: 962}
+    mosaicPosition: {x: 1672, y: 2643}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: GameBoard
     spriteName: GameBoard
     isGroup: 0
-    parentIndex: 29
+    parentIndex: 33
     spriteID: b79ad9332f606e048aec1d392c2a07fe
     layerID: 741
     mosaicPosition: {x: 1092, y: 4}
@@ -1405,7 +1533,7 @@ ScriptedImporter:
   - name: GameBoardFrame
     spriteName: GameBoardFrame
     isGroup: 0
-    parentIndex: 29
+    parentIndex: 33
     spriteID: 73bc07d56a6aa4d49b6eb405732dc7b6
     layerID: 742
     mosaicPosition: {x: 4, y: 2352}
@@ -1425,7 +1553,7 @@ ScriptedImporter:
   - name: BG
     spriteName: BG
     isGroup: 0
-    parentIndex: 45
+    parentIndex: 49
     spriteID: 8eeb6b2a1de72ba4ebbb18f718a350df
     layerID: 732
     mosaicPosition: {x: 4, y: 4}

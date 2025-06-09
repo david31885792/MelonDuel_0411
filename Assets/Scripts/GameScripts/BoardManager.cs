@@ -262,4 +262,10 @@ public class BoardManager : MonoBehaviour
         Debug.Log($"{numToConvert}개의 타일이 만능 타일로 변환되었습니다.");
     }
 
+    public Tile[] GetAllTiles()
+    {
+        return GetComponentsInChildren<Tile>();
+    }
+
+
 }

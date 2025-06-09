@@ -14,6 +14,9 @@ public class AIController : MonoBehaviour
     private IAIBehavior currentAI;
     private RivalGaugeManager gaugeManager;
 
+    [SerializeField] private RivalScoreManager scoreManager;
+
+
     private void Awake()
     {
         if (skillController == null)
@@ -109,13 +112,13 @@ public class AIController : MonoBehaviour
                 break;
         }
 
-        currentAI?.Initialize(boardManager, patternBoard, gaugeManager, skillController);
+        currentAI?.Initialize(boardManager, patternBoard, gaugeManager, skillController, scoreManager);
         Debug.Log($"🤖 AIController: Player{selectedCharacterId + 1} 초기화 완료");
         Debug.Log($"[AI DEBUG] boardManager: {(boardManager == null ? "NULL" : "OK")}");
         Debug.Log($"[AI DEBUG] patternBoard: {(patternBoard == null ? "NULL" : "OK")}");
         Debug.Log($"[AI DEBUG] gaugeManager: {(gaugeManager == null ? "NULL" : "OK")}");
         Debug.Log($"[AI DEBUG] skillController: {(skillController == null ? "NULL" : "OK")}");
-
+        Debug.Log($"[AI DEBUG] scoremanager: {(scoreManager == null ? "NULL" : "OK")}");
     }
 
     void Update()

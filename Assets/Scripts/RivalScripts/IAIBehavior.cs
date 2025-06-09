@@ -18,7 +18,7 @@ public interface IAIBehavior
     /// <summary>
     /// AI 초기화 로직 (보드, 패턴, 스킬 시스템 연결)
     /// </summary>
-    void Initialize(RivalBoardManager boardManager, RivalPatternBoard patternBoard, RivalGaugeManager gaugeManager, RivalSkillController skillController);
+    void Initialize(RivalBoardManager boardManager, RivalPatternBoard patternBoard, RivalGaugeManager gaugeManager, RivalSkillController skillController, RivalScoreManager scoreManager);
 
     /// <summary>
     /// 매 프레임 또는 일정 주기로 호출되는 AI 행동 루프

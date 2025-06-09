@@ -424,13 +424,13 @@ MonoBehaviour:
   skillIconFrame: {fileID: 712783999}
   characterList:
   - characterId: player1
-    characterSprite: {fileID: 5134702317639834578, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
+    characterSprite: {fileID: 6763417652528299724, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
     skillIcon: {fileID: 7599836718083253543, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
   - characterId: player2
-    characterSprite: {fileID: 2959159301768195959, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
+    characterSprite: {fileID: -7329241067088397943, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
     skillIcon: {fileID: -4359451860678562695, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
   - characterId: player3
-    characterSprite: {fileID: -1864783994686344621, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
+    characterSprite: {fileID: -413284484220132746, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
     skillIcon: {fileID: -5444136565096208221, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
 --- !u!4 &339469026
 Transform:
@@ -2020,7 +2020,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 114.5}
-  m_SizeDelta: {x: 704, y: 1059}
+  m_SizeDelta: {x: 771, y: 930}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2409031353485895948
 MonoBehaviour:
@@ -2086,7 +2086,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1864783994686344621, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
+  m_Sprite: {fileID: -413284484220132746, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2328,7 +2328,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: ChallengeSene
+          m_StringArgument: ChallengeScene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &2771608354514672228
@@ -3035,7 +3035,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 61}
-  m_SizeDelta: {x: 622, y: 932}
+  m_SizeDelta: {x: 613, y: 930}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4492003332016241904
 MonoBehaviour:
@@ -3101,7 +3101,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5134702317639834578, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
+  m_Sprite: {fileID: 6763417652528299724, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3267,7 +3267,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 100.5}
-  m_SizeDelta: {x: 676, y: 999}
+  m_SizeDelta: {x: 718, y: 930}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &5246895497959255672
 Transform:
@@ -3373,7 +3373,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5363704474476911223, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
+  m_Sprite: {fileID: 4452837308692603650, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3681,7 +3681,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3938992787540757123, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
+  m_Sprite: {fileID: 1372255565328896071, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4317,7 +4317,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1718122209812182109, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
+  m_Sprite: {fileID: -3776520647032559159, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5304,7 +5304,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2959159301768195959, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
+  m_Sprite: {fileID: -7329241067088397943, guid: 8e1b17a50780d5146842557927e983a7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

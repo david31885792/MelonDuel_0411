@@ -18,7 +18,25 @@ public class RivalSkillController : MonoBehaviour
     {
         currentSkill = skill;
         Debug.Log($"[RivalSkillController] 스킬 세팅됨: {skill?.GetType().Name ?? "NULL"}");
+
+        if (gaugeManager != null && currentSkill != null)
+        {
+            int maxGauge = GetGaugeFromSkill(currentSkill);
+            gaugeManager.maxGauge = maxGauge;
+        }
     }
+
+    private int GetGaugeFromSkill(ICharacterSkill skill)
+    {
+        switch (skill)
+        {
+            case Player1Skill_SlideBooster s: return s.GetSkillMaxGauge();
+            case Player2Skill_Blind s: return s.GetSkillMaxGauge();
+            case Player3Skill_WildTiles s: return s.GetSkillMaxGauge();
+            default: return 100;
+        }
+    }
+
 
     /// <summary>
     /// 스킬 발동 (AI가 판단하여 직접 호출)

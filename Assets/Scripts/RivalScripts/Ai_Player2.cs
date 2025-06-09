@@ -21,13 +21,17 @@ public class AI_Player2 : MonoBehaviour, IAIBehavior
 
     private int failCount = 0; // 클래스 멤버 변수로 추가
 
+    private RivalScoreManager scoreManager;
 
-    public void Initialize(RivalBoardManager board, RivalPatternBoard pattern, RivalGaugeManager gauge, RivalSkillController skillCtrl)
+
+
+    public void Initialize(RivalBoardManager board, RivalPatternBoard pattern, RivalGaugeManager gauge, RivalSkillController skillCtrl, RivalScoreManager scoreManager)
     {
         this.board = board;
         this.pattern = pattern;
         this.gauge = gauge;
         this.skillCtrl = skillCtrl;
+        this.scoreManager = scoreManager;
         BuildPriorityMap();
         GeneratePriorityMap();
 

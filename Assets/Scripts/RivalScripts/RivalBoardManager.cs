@@ -455,4 +455,9 @@ public class RivalBoardManager : MonoBehaviour
         return clone;
     }
 
+    public Tile[] GetAllTiles()
+    {
+        return GetComponentsInChildren<Tile>();
+    }
+
 }

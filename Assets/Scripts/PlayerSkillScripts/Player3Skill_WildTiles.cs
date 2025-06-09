@@ -2,16 +2,34 @@ using UnityEngine;
 
 public class Player3Skill_WildTiles : MonoBehaviour, ICharacterSkill
 {
+    [SerializeField] private bool isForAI = false;
+
+    [SerializeField] private BoardManager playerBoardManager;
+    [SerializeField] private RivalBoardManager aiBoardManager;
+
     [SerializeField] private int wildTileCount = 3;
+
+    [SerializeField] private int skillMaxGauge = 50;
+
+    public int GetSkillMaxGauge() => skillMaxGauge;
+
 
     public void ActivateSkill()
     {
-        Debug.Log("체리나: 만능 타일 생성!");
-        BoardManager.Instance?.ConvertRandomTilesToWild(wildTileCount);
+        Debug.Log("체리나: 와일드 타일 생성 스킬 발동!");
+
+        if (isForAI && aiBoardManager != null)
+        {
+            aiBoardManager.ConvertRandomTilesToWild(wildTileCount);
+        }
+        else if (!isForAI && playerBoardManager != null)
+        {
+            playerBoardManager.ConvertRandomTilesToWild(wildTileCount);
+        }
+
+        FindFirstObjectByType<SkillEffectManager>()?.ShowEffect(SkillEffectManager.SkillType.Player3, isForAI);
     }
-    public bool IsReady()
-    {
-        // 기본 구현: 스킬이 항상 준비된 상태로 가정
-        return true;
-    }
+
+
+    public bool IsReady() => true;
 }
